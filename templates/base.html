@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}KernxTech | System Design Dashboard{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-layout">
+        <!-- Shared Header Navigation -->
+        <header class="navbar">
+            <div class="brand">
+                <i class="fa-solid fa-diagram-project brand-icon"></i>
+                <span class="brand-name">Kernx<strong>Tech</strong></span>
+            </div>
+
+            {% if user.is_authenticated %}
+            <nav class="nav-links">
+                <a href="{% url 'dataset-list' %}" class="btn btn-secondary">
+                    <i class="fa-solid fa-database"></i>
+                    <span class="nav-text">Datasets</span>
+                </a>
+                <a href="{% url 'home' %}" class="btn btn-secondary">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="nav-text">Dashboard</span>
+                </a>
+                <a href="{% url 'commerce-main' %}" class="btn btn-secondary">
+                    <i class="fa-solid fa-shopping-bag"></i>
+                    <span class="nav-text">Commerce</span>
+                </a>
+                <a href="{% url 'profile' %}" class="user-profile-badge">
+                    <i class="fa-regular fa-user"></i>
+                    <span class="nav-text">{{ user.username }}</span>
+                </a>
+            </nav>
+            {% endif %}
+        </header>
+
+        <!-- Main Dynamic Content Block -->
+        <main class="main-content">
+            {% block content %}{% endblock content %}
+        </main>
+    </div>
+    <script href="{% static "script.js" %}"></script>
+</body>
+</html>

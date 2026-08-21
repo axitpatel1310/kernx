@@ -1,0 +1,3302 @@
+[
+  {
+    "project": {
+      "name": "Hobbyist Forum",
+      "type": "Forum",
+      "dau": 100,
+      "posts": 50,
+      "likes": 200,
+      "uploads": 10,
+      "refreshes": 500,
+      "dms": 20,
+      "notifs": 100,
+      "concurrent": 10,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "SQLite",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Local",
+      "compute": "EC2",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "SQLite provides zero-config relational storage for micro-scale workloads without external dependencies."
+    ],
+    "slug": "hobbyist-forum"
+  },
+  {
+    "project": {
+      "name": "Internal Social",
+      "type": "Enterprise",
+      "dau": 100,
+      "posts": 30,
+      "likes": 100,
+      "uploads": 20,
+      "refreshes": 300,
+      "dms": 50,
+      "notifs": 80,
+      "concurrent": 15,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "PostgreSQL provides robust relational integrity for structured enterprise user and post data."
+    ],
+    "slug": "internal-social"
+  },
+  {
+    "project": {
+      "name": "Local Community",
+      "type": "Community",
+      "dau": 100,
+      "posts": 40,
+      "likes": 150,
+      "uploads": 15,
+      "refreshes": 400,
+      "dms": 30,
+      "notifs": 90,
+      "concurrent": 12,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "VM",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "PostgreSQL handles moderate read/write loads efficiently for a small localized user base."
+    ],
+    "slug": "local-community"
+  },
+  {
+    "project": {
+      "name": "School Network",
+      "type": "Education",
+      "dau": 100,
+      "posts": 60,
+      "likes": 250,
+      "uploads": 5,
+      "refreshes": 600,
+      "dms": 10,
+      "notifs": 120,
+      "concurrent": 20,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "COPPA",
+      "arch": "Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "SQLite",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Local",
+      "compute": "EC2",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "SQLite simplifies deployment for a low-traffic educational project while maintaining data consistency."
+    ],
+    "slug": "school-network"
+  },
+  {
+    "project": {
+      "name": "Creator Hub",
+      "type": "Creator",
+      "dau": 100,
+      "posts": 20,
+      "likes": 300,
+      "uploads": 50,
+      "refreshes": 800,
+      "dms": 40,
+      "notifs": 150,
+      "concurrent": 25,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Serverless",
+      "cloud": "Vercel"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "Lambda",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Serverless PostgreSQL scales to zero during idle periods, optimizing costs for a small creator platform."
+    ],
+    "slug": "creator-hub"
+  },
+  {
+    "project": {
+      "name": "Family Network",
+      "type": "Private",
+      "dau": 100,
+      "posts": 10,
+      "likes": 50,
+      "uploads": 100,
+      "refreshes": 200,
+      "dms": 80,
+      "notifs": 40,
+      "concurrent": 8,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "DigitalOcean"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Spaces",
+      "compute": "Droplet",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "PostgreSQL on a single Droplet provides cost-effective, reliable storage for private family media and messages."
+    ],
+    "slug": "family-network"
+  },
+  {
+    "project": {
+      "name": "Neighborhood Watch",
+      "type": "Community",
+      "dau": 100,
+      "posts": 15,
+      "likes": 40,
+      "uploads": 10,
+      "refreshes": 300,
+      "dms": 20,
+      "notifs": 60,
+      "concurrent": 10,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "SQLite",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Local",
+      "compute": "EC2",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "SQLite is sufficient for low-volume, read-heavy neighborhood alerts without requiring a dedicated database server."
+    ],
+    "slug": "neighborhood-watch"
+  },
+  {
+    "project": {
+      "name": "Book Club",
+      "type": "Hobby",
+      "dau": 100,
+      "posts": 25,
+      "likes": 100,
+      "uploads": 5,
+      "refreshes": 250,
+      "dms": 30,
+      "notifs": 50,
+      "concurrent": 12,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "VM",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "PostgreSQL supports full-text search natively for book discussions without needing an external search engine."
+    ],
+    "slug": "book-club"
+  },
+  {
+    "project": {
+      "name": "Sports Team",
+      "type": "Sports",
+      "dau": 100,
+      "posts": 30,
+      "likes": 120,
+      "uploads": 40,
+      "refreshes": 400,
+      "dms": 50,
+      "notifs": 80,
+      "concurrent": 15,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "PostgreSQL handles relational scheduling and roster data efficiently for a single local sports team."
+    ],
+    "slug": "sports-team"
+  },
+  {
+    "project": {
+      "name": "Indie Game Dev",
+      "type": "Gaming",
+      "dau": 100,
+      "posts": 40,
+      "likes": 200,
+      "uploads": 30,
+      "refreshes": 500,
+      "dms": 60,
+      "notifs": 100,
+      "concurrent": 20,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "SQLite",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Local",
+      "compute": "EC2",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "SQLite provides a lightweight, portable database for indie developers to iterate quickly without infrastructure overhead."
+    ],
+    "slug": "indie-game-dev"
+  },
+  {
+    "project": {
+      "name": "Pet Owners",
+      "type": "Niche",
+      "dau": 10000,
+      "posts": 2000,
+      "likes": 15000,
+      "uploads": 3000,
+      "refreshes": 50000,
+      "dms": 1000,
+      "notifs": 5000,
+      "concurrent": 500,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Redis caches user profiles and session data to reduce PostgreSQL load during peak browsing times."
+    ],
+    "slug": "pet-owners"
+  },
+  {
+    "project": {
+      "name": "Alumni Assoc",
+      "type": "Professional",
+      "dau": 10000,
+      "posts": 1000,
+      "likes": 8000,
+      "uploads": 500,
+      "refreshes": 30000,
+      "dms": 2000,
+      "notifs": 4000,
+      "concurrent": 400,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Redis provides fast access to directory and connection graphs for alumni networking features."
+    ],
+    "slug": "alumni-assoc"
+  },
+  {
+    "project": {
+      "name": "Niche Pro Net",
+      "type": "Professional",
+      "dau": 10000,
+      "posts": 1500,
+      "likes": 12000,
+      "uploads": 1000,
+      "refreshes": 40000,
+      "dms": 3000,
+      "notifs": 6000,
+      "concurrent": 600,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Redis accelerates feed generation by caching recent posts and user activity timelines."
+    ],
+    "slug": "niche-pro-net"
+  },
+  {
+    "project": {
+      "name": "Local Events",
+      "type": "Events",
+      "dau": 10000,
+      "posts": 3000,
+      "likes": 20000,
+      "uploads": 4000,
+      "refreshes": 60000,
+      "dms": 1500,
+      "notifs": 8000,
+      "concurrent": 800,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Serverless",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "Lambda",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Serverless compute handles spiky traffic for local event announcements without paying for idle capacity."
+    ],
+    "slug": "local-events"
+  },
+  {
+    "project": {
+      "name": "Photo Hobby",
+      "type": "Media",
+      "dau": 10000,
+      "posts": 2500,
+      "likes": 25000,
+      "uploads": 5000,
+      "refreshes": 80000,
+      "dms": 500,
+      "notifs": 10000,
+      "concurrent": 700,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Redis caches image metadata and thumbnails to ensure fast gallery loading for photography enthusiasts."
+    ],
+    "slug": "photo-hobby"
+  },
+  {
+    "project": {
+      "name": "City Dating",
+      "type": "Dating",
+      "dau": 10000,
+      "posts": 500,
+      "likes": 30000,
+      "uploads": 2000,
+      "refreshes": 100000,
+      "dms": 15000,
+      "notifs": 20000,
+      "concurrent": 1000,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Redis manages real-time matching queues and ephemeral session states for high-concurrency swiping."
+    ],
+    "slug": "city-dating"
+  },
+  {
+    "project": {
+      "name": "Uni Department",
+      "type": "Education",
+      "dau": 10000,
+      "posts": 1200,
+      "likes": 9000,
+      "uploads": 800,
+      "refreshes": 35000,
+      "dms": 2500,
+      "notifs": 5000,
+      "concurrent": 450,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "FERPA",
+      "arch": "Modular Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "PostgreSQL enforces strict relational constraints required for FERPA-compliant student data management."
+    ],
+    "slug": "uni-department"
+  },
+  {
+    "project": {
+      "name": "Fitness Group",
+      "type": "Health",
+      "dau": 10000,
+      "posts": 2000,
+      "likes": 18000,
+      "uploads": 3500,
+      "refreshes": 70000,
+      "dms": 1000,
+      "notifs": 12000,
+      "concurrent": 650,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Redis tracks real-time workout leaderboards and active user streaks with low latency."
+    ],
+    "slug": "fitness-group"
+  },
+  {
+    "project": {
+      "name": "Foodie Net",
+      "type": "Lifestyle",
+      "dau": 10000,
+      "posts": 3000,
+      "likes": 22000,
+      "uploads": 6000,
+      "refreshes": 90000,
+      "dms": 800,
+      "notifs": 15000,
+      "concurrent": 750,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Redis caches geospatial query results for nearby restaurant recommendations to reduce database load."
+    ],
+    "slug": "foodie-net"
+  },
+  {
+    "project": {
+      "name": "Music Collab",
+      "type": "Media",
+      "dau": 10000,
+      "posts": 1500,
+      "likes": 14000,
+      "uploads": 4500,
+      "refreshes": 50000,
+      "dms": 3000,
+      "notifs": 7000,
+      "concurrent": 550,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Redis handles real-time audio session states and collaborative playlist updates efficiently."
+    ],
+    "slug": "music-collab"
+  },
+  {
+    "project": {
+      "name": "Regional Pro",
+      "type": "Professional",
+      "dau": 100000,
+      "posts": 15000,
+      "likes": 120000,
+      "uploads": 10000,
+      "refreshes": 500000,
+      "dms": 20000,
+      "notifs": 60000,
+      "concurrent": 5000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "None",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "RabbitMQ decouples notification generation from post creation to handle increased asynchronous workload."
+    ],
+    "slug": "regional-pro"
+  },
+  {
+    "project": {
+      "name": "Regional Photo",
+      "type": "Media",
+      "dau": 100000,
+      "posts": 25000,
+      "likes": 250000,
+      "uploads": 50000,
+      "refreshes": 800000,
+      "dms": 5000,
+      "notifs": 100000,
+      "concurrent": 7000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "RabbitMQ processes heavy image upload and thumbnail generation tasks asynchronously without blocking the main thread."
+    ],
+    "slug": "regional-photo"
+  },
+  {
+    "project": {
+      "name": "Regional Video",
+      "type": "Media",
+      "dau": 100000,
+      "posts": 10000,
+      "likes": 180000,
+      "uploads": 20000,
+      "refreshes": 1000000,
+      "dms": 8000,
+      "notifs": 120000,
+      "concurrent": 8000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "RabbitMQ manages video transcoding queues, ensuring smooth processing of large media uploads."
+    ],
+    "slug": "regional-video"
+  },
+  {
+    "project": {
+      "name": "Regional Dating",
+      "type": "Dating",
+      "dau": 100000,
+      "posts": 5000,
+      "likes": 300000,
+      "uploads": 20000,
+      "refreshes": 1500000,
+      "dms": 150000,
+      "notifs": 200000,
+      "concurrent": 10000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "None",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "RabbitMQ handles high-volume direct message delivery and match notification queues reliably."
+    ],
+    "slug": "regional-dating"
+  },
+  {
+    "project": {
+      "name": "Regional Food",
+      "type": "Lifestyle",
+      "dau": 100000,
+      "posts": 30000,
+      "likes": 220000,
+      "uploads": 60000,
+      "refreshes": 900000,
+      "dms": 8000,
+      "notifs": 150000,
+      "concurrent": 7500,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "RabbitMQ decouples review submission from search index updates to maintain low latency during peak dining hours."
+    ],
+    "slug": "regional-food"
+  },
+  {
+    "project": {
+      "name": "Regional Fit",
+      "type": "Health",
+      "dau": 100000,
+      "posts": 20000,
+      "likes": 180000,
+      "uploads": 35000,
+      "refreshes": 700000,
+      "dms": 10000,
+      "notifs": 120000,
+      "concurrent": 6500,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "RabbitMQ processes background fitness data aggregation and leaderboard recalculations asynchronously."
+    ],
+    "slug": "regional-fit"
+  },
+  {
+    "project": {
+      "name": "Regional Event",
+      "type": "Events",
+      "dau": 100000,
+      "posts": 40000,
+      "likes": 300000,
+      "uploads": 50000,
+      "refreshes": 1200000,
+      "dms": 15000,
+      "notifs": 200000,
+      "concurrent": 9000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "None",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "RabbitMQ handles ticketing and RSVP processing spikes without overwhelming the core relational database."
+    ],
+    "slug": "regional-event"
+  },
+  {
+    "project": {
+      "name": "Regional Alumni",
+      "type": "Professional",
+      "dau": 100000,
+      "posts": 12000,
+      "likes": 90000,
+      "uploads": 8000,
+      "refreshes": 400000,
+      "dms": 25000,
+      "notifs": 60000,
+      "concurrent": 5500,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "RabbitMQ manages asynchronous email digest generation and directory synchronization tasks."
+    ],
+    "slug": "regional-alumni"
+  },
+  {
+    "project": {
+      "name": "Regional Hobby",
+      "type": "Forum",
+      "dau": 100000,
+      "posts": 50000,
+      "likes": 400000,
+      "uploads": 20000,
+      "refreshes": 1000000,
+      "dms": 10000,
+      "notifs": 150000,
+      "concurrent": 8000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "RabbitMQ decouples forum post creation from moderation and notification workflows."
+    ],
+    "slug": "regional-hobby"
+  },
+  {
+    "project": {
+      "name": "Regional Creator",
+      "type": "Creator",
+      "dau": 100000,
+      "posts": 20000,
+      "likes": 250000,
+      "uploads": 40000,
+      "refreshes": 800000,
+      "dms": 30000,
+      "notifs": 180000,
+      "concurrent": 7000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "None",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "RabbitMQ handles asynchronous payout calculations and subscription renewal processing for creators."
+    ],
+    "slug": "regional-creator"
+  },
+  {
+    "project": {
+      "name": "National Pro",
+      "type": "Professional",
+      "dau": 1000000,
+      "posts": 150000,
+      "likes": 1200000,
+      "uploads": 100000,
+      "refreshes": 5000000,
+      "dms": 200000,
+      "notifs": 600000,
+      "concurrent": 50000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "SOC2",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka streams user activity events to Elasticsearch for real-time feed updates and search indexing."
+    ],
+    "slug": "national-pro"
+  },
+  {
+    "project": {
+      "name": "National Photo",
+      "type": "Media",
+      "dau": 1000000,
+      "posts": 250000,
+      "likes": 2500000,
+      "uploads": 500000,
+      "refreshes": 8000000,
+      "dms": 50000,
+      "notifs": 1000000,
+      "concurrent": 70000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Kafka handles massive ingestion of image metadata and like events without dropping data during traffic spikes."
+    ],
+    "slug": "national-photo"
+  },
+  {
+    "project": {
+      "name": "National Video",
+      "type": "Media",
+      "dau": 1000000,
+      "posts": 100000,
+      "likes": 1800000,
+      "uploads": 200000,
+      "refreshes": 10000000,
+      "dms": 80000,
+      "notifs": 1200000,
+      "concurrent": 80000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Kafka orchestrates the video processing pipeline, routing uploads to transcoding and thumbnail services."
+    ],
+    "slug": "national-video"
+  },
+  {
+    "project": {
+      "name": "National Dating",
+      "type": "Dating",
+      "dau": 1000000,
+      "posts": 50000,
+      "likes": 3000000,
+      "uploads": 200000,
+      "refreshes": 15000000,
+      "dms": 1500000,
+      "notifs": 2000000,
+      "concurrent": 100000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka processes high-throughput swiping events and match notifications with strict ordering guarantees."
+    ],
+    "slug": "national-dating"
+  },
+  {
+    "project": {
+      "name": "National Food",
+      "type": "Lifestyle",
+      "dau": 1000000,
+      "posts": 300000,
+      "likes": 2200000,
+      "uploads": 600000,
+      "refreshes": 9000000,
+      "dms": 80000,
+      "notifs": 1500000,
+      "concurrent": 75000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Kafka streams review and rating events to Elasticsearch for instant local search result updates."
+    ],
+    "slug": "national-food"
+  },
+  {
+    "project": {
+      "name": "National Fit",
+      "type": "Health",
+      "dau": 1000000,
+      "posts": 200000,
+      "likes": 1800000,
+      "uploads": 350000,
+      "refreshes": 7000000,
+      "dms": 100000,
+      "notifs": 1200000,
+      "concurrent": 65000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "HIPAA",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Kafka ensures HIPAA-compliant audit logging of all health-related activity events asynchronously."
+    ],
+    "slug": "national-fit"
+  },
+  {
+    "project": {
+      "name": "National Event",
+      "type": "Events",
+      "dau": 1000000,
+      "posts": 400000,
+      "likes": 3000000,
+      "uploads": 500000,
+      "refreshes": 12000000,
+      "dms": 150000,
+      "notifs": 2000000,
+      "concurrent": 90000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "PCI-DSS",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka handles high-concurrency ticket purchasing events and payment processing workflows reliably."
+    ],
+    "slug": "national-event"
+  },
+  {
+    "project": {
+      "name": "National Alumni",
+      "type": "Professional",
+      "dau": 1000000,
+      "posts": 120000,
+      "likes": 900000,
+      "uploads": 80000,
+      "refreshes": 4000000,
+      "dms": 250000,
+      "notifs": 600000,
+      "concurrent": 55000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Kafka streams directory updates and connection changes to maintain real-time search accuracy."
+    ],
+    "slug": "national-alumni"
+  },
+  {
+    "project": {
+      "name": "National Hobby",
+      "type": "Forum",
+      "dau": 1000000,
+      "posts": 500000,
+      "likes": 4000000,
+      "uploads": 200000,
+      "refreshes": 10000000,
+      "dms": 100000,
+      "notifs": 1500000,
+      "concurrent": 80000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Kafka routes forum posts to Elasticsearch for immediate full-text search availability across millions of threads."
+    ],
+    "slug": "national-hobby"
+  },
+  {
+    "project": {
+      "name": "National Creator",
+      "type": "Creator",
+      "dau": 1000000,
+      "posts": 200000,
+      "likes": 2500000,
+      "uploads": 400000,
+      "refreshes": 8000000,
+      "dms": 300000,
+      "notifs": 1800000,
+      "concurrent": 70000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "SOC2",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka processes high-volume subscription and tip events to update creator dashboards in real-time."
+    ],
+    "slug": "national-creator"
+  },
+  {
+    "project": {
+      "name": "Global Pro",
+      "type": "Professional",
+      "dau": 10000000,
+      "posts": 1500000,
+      "likes": 12000000,
+      "uploads": 1000000,
+      "refreshes": 50000000,
+      "dms": 2000000,
+      "notifs": 6000000,
+      "concurrent": 500000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "GDPR",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Sharded PostgreSQL distributes massive user profile and connection data across multiple regions for low latency."
+    ],
+    "slug": "global-pro"
+  },
+  {
+    "project": {
+      "name": "Global Photo1",
+      "type": "Media",
+      "dau": 10000000,
+      "posts": 2500000,
+      "likes": 25000000,
+      "uploads": 5000000,
+      "refreshes": 80000000,
+      "dms": 500000,
+      "notifs": 10000000,
+      "concurrent": 700000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Redis Cluster provides a globally distributed cache for hot timelines and session data across continents."
+    ],
+    "slug": "global-photo1"
+  },
+  {
+    "project": {
+      "name": "Global Video",
+      "type": "Media",
+      "dau": 10000000,
+      "posts": 1000000,
+      "likes": 18000000,
+      "uploads": 2000000,
+      "refreshes": 100000000,
+      "dms": 800000,
+      "notifs": 12000000,
+      "concurrent": 800000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Sharded PostgreSQL separates read-heavy feed queries from write-heavy video metadata updates using CQRS."
+    ],
+    "slug": "global-video"
+  },
+  {
+    "project": {
+      "name": "Global Dating",
+      "type": "Dating",
+      "dau": 10000000,
+      "posts": 500000,
+      "likes": 30000000,
+      "uploads": 2000000,
+      "refreshes": 150000000,
+      "dms": 15000000,
+      "notifs": 20000000,
+      "concurrent": 1000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Redis Cluster handles massive concurrent geospatial queries and real-time chat sessions globally."
+    ],
+    "slug": "global-dating"
+  },
+  {
+    "project": {
+      "name": "Global Food",
+      "type": "Lifestyle",
+      "dau": 10000000,
+      "posts": 3000000,
+      "likes": 22000000,
+      "uploads": 6000000,
+      "refreshes": 90000000,
+      "dms": 800000,
+      "notifs": 15000000,
+      "concurrent": 750000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "OpenSearch provides fast, localized full-text search for millions of restaurant reviews and dishes globally."
+    ],
+    "slug": "global-food"
+  },
+  {
+    "project": {
+      "name": "Global Fit",
+      "type": "Health",
+      "dau": 10000000,
+      "posts": 2000000,
+      "likes": 18000000,
+      "uploads": 3500000,
+      "refreshes": 70000000,
+      "dms": 1000000,
+      "notifs": 12000000,
+      "concurrent": 650000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "HIPAA",
+      "arch": "CQRS",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Sharded PostgreSQL ensures data residency compliance by keeping regional health data within specific geographic boundaries."
+    ],
+    "slug": "global-fit"
+  },
+  {
+    "project": {
+      "name": "Global Event",
+      "type": "Events",
+      "dau": 10000000,
+      "posts": 4000000,
+      "likes": 30000000,
+      "uploads": 5000000,
+      "refreshes": 120000000,
+      "dms": 1500000,
+      "notifs": 20000000,
+      "concurrent": 900000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "PCI-DSS",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Redis Cluster manages high-throughput ticket inventory locks and flash-sale concurrency globally."
+    ],
+    "slug": "global-event"
+  },
+  {
+    "project": {
+      "name": "Global Alumni",
+      "type": "Professional",
+      "dau": 10000000,
+      "posts": 1200000,
+      "likes": 9000000,
+      "uploads": 800000,
+      "refreshes": 40000000,
+      "dms": 2500000,
+      "notifs": 6000000,
+      "concurrent": 550000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "OpenSearch enables complex faceted search across millions of alumni profiles and company affiliations."
+    ],
+    "slug": "global-alumni"
+  },
+  {
+    "project": {
+      "name": "Global Hobby",
+      "type": "Forum",
+      "dau": 10000000,
+      "posts": 5000000,
+      "likes": 40000000,
+      "uploads": 2000000,
+      "refreshes": 100000000,
+      "dms": 1000000,
+      "notifs": 15000000,
+      "concurrent": 800000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Sharded PostgreSQL scales write throughput for high-volume forum posts and comments across global regions."
+    ],
+    "slug": "global-hobby"
+  },
+  {
+    "project": {
+      "name": "Global Creator",
+      "type": "Creator",
+      "dau": 10000000,
+      "posts": 2000000,
+      "likes": 25000000,
+      "uploads": 4000000,
+      "refreshes": 80000000,
+      "dms": 3000000,
+      "notifs": 18000000,
+      "concurrent": 700000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "SOC2",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Redis Cluster caches high-traffic creator storefronts and subscription tiers to minimize database reads."
+    ],
+    "slug": "global-creator"
+  },
+  {
+    "project": {
+      "name": "Massive Gen",
+      "type": "General",
+      "dau": 100000000,
+      "posts": 15000000,
+      "likes": 120000000,
+      "uploads": 10000000,
+      "refreshes": 500000000,
+      "dms": 20000000,
+      "notifs": 60000000,
+      "concurrent": 5000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Cassandra provides massive write throughput and horizontal scalability for the global activity feed and likes."
+    ],
+    "slug": "massive-gen"
+  },
+  {
+    "project": {
+      "name": "Massive Vid",
+      "type": "Media",
+      "dau": 100000000,
+      "posts": 10000000,
+      "likes": 180000000,
+      "uploads": 20000000,
+      "refreshes": 1000000000,
+      "dms": 8000000,
+      "notifs": 120000000,
+      "concurrent": 8000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Microservices",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Spanner",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Cassandra handles billions of daily view count increments and timeline updates with zero downtime."
+    ],
+    "slug": "massive-vid"
+  },
+  {
+    "project": {
+      "name": "Massive Photo",
+      "type": "Media",
+      "dau": 100000000,
+      "posts": 25000000,
+      "likes": 250000000,
+      "uploads": 50000000,
+      "refreshes": 800000000,
+      "dms": 5000000,
+      "notifs": 100000000,
+      "concurrent": 7000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "CosmosDB",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Cassandra's wide-column model efficiently stores massive volumes of image metadata and tagging relationships."
+    ],
+    "slug": "massive-photo"
+  },
+  {
+    "project": {
+      "name": "Massive Micro",
+      "type": "Microblog",
+      "dau": 100000000,
+      "posts": 50000000,
+      "likes": 300000000,
+      "uploads": 5000000,
+      "refreshes": 1500000000,
+      "dms": 15000000,
+      "notifs": 200000000,
+      "concurrent": 10000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Cassandra supports the extreme write velocity of short-form text posts and real-time retweets globally."
+    ],
+    "slug": "massive-micro"
+  },
+  {
+    "project": {
+      "name": "Massive Date",
+      "type": "Dating",
+      "dau": 100000000,
+      "posts": 5000000,
+      "likes": 300000000,
+      "uploads": 20000000,
+      "refreshes": 1500000000,
+      "dms": 150000000,
+      "notifs": 200000000,
+      "concurrent": 10000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Microservices",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Spanner",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Cassandra manages the massive volume of swipe events and match history logs with high availability."
+    ],
+    "slug": "massive-date"
+  },
+  {
+    "project": {
+      "name": "Massive Game",
+      "type": "Gaming",
+      "dau": 100000000,
+      "posts": 10000000,
+      "likes": 150000000,
+      "uploads": 15000000,
+      "refreshes": 800000000,
+      "dms": 50000000,
+      "notifs": 100000000,
+      "concurrent": 8000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "CosmosDB",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Cassandra provides the low-latency, high-write throughput required for real-time gaming leaderboards and stats."
+    ],
+    "slug": "massive-game"
+  },
+  {
+    "project": {
+      "name": "Massive Music",
+      "type": "Media",
+      "dau": 100000000,
+      "posts": 8000000,
+      "likes": 200000000,
+      "uploads": 10000000,
+      "refreshes": 1000000000,
+      "dms": 20000000,
+      "notifs": 150000000,
+      "concurrent": 7000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Cassandra scales horizontally to track billions of daily song plays and playlist additions."
+    ],
+    "slug": "massive-music"
+  },
+  {
+    "project": {
+      "name": "Massive Sport",
+      "type": "Sports",
+      "dau": 100000000,
+      "posts": 12000000,
+      "likes": 180000000,
+      "uploads": 8000000,
+      "refreshes": 900000000,
+      "dms": 10000000,
+      "notifs": 120000000,
+      "concurrent": 8000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Microservices",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Spanner",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Cassandra handles the massive spike in write operations during live global sporting events and real-time scoring."
+    ],
+    "slug": "massive-sport"
+  },
+  {
+    "project": {
+      "name": "Massive News",
+      "type": "News",
+      "dau": 100000000,
+      "posts": 20000000,
+      "likes": 250000000,
+      "uploads": 5000000,
+      "refreshes": 1200000000,
+      "dms": 5000000,
+      "notifs": 180000000,
+      "concurrent": 9000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "CosmosDB",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Cassandra provides the write scalability needed for high-volume news article comments and reactions."
+    ],
+    "slug": "massive-news"
+  },
+  {
+    "project": {
+      "name": "Massive Crypto",
+      "type": "Finance",
+      "dau": 100000000,
+      "posts": 15000000,
+      "likes": 100000000,
+      "uploads": 2000000,
+      "refreshes": 800000000,
+      "dms": 30000000,
+      "notifs": 150000000,
+      "concurrent": 7000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Cassandra ensures high availability and partition tolerance for critical financial discussion and transaction feeds."
+    ],
+    "slug": "massive-crypto"
+  },
+  {
+    "project": {
+      "name": "Global Gen",
+      "type": "General",
+      "dau": 1000000000,
+      "posts": 150000000,
+      "likes": 1200000000,
+      "uploads": 100000000,
+      "refreshes": 5000000000,
+      "dms": 200000000,
+      "notifs": 600000000,
+      "concurrent": 50000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides global consistency and horizontal scalability for a billion-user relational data model."
+    ],
+    "slug": "global-gen"
+  },
+  {
+    "project": {
+      "name": "Global Vid",
+      "type": "Media",
+      "dau": 1000000000,
+      "posts": 100000000,
+      "likes": 1800000000,
+      "uploads": 200000000,
+      "refreshes": 10000000000,
+      "dms": 80000000,
+      "notifs": 1200000000,
+      "concurrent": 80000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Global Redis provides ultra-low latency caching for video metadata and user sessions across all continents."
+    ],
+    "slug": "global-vid"
+  },
+  {
+    "project": {
+      "name": "Global Photo",
+      "type": "Media",
+      "dau": 1000000000,
+      "posts": 250000000,
+      "likes": 2500000000,
+      "uploads": 500000000,
+      "refreshes": 8000000000,
+      "dms": 50000000,
+      "notifs": 1000000000,
+      "concurrent": 70000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner automatically shards image metadata globally, ensuring strong consistency for photo albums and tags."
+    ],
+    "slug": "global-photo"
+  },
+  {
+    "project": {
+      "name": "Global Micro",
+      "type": "Microblog",
+      "dau": 1000000000,
+      "posts": 500000000,
+      "likes": 3000000000,
+      "uploads": 50000000,
+      "refreshes": 15000000000,
+      "dms": 150000000,
+      "notifs": 2000000000,
+      "concurrent": 100000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner handles the massive write throughput of short-form posts while maintaining global relational integrity."
+    ],
+    "slug": "global-micro"
+  },
+  {
+    "project": {
+      "name": "Global Date",
+      "type": "Dating",
+      "dau": 1000000000,
+      "posts": 50000000,
+      "likes": 3000000000,
+      "uploads": 200000000,
+      "refreshes": 15000000000,
+      "dms": 1500000000,
+      "notifs": 2000000000,
+      "concurrent": 100000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Global Redis manages real-time geospatial matching and chat states for a billion concurrent users globally."
+    ],
+    "slug": "global-date"
+  },
+  {
+    "project": {
+      "name": "Global Game",
+      "type": "Gaming",
+      "dau": 1000000000,
+      "posts": 100000000,
+      "likes": 1500000000,
+      "uploads": 150000000,
+      "refreshes": 8000000000,
+      "dms": 500000000,
+      "notifs": 1000000000,
+      "concurrent": 80000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides the low-latency, globally distributed relational store required for cross-regional gaming stats."
+    ],
+    "slug": "global-game"
+  },
+  {
+    "project": {
+      "name": "Global Music",
+      "type": "Media",
+      "dau": 1000000000,
+      "posts": 80000000,
+      "likes": 2000000000,
+      "uploads": 100000000,
+      "refreshes": 10000000000,
+      "dms": 200000000,
+      "notifs": 1500000000,
+      "concurrent": 70000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner scales globally to track billions of daily music streams and playlist interactions with strict consistency."
+    ],
+    "slug": "global-music"
+  },
+  {
+    "project": {
+      "name": "Global Sport",
+      "type": "Sports",
+      "dau": 1000000000,
+      "posts": 120000000,
+      "likes": 1800000000,
+      "uploads": 80000000,
+      "refreshes": 9000000000,
+      "dms": 100000000,
+      "notifs": 1200000000,
+      "concurrent": 80000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner ensures global consistency for live sports scoring and real-time fan engagement metrics."
+    ],
+    "slug": "global-sport"
+  },
+  {
+    "project": {
+      "name": "Global News",
+      "type": "News",
+      "dau": 1000000000,
+      "posts": 200000000,
+      "likes": 2500000000,
+      "uploads": 50000000,
+      "refreshes": 12000000000,
+      "dms": 50000000,
+      "notifs": 1800000000,
+      "concurrent": 90000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides the massive write scalability and global read replication needed for breaking news feeds."
+    ],
+    "slug": "global-news"
+  },
+  {
+    "project": {
+      "name": "Global Crypto",
+      "type": "Finance",
+      "dau": 1000000000,
+      "posts": 150000000,
+      "likes": 1000000000,
+      "uploads": 20000000,
+      "refreshes": 8000000000,
+      "dms": 300000000,
+      "notifs": 1500000000,
+      "concurrent": 70000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner guarantees strong global consistency for critical financial discussions and transaction verification."
+    ],
+    "slug": "global-crypto"
+  },
+  {
+    "project": {
+      "name": "Health Social",
+      "type": "Health",
+      "dau": 1000000,
+      "posts": 100000,
+      "likes": 800000,
+      "uploads": 50000,
+      "refreshes": 3000000,
+      "dms": 150000,
+      "notifs": 400000,
+      "concurrent": 40000,
+      "geo": "Single",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "HIPAA",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "PostgreSQL on AWS provides HIPAA-eligible relational storage with strict access controls for health data."
+    ],
+    "slug": "health-social"
+  },
+  {
+    "project": {
+      "name": "Finance Social",
+      "type": "Finance",
+      "dau": 1000000,
+      "posts": 80000,
+      "likes": 600000,
+      "uploads": 20000,
+      "refreshes": 2500000,
+      "dms": 200000,
+      "notifs": 300000,
+      "concurrent": 35000,
+      "geo": "Single",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "FINRA",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Azure provides FINRA-compliant infrastructure with comprehensive audit logging for financial discussions."
+    ],
+    "slug": "finance-social"
+  },
+  {
+    "project": {
+      "name": "Kids Social",
+      "type": "Education",
+      "dau": 10000000,
+      "posts": 500000,
+      "likes": 4000000,
+      "uploads": 200000,
+      "refreshes": 15000000,
+      "dms": 100000,
+      "notifs": 2000000,
+      "concurrent": 400000,
+      "geo": "Multi-Region",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "COPPA",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Sharded PostgreSQL ensures strict data isolation and parental consent tracking required by COPPA compliance."
+    ],
+    "slug": "kids-social"
+  },
+  {
+    "project": {
+      "name": "EU Social",
+      "type": "General",
+      "dau": 10000000,
+      "posts": 1000000,
+      "likes": 8000000,
+      "uploads": 500000,
+      "refreshes": 30000000,
+      "dms": 800000,
+      "notifs": 4000000,
+      "concurrent": 500000,
+      "geo": "EU-Only",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "GDPR",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "AWS EU regions ensure data residency compliance, while sharded PostgreSQL handles the right to be forgotten efficiently."
+    ],
+    "slug": "eu-social"
+  },
+  {
+    "project": {
+      "name": "Gov Social",
+      "type": "Enterprise",
+      "dau": 1000000,
+      "posts": 50000,
+      "likes": 400000,
+      "uploads": 30000,
+      "refreshes": 1500000,
+      "dms": 100000,
+      "notifs": 200000,
+      "concurrent": 30000,
+      "geo": "Single",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "FedRAMP",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Azure Government cloud provides the necessary FedRAMP High authorization for secure internal communications."
+    ],
+    "slug": "gov-social"
+  },
+  {
+    "project": {
+      "name": "Emergency Social",
+      "type": "Utility",
+      "dau": 10000000,
+      "posts": 2000000,
+      "likes": 10000000,
+      "uploads": 1000000,
+      "refreshes": 50000000,
+      "dms": 5000000,
+      "notifs": 20000000,
+      "concurrent": 2000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Multi-AZ deployment with 99.999% SLA ensures critical emergency alerts are never dropped during disasters."
+    ],
+    "slug": "emergency-social"
+  },
+  {
+    "project": {
+      "name": "Anonymous Social",
+      "type": "Privacy",
+      "dau": 1000000,
+      "posts": 300000,
+      "likes": 2000000,
+      "uploads": 100000,
+      "refreshes": 10000000,
+      "dms": 500000,
+      "notifs": 1000000,
+      "concurrent": 80000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "PostgreSQL with encrypted at-rest storage ensures user privacy and secure anonymous posting."
+    ],
+    "slug": "anonymous-social"
+  },
+  {
+    "project": {
+      "name": "Tipping Social",
+      "type": "Creator",
+      "dau": 10000000,
+      "posts": 800000,
+      "likes": 6000000,
+      "uploads": 400000,
+      "refreshes": 25000000,
+      "dms": 1000000,
+      "notifs": 3000000,
+      "concurrent": 400000,
+      "geo": "Multi-Region",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "PCI-DSS",
+      "arch": "CQRS",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "PCI-DSS compliant infrastructure ensures secure processing of creator tips and subscription payments."
+    ],
+    "slug": "tipping-social"
+  },
+  {
+    "project": {
+      "name": "Corp Internal",
+      "type": "Enterprise",
+      "dau": 100000,
+      "posts": 10000,
+      "likes": 80000,
+      "uploads": 5000,
+      "refreshes": 300000,
+      "dms": 20000,
+      "notifs": 40000,
+      "concurrent": 5000,
+      "geo": "Single",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "SOC2",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "None",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "SOC2 compliant AWS environment provides the necessary security controls for internal corporate communications."
+    ],
+    "slug": "corp-internal"
+  },
+  {
+    "project": {
+      "name": "ISO Corp",
+      "type": "Enterprise",
+      "dau": 100000,
+      "posts": 8000,
+      "likes": 60000,
+      "uploads": 4000,
+      "refreshes": 250000,
+      "dms": 15000,
+      "notifs": 30000,
+      "concurrent": 4000,
+      "geo": "Single",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "ISO27001",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Azure's ISO27001 certification meets the strict information security management requirements of the enterprise."
+    ],
+    "slug": "iso-corp"
+  },
+  {
+    "project": {
+      "name": "Edge Social",
+      "type": "General",
+      "dau": 1000000,
+      "posts": 200000,
+      "likes": 1500000,
+      "uploads": 100000,
+      "refreshes": 6000000,
+      "dms": 50000,
+      "notifs": 800000,
+      "concurrent": 60000,
+      "geo": "Global",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Serverless",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Aurora",
+      "cache": "Redis",
+      "queue": "EventBridge",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "Lambda@Edge",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Lambda@Edge processes feed personalization and image resizing at the CDN edge to reduce origin latency."
+    ],
+    "slug": "edge-social"
+  },
+  {
+    "project": {
+      "name": "K8s Social",
+      "type": "General",
+      "dau": 10000000,
+      "posts": 1000000,
+      "likes": 8000000,
+      "uploads": 500000,
+      "refreshes": 30000000,
+      "dms": 800000,
+      "notifs": 4000000,
+      "concurrent": 500000,
+      "geo": "Multi-Region",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "GKE provides advanced container orchestration and auto-scaling for complex, multi-service social workloads."
+    ],
+    "slug": "k8s-social"
+  },
+  {
+    "project": {
+      "name": "PaaS Social",
+      "type": "General",
+      "dau": 1000000,
+      "posts": 150000,
+      "likes": 1200000,
+      "uploads": 80000,
+      "refreshes": 4500000,
+      "dms": 100000,
+      "notifs": 600000,
+      "concurrent": 70000,
+      "geo": "Single",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "CosmosDB",
+      "cache": "Redis",
+      "queue": "ServiceBus",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "App Service",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "CosmosDB provides globally distributed, multi-model database capabilities with managed PaaS simplicity."
+    ],
+    "slug": "paas-social"
+  },
+  {
+    "project": {
+      "name": "Live Social",
+      "type": "Media",
+      "dau": 10000000,
+      "posts": 500000,
+      "likes": 5000000,
+      "uploads": 1000000,
+      "refreshes": 20000000,
+      "dms": 2000000,
+      "notifs": 3000000,
+      "concurrent": 1000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Cassandra handles the massive write throughput of live chat messages and real-time viewer counts."
+    ],
+    "slug": "live-social"
+  },
+  {
+    "project": {
+      "name": "Web3 Social",
+      "type": "Decentralized",
+      "dau": 1000000,
+      "posts": 100000,
+      "likes": 800000,
+      "uploads": 200000,
+      "refreshes": 3000000,
+      "dms": 50000,
+      "notifs": 400000,
+      "concurrent": 50000,
+      "geo": "Global",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "IPFS",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "IPFS provides decentralized, content-addressed storage for user-generated media, ensuring censorship resistance."
+    ],
+    "slug": "web3-social"
+  },
+  {
+    "project": {
+      "name": "AI Social",
+      "type": "General",
+      "dau": 10000000,
+      "posts": 1500000,
+      "likes": 12000000,
+      "uploads": 800000,
+      "refreshes": 45000000,
+      "dms": 500000,
+      "notifs": 6000000,
+      "concurrent": 600000,
+      "geo": "Multi-Region",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "GCP's AI infrastructure integrates seamlessly with Kafka to process real-time content recommendations."
+    ],
+    "slug": "ai-social"
+  },
+  {
+    "project": {
+      "name": "LowBand Social",
+      "type": "Utility",
+      "dau": 10000000,
+      "posts": 800000,
+      "likes": 6000000,
+      "uploads": 100000,
+      "refreshes": 25000000,
+      "dms": 300000,
+      "notifs": 3000000,
+      "concurrent": 400000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Aggressive edge caching and optimized payloads ensure usability in low-bandwidth emerging markets."
+    ],
+    "slug": "lowband-social"
+  },
+  {
+    "project": {
+      "name": "Offline Social",
+      "type": "Utility",
+      "dau": 100000,
+      "posts": 5000,
+      "likes": 40000,
+      "uploads": 2000,
+      "refreshes": 150000,
+      "dms": 10000,
+      "notifs": 20000,
+      "concurrent": 3000,
+      "geo": "Single",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Couchbase",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Couchbase provides built-in offline-first synchronization for field workers with intermittent connectivity."
+    ],
+    "slug": "offline-social"
+  },
+  {
+    "project": {
+      "name": "Collab Social",
+      "type": "Productivity",
+      "dau": 1000000,
+      "posts": 50000,
+      "likes": 400000,
+      "uploads": 100000,
+      "refreshes": 1500000,
+      "dms": 200000,
+      "notifs": 300000,
+      "concurrent": 80000,
+      "geo": "Single",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Redis pub/sub enables real-time collaborative editing and whiteboard updates with sub-millisecond latency."
+    ],
+    "slug": "collab-social"
+  },
+  {
+    "project": {
+      "name": "Voice Social",
+      "type": "Audio",
+      "dau": 1000000,
+      "posts": 20000,
+      "likes": 300000,
+      "uploads": 50000,
+      "refreshes": 1000000,
+      "dms": 500000,
+      "notifs": 200000,
+      "concurrent": 100000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Redis manages real-time voice room states and participant lists for low-latency audio streaming."
+    ],
+    "slug": "voice-social"
+  },
+  {
+    "project": {
+      "name": "Media Heavy",
+      "type": "Media",
+      "dau": 10000000,
+      "posts": 500000,
+      "likes": 4000000,
+      "uploads": 5000000,
+      "refreshes": 15000000,
+      "dms": 100000,
+      "notifs": 2000000,
+      "concurrent": 300000,
+      "geo": "Multi-Region",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "GCS provides massive, cost-effective object storage and high-throughput CDN for heavy media uploads."
+    ],
+    "slug": "media-heavy"
+  },
+  {
+    "project": {
+      "name": "DM Heavy",
+      "type": "Messaging",
+      "dau": 10000000,
+      "posts": 100000,
+      "likes": 1000000,
+      "uploads": 500000,
+      "refreshes": 5000000,
+      "dms": 50000000,
+      "notifs": 10000000,
+      "concurrent": 2000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Cassandra handles the extreme write volume of direct messages and chat history with high availability."
+    ],
+    "slug": "dm-heavy"
+  },
+  {
+    "project": {
+      "name": "Live Heavy",
+      "type": "Streaming",
+      "dau": 10000000,
+      "posts": 200000,
+      "likes": 2000000,
+      "uploads": 1000000,
+      "refreshes": 8000000,
+      "dms": 1000000,
+      "notifs": 3000000,
+      "concurrent": 3000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Azure CDN and Cassandra work together to deliver low-latency live video and manage concurrent viewer counts."
+    ],
+    "slug": "live-heavy"
+  },
+  {
+    "project": {
+      "name": "Stories Heavy",
+      "type": "Media",
+      "dau": 10000000,
+      "posts": 2000000,
+      "likes": 15000000,
+      "uploads": 4000000,
+      "refreshes": 50000000,
+      "dms": 200000,
+      "notifs": 8000000,
+      "concurrent": 600000,
+      "geo": "Multi-Region",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Redis Cluster manages the ephemeral TTL and high-read velocity of 24-hour story content efficiently."
+    ],
+    "slug": "stories-heavy"
+  },
+  {
+    "project": {
+      "name": "Search Heavy",
+      "type": "Discovery",
+      "dau": 10000000,
+      "posts": 1000000,
+      "likes": 8000000,
+      "uploads": 500000,
+      "refreshes": 30000000,
+      "dms": 300000,
+      "notifs": 4000000,
+      "concurrent": 500000,
+      "geo": "Multi-Region",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "OpenSearch provides sub-second full-text and faceted search across billions of posts and user profiles."
+    ],
+    "slug": "search-heavy"
+  },
+  {
+    "project": {
+      "name": "Group Heavy",
+      "type": "Community",
+      "dau": 1000000,
+      "posts": 300000,
+      "likes": 2500000,
+      "uploads": 200000,
+      "refreshes": 9000000,
+      "dms": 5000000,
+      "notifs": 3000000,
+      "concurrent": 200000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Kafka routes group messages to multiple subscribers efficiently, handling high fan-out for large communities."
+    ],
+    "slug": "group-heavy"
+  },
+  {
+    "project": {
+      "name": "Monetize Heavy",
+      "type": "Creator",
+      "dau": 10000000,
+      "posts": 500000,
+      "likes": 4000000,
+      "uploads": 300000,
+      "refreshes": 15000000,
+      "dms": 1000000,
+      "notifs": 5000000,
+      "concurrent": 400000,
+      "geo": "Multi-Region",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "PCI-DSS",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Sharded PostgreSQL ensures strict transactional integrity for high-volume creator payouts and subscriptions."
+    ],
+    "slug": "monetize-heavy"
+  },
+  {
+    "project": {
+      "name": "Geo Heavy",
+      "type": "Location",
+      "dau": 1000000,
+      "posts": 200000,
+      "likes": 1500000,
+      "uploads": 300000,
+      "refreshes": 6000000,
+      "dms": 100000,
+      "notifs": 800000,
+      "concurrent": 80000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Redis geospatial indexes enable fast, real-time location-based check-ins and nearby user discovery."
+    ],
+    "slug": "geo-heavy"
+  },
+  {
+    "project": {
+      "name": "Poll Heavy",
+      "type": "Engagement",
+      "dau": 100000,
+      "posts": 50000,
+      "likes": 400000,
+      "uploads": 10000,
+      "refreshes": 1500000,
+      "dms": 5000,
+      "notifs": 200000,
+      "concurrent": 10000,
+      "geo": "Single",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Redis atomic increments handle high-concurrency poll voting without database contention."
+    ],
+    "slug": "poll-heavy"
+  },
+  {
+    "project": {
+      "name": "AR Heavy",
+      "type": "Media",
+      "dau": 10000000,
+      "posts": 1000000,
+      "likes": 8000000,
+      "uploads": 2000000,
+      "refreshes": 30000000,
+      "dms": 200000,
+      "notifs": 4000000,
+      "concurrent": 500000,
+      "geo": "Multi-Region",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "S3 and CloudFront deliver large AR asset files with low latency, while Redis caches user-specific filter states."
+    ],
+    "slug": "ar-heavy"
+  }
+]

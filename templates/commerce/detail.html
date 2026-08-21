@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ product.name }} | Kernx Commerce Store{% endblock title %}
+
+{% block content %}
+<!-- Product Dashboard Header -->
+<section class="dashboard-header">
+    <div class="header-text">
+        <h1>{{ product.name }}</h1>
+        <p>Master the craft with precision, discipline, and timeless architectural principles.</p>
+    </div>
+</section>
+
+<!-- Samurai Theme Detail Grid -->
+<div class="detail-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+    
+    <!-- Left Column: Product Art / Banner -->
+    <div class="detail-card" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1rem;">
+        <div style="position: relative; width: 100%; height: 100%; min-height: 350px; border-radius: 4px; overflow: hidden; border: 1px solid var(--samurai-border); background: var(--samurai-paper);">
+            {% if product.image %}
+                <img src="{{ product.image.url }}" alt="{{ product.name }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            {% else %}
+                <!-- Fallback Samurai Banner Frame when no image is uploaded -->
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; width: 100%; background: #FAF8F3; padding: 2rem; text-align: center;">
+                    <div style="width: 80px; height: 80px; border-radius: 50%; background: var(--color-accent-red); color: white; display: grid; place-items: center; font-size: 2rem; margin-bottom: 1rem; box-shadow: 0 4px 15px rgba(193,17,31,0.2);">
+                        <i class="fa-solid fa-kaaba"></i>
+                    </div>
+                    <span style="font-family: Georgia, serif; font-weight: 700; color: var(--samurai-ink); font-size: 1.1rem; letter-spacing: -0.02em;">{{ product.name }}</span>
+                    <span style="font-size: 0.8rem; color: #77736D; text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.5rem;">Kernx Commerce Edition</span>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Middle Column: Scroll of Knowledge -->
+    <div class="detail-card">
+        <div class="detail-card-header">
+            <i class="fa-solid fa-scroll"></i>
+            <h2>Scroll of Knowledge</h2>
+        </div>
+        
+        <!-- Description -->
+        <div style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem; color: var(--samurai-ink);">
+            {{ product.description|safe }}
+        </div>
+
+        <div class="detail-card-header" style="border-top: 1px solid var(--samurai-border); padding-top: 1.25rem; margin-top: 1.25rem;">
+            <i class="fa-solid fa-khanda"></i>
+            <h2>What You Will Master</h2>
+        </div>
+        
+        <!-- Checklist using the theme's reasoning-list -->
+        <ul class="reasoning-list">
+            <li>Deep architectural patterns and scalable system design</li>
+            <li>Advanced optimization techniques and algorithmic thinking</li>
+            <li>Disciplined code structuring and production-ready deployments</li>
+        </ul>
+    </div>
+
+    <!-- Right Column: Specifications & Action -->
+    <div class="detail-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+            <div class="detail-card-header">
+                <i class="fa-solid fa-yin-yang"></i>
+                <h2>Specifications</h2>
+            </div>
+            
+            <table class="spec-table" style="margin-bottom: 1.5rem;">
+                <tbody>
+                    <tr>
+                        <th>Format</th>
+                        <td>
+                            {% if product.type_of == "Course" %}
+                                Video Lecture Series
+                            {% elif product.type_of == "E_book" or product.type_of == "Quick_Guide" %}
+                                Digital Scroll (PDF/EPUB)
+                            {% elif product.type_of == "Cheatsheet" %}
+                                Quick Reference Sheet
+                            {% endif %}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Duration</th>
+                        <td>{{ product.duration }}</td>
+                    </tr>
+                    <tr>
+                        <th>Access</th>
+                        <td>Lifetime Access</td>
+                    </tr>
+                    <tr>
+                        <th>Tags</th>
+                        <td>
+                            <span class="tech-badge">System Design</span>
+                            <span class="tech-badge">Architecture</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Pricing & Action Footer -->
+        <div style="border-top: 1px solid var(--samurai-border); padding-top: 1.25rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem;">
+                <span style="color: #77736D; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.85rem;">Investment</span>
+                <span style="font-family: Georgia, serif; font-size: 2.25rem; font-weight: 700; color: var(--color-accent-red);">${{product.price}}</span>
+            </div>
+            
+            <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                <a href="{{product.link}}" class="btn btn-primary" style="justify-content: center; font-size: 1rem; padding: 0.8rem;">
+                    <i class="fa-solid fa-cart-arrow-down"></i> Secure Access
+                </a>
+                
+                <a href="" class="btn btn-secondary" style="justify-content: center;">
+                    <i class="fa-solid fa-arrow-left"></i> Return to Catalog
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock content %}

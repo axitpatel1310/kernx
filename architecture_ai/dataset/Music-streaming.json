@@ -1,0 +1,2972 @@
+[
+  {
+    "project": {
+      "name": "Hobbyist Music Blog",
+      "type": "Indie",
+      "dau": 100,
+      "daily_plays": 500,
+      "catalog_size": 1000,
+      "daily_uploads": 5,
+      "live_sessions": 0,
+      "bandwidth": "10 GB",
+      "drm_protection": "None",
+      "concurrent": 20,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "SQLite",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "SQLite provides zero-config relational storage for micro-scale music metadata without external database dependencies."
+    ],
+    "slug": "hobbyist-music-blog"
+  },
+  {
+    "project": {
+      "name": "Local Band Promo",
+      "type": "Indie",
+      "dau": 100,
+      "daily_plays": 400,
+      "catalog_size": 500,
+      "daily_uploads": 2,
+      "live_sessions": 0,
+      "bandwidth": "5 GB",
+      "drm_protection": "None",
+      "concurrent": 15,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "PostgreSQL handles structured track and album metadata reliably for a small localized band promotion site."
+    ],
+    "slug": "local-band-promo"
+  },
+  {
+    "project": {
+      "name": "School Radio Station",
+      "type": "Education",
+      "dau": 100,
+      "daily_plays": 600,
+      "catalog_size": 2000,
+      "daily_uploads": 10,
+      "live_sessions": 1,
+      "bandwidth": "20 GB",
+      "drm_protection": "None",
+      "concurrent": 30,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "PostgreSQL provides robust relational integrity for scheduling and show metadata without requiring complex distributed systems."
+    ],
+    "slug": "school-radio-station"
+  },
+  {
+    "project": {
+      "name": "Podcast Hobby",
+      "type": "Podcast",
+      "dau": 100,
+      "daily_plays": 300,
+      "catalog_size": 100,
+      "daily_uploads": 1,
+      "live_sessions": 0,
+      "bandwidth": "15 GB",
+      "drm_protection": "None",
+      "concurrent": 10,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "DigitalOcean"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Spaces",
+      "compute": "Droplet",
+      "cdn": "DO CDN"
+    },
+    "reasoning": [
+      "PostgreSQL on a single Droplet provides cost-effective, reliable storage for podcast episode metadata and RSS feed generation."
+    ],
+    "slug": "podcast-hobby"
+  },
+  {
+    "project": {
+      "name": "Audiobook Reader",
+      "type": "Audiobook",
+      "dau": 100,
+      "daily_plays": 200,
+      "catalog_size": 50,
+      "daily_uploads": 1,
+      "live_sessions": 0,
+      "bandwidth": "30 GB",
+      "drm_protection": "None",
+      "concurrent": 10,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "SQLite",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "SQLite simplifies deployment for a low-traffic audiobook reader while maintaining data consistency for user progress tracking."
+    ],
+    "slug": "audiobook-reader"
+  },
+  {
+    "project": {
+      "name": "Local DJ Mixes",
+      "type": "Radio",
+      "dau": 100,
+      "daily_plays": 800,
+      "catalog_size": 300,
+      "daily_uploads": 5,
+      "live_sessions": 2,
+      "bandwidth": "25 GB",
+      "drm_protection": "None",
+      "concurrent": 40,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "PostgreSQL handles relational scheduling and broadcast metadata efficiently for a single local DJ streaming setup."
+    ],
+    "slug": "local-dj-mixes"
+  },
+  {
+    "project": {
+      "name": "Choir Archive",
+      "type": "Education",
+      "dau": 100,
+      "daily_plays": 150,
+      "catalog_size": 500,
+      "daily_uploads": 2,
+      "live_sessions": 0,
+      "bandwidth": "10 GB",
+      "drm_protection": "None",
+      "concurrent": 10,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "PostgreSQL supports full-text search natively for choral work metadata without needing an external search engine."
+    ],
+    "slug": "choir-archive"
+  },
+  {
+    "project": {
+      "name": "Indie Label Demo",
+      "type": "Label",
+      "dau": 100,
+      "daily_plays": 250,
+      "catalog_size": 100,
+      "daily_uploads": 10,
+      "live_sessions": 0,
+      "bandwidth": "5 GB",
+      "drm_protection": "None",
+      "concurrent": 15,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "SQLite",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "SQLite provides a lightweight, portable database for indie labels to manage demo submissions without infrastructure overhead."
+    ],
+    "slug": "indie-label-demo"
+  },
+  {
+    "project": {
+      "name": "Music Theory Course",
+      "type": "Education",
+      "dau": 100,
+      "daily_plays": 1000,
+      "catalog_size": 200,
+      "daily_uploads": 1,
+      "live_sessions": 0,
+      "bandwidth": "8 GB",
+      "drm_protection": "None",
+      "concurrent": 20,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "PostgreSQL enforces strict relational constraints required for tracking student progress and course enrollment."
+    ],
+    "slug": "music-theory-course"
+  },
+  {
+    "project": {
+      "name": "Local Church Music",
+      "type": "Education",
+      "dau": 100,
+      "daily_plays": 300,
+      "catalog_size": 400,
+      "daily_uploads": 2,
+      "live_sessions": 1,
+      "bandwidth": "12 GB",
+      "drm_protection": "None",
+      "concurrent": 25,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "PostgreSQL handles relational scheduling and service metadata efficiently for a single local church music ministry."
+    ],
+    "slug": "local-church-music"
+  },
+  {
+    "project": {
+      "name": "Regional Indie Label",
+      "type": "Label",
+      "dau": 10000,
+      "daily_plays": 50000,
+      "catalog_size": 50000,
+      "daily_uploads": 50,
+      "live_sessions": 2,
+      "bandwidth": "500 GB",
+      "drm_protection": "None",
+      "concurrent": 2000,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Redis caches user profiles and session data to reduce PostgreSQL load during peak regional music browsing."
+    ],
+    "slug": "regional-indie-label"
+  },
+  {
+    "project": {
+      "name": "Niche Podcast Network",
+      "type": "Podcast",
+      "dau": 10000,
+      "daily_plays": 40000,
+      "catalog_size": 10000,
+      "daily_uploads": 20,
+      "live_sessions": 0,
+      "bandwidth": "800 GB",
+      "drm_protection": "None",
+      "concurrent": 1500,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Redis provides fast access to user listen history and recommendation graphs for podcast binge-watching sessions."
+    ],
+    "slug": "niche-podcast-network"
+  },
+  {
+    "project": {
+      "name": "University Radio Station",
+      "type": "Radio",
+      "dau": 10000,
+      "daily_plays": 60000,
+      "catalog_size": 80000,
+      "daily_uploads": 100,
+      "live_sessions": 10,
+      "bandwidth": "600 GB",
+      "drm_protection": "None",
+      "concurrent": 3000,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Redis manages real-time listener counts and live chat states for continuous university radio broadcasting."
+    ],
+    "slug": "university-radio-station"
+  },
+  {
+    "project": {
+      "name": "Audiobook Subscription",
+      "type": "Audiobook",
+      "dau": 10000,
+      "daily_plays": 30000,
+      "catalog_size": 20000,
+      "daily_uploads": 30,
+      "live_sessions": 0,
+      "bandwidth": "1.5 TB",
+      "drm_protection": "FairPlay",
+      "concurrent": 1200,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Redis handles real-time session states for interactive audiobook progress tracking and bookmark management."
+    ],
+    "slug": "audiobook-subscription"
+  },
+  {
+    "project": {
+      "name": "Local Music Festival",
+      "type": "Live",
+      "dau": 10000,
+      "daily_plays": 80000,
+      "catalog_size": 5000,
+      "daily_uploads": 500,
+      "live_sessions": 50,
+      "bandwidth": "2 TB",
+      "drm_protection": "None",
+      "concurrent": 5000,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Redis tracks real-time stage schedules and active user locations during live multi-stage festival streaming."
+    ],
+    "slug": "local-music-festival"
+  },
+  {
+    "project": {
+      "name": "Regional DJ Platform",
+      "type": "Radio",
+      "dau": 10000,
+      "daily_plays": 70000,
+      "catalog_size": 30000,
+      "daily_uploads": 100,
+      "live_sessions": 20,
+      "bandwidth": "1.8 TB",
+      "drm_protection": "None",
+      "concurrent": 4000,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Redis accelerates feed generation by caching recent DJ mixes and user activity timelines."
+    ],
+    "slug": "regional-dj-platform"
+  },
+  {
+    "project": {
+      "name": "Indie Artist Hub",
+      "type": "Indie",
+      "dau": 10000,
+      "daily_plays": 45000,
+      "catalog_size": 40000,
+      "daily_uploads": 200,
+      "live_sessions": 5,
+      "bandwidth": "900 GB",
+      "drm_protection": "None",
+      "concurrent": 1800,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Redis caches audio metadata and thumbnails to ensure fast gallery loading for indie artist portfolio browsing."
+    ],
+    "slug": "indie-artist-hub"
+  },
+  {
+    "project": {
+      "name": "Classical Music Archive",
+      "type": "Label",
+      "dau": 10000,
+      "daily_plays": 25000,
+      "catalog_size": 100000,
+      "daily_uploads": 10,
+      "live_sessions": 0,
+      "bandwidth": "1.2 TB",
+      "drm_protection": "None",
+      "concurrent": 1000,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "PostgreSQL enforces strict relational constraints required for complex composer, orchestra, and movement metadata."
+    ],
+    "slug": "classical-music-archive"
+  },
+  {
+    "project": {
+      "name": "Music Production School",
+      "type": "Education",
+      "dau": 10000,
+      "daily_plays": 55000,
+      "catalog_size": 15000,
+      "daily_uploads": 50,
+      "live_sessions": 10,
+      "bandwidth": "700 GB",
+      "drm_protection": "None",
+      "concurrent": 2500,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Redis handles real-time collaborative audio session states and student feedback workflows efficiently."
+    ],
+    "slug": "music-production-school"
+  },
+  {
+    "project": {
+      "name": "Regional Karaoke App",
+      "type": "VOD",
+      "dau": 10000,
+      "daily_plays": 90000,
+      "catalog_size": 60000,
+      "daily_uploads": 100,
+      "live_sessions": 0,
+      "bandwidth": "2.5 TB",
+      "drm_protection": "None",
+      "concurrent": 4500,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Redis manages real-time scoring queues and ephemeral session states for high-concurrency karaoke singing."
+    ],
+    "slug": "regional-karaoke-app"
+  },
+  {
+    "project": {
+      "name": "National Indie Label",
+      "type": "Label",
+      "dau": 100000,
+      "daily_plays": 500000,
+      "catalog_size": 500000,
+      "daily_uploads": 500,
+      "live_sessions": 20,
+      "bandwidth": "5 TB",
+      "drm_protection": "Widevine",
+      "concurrent": 20000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "RabbitMQ decouples audio ingest from the transcoding pipeline, ensuring smooth processing of new track uploads."
+    ],
+    "slug": "national-indie-label"
+  },
+  {
+    "project": {
+      "name": "Global Podcast Network",
+      "type": "Podcast",
+      "dau": 100000,
+      "daily_plays": 400000,
+      "catalog_size": 100000,
+      "daily_uploads": 200,
+      "live_sessions": 0,
+      "bandwidth": "8 TB",
+      "drm_protection": "None",
+      "concurrent": 15000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "RabbitMQ manages asynchronous audio processing and RSS feed generation queues for global podcast distribution."
+    ],
+    "slug": "global-podcast-network"
+  },
+  {
+    "project": {
+      "name": "National Radio Network",
+      "type": "Radio",
+      "dau": 100000,
+      "daily_plays": 600000,
+      "catalog_size": 800000,
+      "daily_uploads": 1000,
+      "live_sessions": 100,
+      "bandwidth": "6 TB",
+      "drm_protection": "None",
+      "concurrent": 30000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "RabbitMQ handles background audio archiving and metadata synchronization tasks asynchronously for live radio."
+    ],
+    "slug": "national-radio-network"
+  },
+  {
+    "project": {
+      "name": "Audiobook Platform Pro",
+      "type": "Audiobook",
+      "dau": 100000,
+      "daily_plays": 300000,
+      "catalog_size": 200000,
+      "daily_uploads": 300,
+      "live_sessions": 0,
+      "bandwidth": "15 TB",
+      "drm_protection": "FairPlay",
+      "concurrent": 12000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "RabbitMQ processes high-volume chapter splitting and audio normalization tasks asynchronously without blocking the main thread."
+    ],
+    "slug": "audiobook-platform-pro"
+  },
+  {
+    "project": {
+      "name": "Live Concert Streaming",
+      "type": "Live",
+      "dau": 100000,
+      "daily_plays": 800000,
+      "catalog_size": 50000,
+      "daily_uploads": 5000,
+      "live_sessions": 500,
+      "bandwidth": "20 TB",
+      "drm_protection": "Widevine",
+      "concurrent": 50000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "RabbitMQ processes high-volume live chat messages and real-time viewer count updates without overwhelming the core database."
+    ],
+    "slug": "live-concert-streaming"
+  },
+  {
+    "project": {
+      "name": "DJ Mixing Platform",
+      "type": "Radio",
+      "dau": 100000,
+      "daily_plays": 700000,
+      "catalog_size": 300000,
+      "daily_uploads": 1000,
+      "live_sessions": 200,
+      "bandwidth": "18 TB",
+      "drm_protection": "None",
+      "concurrent": 40000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "RabbitMQ decouples live DJ set recording from the VOD archiving and podcast distribution workflows."
+    ],
+    "slug": "dj-mixing-platform"
+  },
+  {
+    "project": {
+      "name": "Music Collaboration Hub",
+      "type": "Indie",
+      "dau": 100000,
+      "daily_plays": 450000,
+      "catalog_size": 400000,
+      "daily_uploads": 2000,
+      "live_sessions": 50,
+      "bandwidth": "9 TB",
+      "drm_protection": "None",
+      "concurrent": 18000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "RabbitMQ handles asynchronous audio stem merging and version control workflows for remote music collaboration."
+    ],
+    "slug": "music-collaboration-hub"
+  },
+  {
+    "project": {
+      "name": "Classical Streaming Pro",
+      "type": "Label",
+      "dau": 100000,
+      "daily_plays": 250000,
+      "catalog_size": 1000000,
+      "daily_uploads": 100,
+      "live_sessions": 0,
+      "bandwidth": "12 TB",
+      "drm_protection": "None",
+      "concurrent": 10000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "RabbitMQ manages asynchronous metadata enrichment and musicological tagging tasks for complex classical works."
+    ],
+    "slug": "classical-streaming-pro"
+  },
+  {
+    "project": {
+      "name": "Music Education Pro",
+      "type": "Education",
+      "dau": 100000,
+      "daily_plays": 550000,
+      "catalog_size": 150000,
+      "daily_uploads": 500,
+      "live_sessions": 100,
+      "bandwidth": "7 TB",
+      "drm_protection": "None",
+      "concurrent": 25000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "FERPA",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "RabbitMQ decouples student assignment submissions from the grading and notification workflows to maintain low latency."
+    ],
+    "slug": "music-education-pro"
+  },
+  {
+    "project": {
+      "name": "Karaoke Network",
+      "type": "VOD",
+      "dau": 100000,
+      "daily_plays": 900000,
+      "catalog_size": 600000,
+      "daily_uploads": 1000,
+      "live_sessions": 0,
+      "bandwidth": "25 TB",
+      "drm_protection": "None",
+      "concurrent": 45000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "RabbitMQ handles high-volume vocal track isolation and background music generation tasks asynchronously."
+    ],
+    "slug": "karaoke-network"
+  },
+  {
+    "project": {
+      "name": "Major Indie Label",
+      "type": "Label",
+      "dau": 1000000,
+      "daily_plays": 5000000,
+      "catalog_size": 5000000,
+      "daily_uploads": 5000,
+      "live_sessions": 200,
+      "bandwidth": "50 TB",
+      "drm_protection": "Widevine",
+      "concurrent": 200000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka streams user activity events to Elasticsearch for real-time feed updates and personalized music recommendations."
+    ],
+    "slug": "major-indie-label"
+  },
+  {
+    "project": {
+      "name": "Mega Podcast Network",
+      "type": "Podcast",
+      "dau": 1000000,
+      "daily_plays": 4000000,
+      "catalog_size": 1000000,
+      "daily_uploads": 2000,
+      "live_sessions": 0,
+      "bandwidth": "80 TB",
+      "drm_protection": "None",
+      "concurrent": 150000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Kafka handles massive ingestion of podcast metadata and user listen history events without dropping data during traffic spikes."
+    ],
+    "slug": "mega-podcast-network"
+  },
+  {
+    "project": {
+      "name": "National Radio Mega",
+      "type": "Radio",
+      "dau": 1000000,
+      "daily_plays": 6000000,
+      "catalog_size": 8000000,
+      "daily_uploads": 10000,
+      "live_sessions": 1000,
+      "bandwidth": "60 TB",
+      "drm_protection": "None",
+      "concurrent": 300000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Kafka ensures SOC2-compliant audit logging of all broadcast metadata and listener analytics asynchronously."
+    ],
+    "slug": "national-radio-mega"
+  },
+  {
+    "project": {
+      "name": "Audiobook Mega",
+      "type": "Audiobook",
+      "dau": 1000000,
+      "daily_plays": 3000000,
+      "catalog_size": 2000000,
+      "daily_uploads": 3000,
+      "live_sessions": 0,
+      "bandwidth": "150 TB",
+      "drm_protection": "FairPlay",
+      "concurrent": 120000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka processes high-throughput chapter navigation and bookmark events with strict ordering guarantees."
+    ],
+    "slug": "audiobook-mega"
+  },
+  {
+    "project": {
+      "name": "Live Concert Mega",
+      "type": "Live",
+      "dau": 1000000,
+      "daily_plays": 8000000,
+      "catalog_size": 500000,
+      "daily_uploads": 50000,
+      "live_sessions": 5000,
+      "bandwidth": "200 TB",
+      "drm_protection": "Widevine",
+      "concurrent": 500000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Kafka streams directory updates and ticketing changes to maintain real-time search accuracy across global venues."
+    ],
+    "slug": "live-concert-mega"
+  },
+  {
+    "project": {
+      "name": "DJ Mega Platform",
+      "type": "Radio",
+      "dau": 1000000,
+      "daily_plays": 7000000,
+      "catalog_size": 3000000,
+      "daily_uploads": 10000,
+      "live_sessions": 2000,
+      "bandwidth": "180 TB",
+      "drm_protection": "None",
+      "concurrent": 400000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Kafka routes live DJ set recordings to Elasticsearch for immediate full-text search availability across millions of tracks."
+    ],
+    "slug": "dj-mega-platform"
+  },
+  {
+    "project": {
+      "name": "Music Collab Mega",
+      "type": "Indie",
+      "dau": 1000000,
+      "daily_plays": 4500000,
+      "catalog_size": 4000000,
+      "daily_uploads": 20000,
+      "live_sessions": 500,
+      "bandwidth": "90 TB",
+      "drm_protection": "None",
+      "concurrent": 180000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka processes high-volume stem versioning and collaboration invite events to update user dashboards in real-time."
+    ],
+    "slug": "music-collab-mega"
+  },
+  {
+    "project": {
+      "name": "Classical Mega",
+      "type": "Label",
+      "dau": 1000000,
+      "daily_plays": 2500000,
+      "catalog_size": 10000000,
+      "daily_uploads": 1000,
+      "live_sessions": 0,
+      "bandwidth": "120 TB",
+      "drm_protection": "None",
+      "concurrent": 100000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Kafka streams complex musicological metadata updates to Elasticsearch for instant faceted search across millions of movements."
+    ],
+    "slug": "classical-mega"
+  },
+  {
+    "project": {
+      "name": "Music Edu Mega",
+      "type": "Education",
+      "dau": 1000000,
+      "daily_plays": 5500000,
+      "catalog_size": 1500000,
+      "daily_uploads": 5000,
+      "live_sessions": 1000,
+      "bandwidth": "70 TB",
+      "drm_protection": "None",
+      "concurrent": 250000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "FERPA",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Kafka ensures FERPA-compliant audit logging of all student progress and assignment submissions asynchronously."
+    ],
+    "slug": "music-edu-mega"
+  },
+  {
+    "project": {
+      "name": "Karaoke Mega",
+      "type": "VOD",
+      "dau": 1000000,
+      "daily_plays": 9000000,
+      "catalog_size": 6000000,
+      "daily_uploads": 10000,
+      "live_sessions": 0,
+      "bandwidth": "250 TB",
+      "drm_protection": "None",
+      "concurrent": 450000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka orchestrates the vocal isolation pipeline, routing uploads to AI processing and CDN distribution."
+    ],
+    "slug": "karaoke-mega"
+  },
+  {
+    "project": {
+      "name": "Global Indie Label",
+      "type": "Label",
+      "dau": 10000000,
+      "daily_plays": 50000000,
+      "catalog_size": 50000000,
+      "daily_uploads": 50000,
+      "live_sessions": 2000,
+      "bandwidth": "500 TB",
+      "drm_protection": "Multi-DRM",
+      "concurrent": 2000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "GDPR",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra provides massive write throughput and horizontal scalability for the global activity feed and track metadata."
+    ],
+    "slug": "global-indie-label"
+  },
+  {
+    "project": {
+      "name": "Global Podcast",
+      "type": "Podcast",
+      "dau": 10000000,
+      "daily_plays": 40000000,
+      "catalog_size": 10000000,
+      "daily_uploads": 20000,
+      "live_sessions": 0,
+      "bandwidth": "800 TB",
+      "drm_protection": "None",
+      "concurrent": 1500000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Spanner",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra handles billions of daily listen count increments and timeline updates with zero downtime for podcasts."
+    ],
+    "slug": "global-podcast"
+  },
+  {
+    "project": {
+      "name": "Global Radio",
+      "type": "Radio",
+      "dau": 10000000,
+      "daily_plays": 60000000,
+      "catalog_size": 80000000,
+      "daily_uploads": 100000,
+      "live_sessions": 10000,
+      "bandwidth": "600 TB",
+      "drm_protection": "None",
+      "concurrent": 3000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "CosmosDB",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "CosmosDB provides globally distributed, multi-model database capabilities with managed PaaS simplicity for global radio."
+    ],
+    "slug": "global-radio"
+  },
+  {
+    "project": {
+      "name": "Global Audiobook",
+      "type": "Audiobook",
+      "dau": 10000000,
+      "daily_plays": 30000000,
+      "catalog_size": 20000000,
+      "daily_uploads": 30000,
+      "live_sessions": 0,
+      "bandwidth": "1.5 PB",
+      "drm_protection": "Multi-DRM",
+      "concurrent": 1200000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra handles the massive write throughput of chapter navigation and bookmark events for global audiobooks."
+    ],
+    "slug": "global-audiobook"
+  },
+  {
+    "project": {
+      "name": "Global Live Concert",
+      "type": "Live",
+      "dau": 10000000,
+      "daily_plays": 80000000,
+      "catalog_size": 5000000,
+      "daily_uploads": 500000,
+      "live_sessions": 50000,
+      "bandwidth": "2 PB",
+      "drm_protection": "Multi-DRM",
+      "concurrent": 5000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Spanner",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra scales horizontally to track billions of daily ticket sales and live stream interactions globally."
+    ],
+    "slug": "global-live-concert"
+  },
+  {
+    "project": {
+      "name": "Global DJ",
+      "type": "Radio",
+      "dau": 10000000,
+      "daily_plays": 70000000,
+      "catalog_size": 30000000,
+      "daily_uploads": 100000,
+      "live_sessions": 20000,
+      "bandwidth": "1.8 PB",
+      "drm_protection": "None",
+      "concurrent": 4000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "CosmosDB",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "CosmosDB provides the massive write scalability needed for high-volume DJ set uploads and global listener tracking."
+    ],
+    "slug": "global-dj"
+  },
+  {
+    "project": {
+      "name": "Global Collab",
+      "type": "Indie",
+      "dau": 10000000,
+      "daily_plays": 45000000,
+      "catalog_size": 40000000,
+      "daily_uploads": 200000,
+      "live_sessions": 5000,
+      "bandwidth": "900 TB",
+      "drm_protection": "None",
+      "concurrent": 1800000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra scales horizontally to track billions of daily stem versioning and collaboration interactions."
+    ],
+    "slug": "global-collab"
+  },
+  {
+    "project": {
+      "name": "Global Classical",
+      "type": "Label",
+      "dau": 10000000,
+      "daily_plays": 25000000,
+      "catalog_size": 100000000,
+      "daily_uploads": 10000,
+      "live_sessions": 0,
+      "bandwidth": "1.2 PB",
+      "drm_protection": "None",
+      "concurrent": 1000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Spanner",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra provides the massive write throughput and horizontal scalability for global classical music metadata."
+    ],
+    "slug": "global-classical"
+  },
+  {
+    "project": {
+      "name": "Global Edu",
+      "type": "Education",
+      "dau": 10000000,
+      "daily_plays": 55000000,
+      "catalog_size": 15000000,
+      "daily_uploads": 50000,
+      "live_sessions": 10000,
+      "bandwidth": "700 TB",
+      "drm_protection": "None",
+      "concurrent": 2500000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "FERPA",
+      "arch": "CQRS",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "CosmosDB",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "CosmosDB ensures high availability and partition tolerance for critical FERPA-compliant student progress tracking."
+    ],
+    "slug": "global-edu"
+  },
+  {
+    "project": {
+      "name": "Global Karaoke",
+      "type": "VOD",
+      "dau": 10000000,
+      "daily_plays": 90000000,
+      "catalog_size": 60000000,
+      "daily_uploads": 100000,
+      "live_sessions": 0,
+      "bandwidth": "2.5 PB",
+      "drm_protection": "None",
+      "concurrent": 4500000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra handles the massive spike in write operations during global karaoke competitions and real-time scoring."
+    ],
+    "slug": "global-karaoke"
+  },
+  {
+    "project": {
+      "name": "Hyper Indie",
+      "type": "Label",
+      "dau": 100000000,
+      "daily_plays": 500000000,
+      "catalog_size": 500000000,
+      "daily_uploads": 500000,
+      "live_sessions": 20000,
+      "bandwidth": "5 PB",
+      "drm_protection": "Multi-DRM",
+      "concurrent": 20000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides global consistency and horizontal scalability for a hundred-million-user relational music metadata model."
+    ],
+    "slug": "hyper-indie"
+  },
+  {
+    "project": {
+      "name": "Hyper Podcast",
+      "type": "Podcast",
+      "dau": 100000000,
+      "daily_plays": 400000000,
+      "catalog_size": 100000000,
+      "daily_uploads": 200000,
+      "live_sessions": 0,
+      "bandwidth": "8 PB",
+      "drm_protection": "None",
+      "concurrent": 15000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Global Redis provides ultra-low latency caching for podcast metadata and user sessions across all continents."
+    ],
+    "slug": "hyper-podcast"
+  },
+  {
+    "project": {
+      "name": "Hyper Radio",
+      "type": "Radio",
+      "dau": 100000000,
+      "daily_plays": 600000000,
+      "catalog_size": 800000000,
+      "daily_uploads": 1000000,
+      "live_sessions": 100000,
+      "bandwidth": "6 PB",
+      "drm_protection": "None",
+      "concurrent": 30000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner automatically shards radio metadata globally, ensuring strong consistency for global broadcast scheduling."
+    ],
+    "slug": "hyper-radio"
+  },
+  {
+    "project": {
+      "name": "Hyper Audiobook",
+      "type": "Audiobook",
+      "dau": 100000000,
+      "daily_plays": 300000000,
+      "catalog_size": 200000000,
+      "daily_uploads": 300000,
+      "live_sessions": 0,
+      "bandwidth": "15 PB",
+      "drm_protection": "Multi-DRM",
+      "concurrent": 12000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Global Redis manages real-time chapter navigation and bookmark states for twelve million concurrent audiobook listeners."
+    ],
+    "slug": "hyper-audiobook"
+  },
+  {
+    "project": {
+      "name": "Hyper Live",
+      "type": "Live",
+      "dau": 100000000,
+      "daily_plays": 800000000,
+      "catalog_size": 50000000,
+      "daily_uploads": 5000000,
+      "live_sessions": 500000,
+      "bandwidth": "20 PB",
+      "drm_protection": "Multi-DRM",
+      "concurrent": 50000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides the low-latency, globally distributed relational store required for cross-regional concert ticketing."
+    ],
+    "slug": "hyper-live"
+  },
+  {
+    "project": {
+      "name": "Hyper DJ",
+      "type": "Radio",
+      "dau": 100000000,
+      "daily_plays": 700000000,
+      "catalog_size": 300000000,
+      "daily_uploads": 1000000,
+      "live_sessions": 200000,
+      "bandwidth": "18 PB",
+      "drm_protection": "None",
+      "concurrent": 40000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner scales globally to track billions of daily DJ set uploads and listener interactions with strict consistency."
+    ],
+    "slug": "hyper-dj"
+  },
+  {
+    "project": {
+      "name": "Hyper Collab",
+      "type": "Indie",
+      "dau": 100000000,
+      "daily_plays": 450000000,
+      "catalog_size": 400000000,
+      "daily_uploads": 2000000,
+      "live_sessions": 50000,
+      "bandwidth": "9 PB",
+      "drm_protection": "None",
+      "concurrent": 18000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner ensures global consistency for real-time collaborative audio editing and version control across continents."
+    ],
+    "slug": "hyper-collab"
+  },
+  {
+    "project": {
+      "name": "Hyper Classical",
+      "type": "Label",
+      "dau": 100000000,
+      "daily_plays": 250000000,
+      "catalog_size": 1000000000,
+      "daily_uploads": 100000,
+      "live_sessions": 0,
+      "bandwidth": "12 PB",
+      "drm_protection": "None",
+      "concurrent": 10000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides massive write throughput and horizontal scalability for global classical music metadata models."
+    ],
+    "slug": "hyper-classical"
+  },
+  {
+    "project": {
+      "name": "Hyper Edu",
+      "type": "Education",
+      "dau": 100000000,
+      "daily_plays": 550000000,
+      "catalog_size": 150000000,
+      "daily_uploads": 500000,
+      "live_sessions": 100000,
+      "bandwidth": "7 PB",
+      "drm_protection": "None",
+      "concurrent": 25000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner guarantees strong global consistency for critical student progress tracking and compliance audit logs."
+    ],
+    "slug": "hyper-edu"
+  },
+  {
+    "project": {
+      "name": "Hyper Karaoke",
+      "type": "VOD",
+      "dau": 100000000,
+      "daily_plays": 900000000,
+      "catalog_size": 600000000,
+      "daily_uploads": 1000000,
+      "live_sessions": 0,
+      "bandwidth": "25 PB",
+      "drm_protection": "None",
+      "concurrent": 45000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner handles the massive spike in write operations during global karaoke competitions with strict consistency."
+    ],
+    "slug": "hyper-karaoke"
+  },
+  {
+    "project": {
+      "name": "HIPAA Audio Therapy",
+      "type": "Health",
+      "dau": 1000000,
+      "daily_plays": 2000000,
+      "catalog_size": 50000,
+      "daily_uploads": 1000,
+      "live_sessions": 100,
+      "bandwidth": "50 TB",
+      "drm_protection": "None",
+      "concurrent": 100000,
+      "geo": "Single",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "HIPAA",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "PostgreSQL on AWS provides HIPAA-eligible relational storage with strict access controls for therapeutic audio data."
+    ],
+    "slug": "hipaa-audio-therapy"
+  },
+  {
+    "project": {
+      "name": "FedRAMP Gov Radio",
+      "type": "Enterprise",
+      "dau": 1000000,
+      "daily_plays": 1500000,
+      "catalog_size": 200000,
+      "daily_uploads": 500,
+      "live_sessions": 50,
+      "bandwidth": "20 TB",
+      "drm_protection": "None",
+      "concurrent": 50000,
+      "geo": "Single",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "FedRAMP",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Azure Government cloud provides the necessary FedRAMP High authorization for secure internal government audio communications."
+    ],
+    "slug": "fedramp-gov-radio"
+  },
+  {
+    "project": {
+      "name": "COPPA Kids Music",
+      "type": "Education",
+      "dau": 10000000,
+      "daily_plays": 50000000,
+      "catalog_size": 1000000,
+      "daily_uploads": 10000,
+      "live_sessions": 1000,
+      "bandwidth": "500 TB",
+      "drm_protection": "None",
+      "concurrent": 2000000,
+      "geo": "Multi-Region",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "COPPA",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Sharded PostgreSQL ensures strict data isolation and parental consent tracking required by COPPA compliance."
+    ],
+    "slug": "coppa-kids-music"
+  },
+  {
+    "project": {
+      "name": "GDPR EU Music",
+      "type": "General",
+      "dau": 10000000,
+      "daily_plays": 100000000,
+      "catalog_size": 80000000,
+      "daily_uploads": 100000,
+      "live_sessions": 10000,
+      "bandwidth": "3 PB",
+      "drm_protection": "Multi-DRM",
+      "concurrent": 5000000,
+      "geo": "EU-Only",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "GDPR",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "AWS EU regions ensure data residency compliance, while sharded PostgreSQL handles the right to be forgotten efficiently."
+    ],
+    "slug": "gdpr-eu-music"
+  },
+  {
+    "project": {
+      "name": "Low-Bandwidth Music",
+      "type": "Utility",
+      "dau": 10000000,
+      "daily_plays": 80000000,
+      "catalog_size": 5000000,
+      "daily_uploads": 10000,
+      "live_sessions": 1000,
+      "bandwidth": "1 PB",
+      "drm_protection": "None",
+      "concurrent": 400000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Aggressive edge caching and optimized payloads ensure usability in low-bandwidth emerging markets."
+    ],
+    "slug": "low-bandwidth-music"
+  },
+  {
+    "project": {
+      "name": "Web3 Music",
+      "type": "Decentralized",
+      "dau": 1000000,
+      "daily_plays": 10000000,
+      "catalog_size": 2000000,
+      "daily_uploads": 100000,
+      "live_sessions": 500,
+      "bandwidth": "30 TB",
+      "drm_protection": "None",
+      "concurrent": 50000,
+      "geo": "Global",
+      "budget": "High",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "IPFS",
+      "storage": "IPFS",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "IPFS provides decentralized, content-addressed storage for user-generated audio, ensuring censorship resistance."
+    ],
+    "slug": "web3-music"
+  },
+  {
+    "project": {
+      "name": "Offline-First DJ",
+      "type": "Utility",
+      "dau": 100000,
+      "daily_plays": 500000,
+      "catalog_size": 500000,
+      "daily_uploads": 1000,
+      "live_sessions": 50,
+      "bandwidth": "5 TB",
+      "drm_protection": "None",
+      "concurrent": 10000,
+      "geo": "Single",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Couchbase",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Couchbase provides built-in offline-first synchronization for DJs performing in venues with intermittent connectivity."
+    ],
+    "slug": "offline-first-dj"
+  },
+  {
+    "project": {
+      "name": "Spatial Audio VR",
+      "type": "Media",
+      "dau": 10000000,
+      "daily_plays": 20000000,
+      "catalog_size": 1000000,
+      "daily_uploads": 50000,
+      "live_sessions": 500,
+      "bandwidth": "5 PB",
+      "drm_protection": "None",
+      "concurrent": 1000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Spanner",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "GCS provides massive, cost-effective object storage and high-throughput CDN for heavy spatial audio uploads."
+    ],
+    "slug": "spatial-audio-vr"
+  },
+  {
+    "project": {
+      "name": "AI Music Generator",
+      "type": "Media",
+      "dau": 10000000,
+      "daily_plays": 30000000,
+      "catalog_size": 10000000,
+      "daily_uploads": 1000000,
+      "live_sessions": 10000,
+      "bandwidth": "2 PB",
+      "drm_protection": "None",
+      "concurrent": 1000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Kafka integrates seamlessly with GPU compute nodes to process real-time AI music generation and inference pipelines."
+    ],
+    "slug": "ai-music-generator"
+  },
+  {
+    "project": {
+      "name": "Lossless Audiophile",
+      "type": "Media",
+      "dau": 1000000,
+      "daily_plays": 5000000,
+      "catalog_size": 2000000,
+      "daily_uploads": 5000,
+      "live_sessions": 100,
+      "bandwidth": "500 TB",
+      "drm_protection": "None",
+      "concurrent": 200000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "GCS provides highly durable object storage specifically optimized for storing and serving multi-gigabyte lossless FLAC files."
+    ],
+    "slug": "lossless-audiophile"
+  },
+  {
+    "project": {
+      "name": "Live DJ Battle",
+      "type": "Live",
+      "dau": 100000,
+      "daily_plays": 800000,
+      "catalog_size": 50000,
+      "daily_uploads": 500,
+      "live_sessions": 100,
+      "bandwidth": "20 TB",
+      "drm_protection": "None",
+      "concurrent": 50000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "RabbitMQ handles high-concurrency live voting and real-time score aggregation during DJ battle events."
+    ],
+    "slug": "live-dj-battle"
+  },
+  {
+    "project": {
+      "name": "Music NFT Marketplace",
+      "type": "Finance",
+      "dau": 10000000,
+      "daily_plays": 50000000,
+      "catalog_size": 5000000,
+      "daily_uploads": 100000,
+      "live_sessions": 1000,
+      "bandwidth": "1 PB",
+      "drm_protection": "Multi-DRM",
+      "concurrent": 2000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "PCI-DSS",
+      "arch": "CQRS",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "CosmosDB",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "CosmosDB ensures high availability and partition tolerance for critical financial transactions and NFT ownership tracking."
+    ],
+    "slug": "music-nft-marketplace"
+  },
+  {
+    "project": {
+      "name": "Royalty Tracking Pro",
+      "type": "Finance",
+      "dau": 1000000,
+      "daily_plays": 10000000,
+      "catalog_size": 10000000,
+      "daily_uploads": 10000,
+      "live_sessions": 0,
+      "bandwidth": "100 TB",
+      "drm_protection": "None",
+      "concurrent": 100000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "SOC2",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Sharded PostgreSQL ensures strict transactional integrity for high-volume royalty calculations and payouts."
+    ],
+    "slug": "royalty-tracking-pro"
+  },
+  {
+    "project": {
+      "name": "Stem Separation App",
+      "type": "Media",
+      "dau": 100000,
+      "daily_plays": 500000,
+      "catalog_size": 100000,
+      "daily_uploads": 5000,
+      "live_sessions": 0,
+      "bandwidth": "10 TB",
+      "drm_protection": "None",
+      "concurrent": 20000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "RabbitMQ manages asynchronous AI stem separation queues, ensuring reliable processing of large audio files."
+    ],
+    "slug": "stem-separation-app"
+  },
+  {
+    "project": {
+      "name": "Lyrics Sync Platform",
+      "type": "Media",
+      "dau": 100000,
+      "daily_plays": 800000,
+      "catalog_size": 2000000,
+      "daily_uploads": 1000,
+      "live_sessions": 0,
+      "bandwidth": "5 TB",
+      "drm_protection": "None",
+      "concurrent": 30000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Redis manages real-time audio timestamp synchronization for precise lyrics display during playback."
+    ],
+    "slug": "lyrics-sync-platform"
+  },
+  {
+    "project": {
+      "name": "Music Sampling Hub",
+      "type": "Media",
+      "dau": 100000,
+      "daily_plays": 600000,
+      "catalog_size": 500000,
+      "daily_uploads": 10000,
+      "live_sessions": 0,
+      "bandwidth": "15 TB",
+      "drm_protection": "None",
+      "concurrent": 25000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Elasticsearch provides fast, fuzzy audio fingerprint matching for copyright clearance and sample discovery."
+    ],
+    "slug": "music-sampling-hub"
+  },
+  {
+    "project": {
+      "name": "Podcast Transcription",
+      "type": "Media",
+      "dau": 100000,
+      "daily_plays": 400000,
+      "catalog_size": 100000,
+      "daily_uploads": 2000,
+      "live_sessions": 0,
+      "bandwidth": "8 TB",
+      "drm_protection": "None",
+      "concurrent": 15000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "RabbitMQ handles background AI transcription and searchable text generation for podcast episodes asynchronously."
+    ],
+    "slug": "podcast-transcription"
+  },
+  {
+    "project": {
+      "name": "Radio Automation",
+      "type": "Radio",
+      "dau": 100000,
+      "daily_plays": 2000000,
+      "catalog_size": 1000000,
+      "daily_uploads": 500,
+      "live_sessions": 24,
+      "bandwidth": "30 TB",
+      "drm_protection": "None",
+      "concurrent": 10000,
+      "geo": "Single",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "RabbitMQ ensures reliable scheduling and playout of audio tracks for 24/7 automated radio broadcasting."
+    ],
+    "slug": "radio-automation"
+  },
+  {
+    "project": {
+      "name": "Music Recommendation API",
+      "type": "Media",
+      "dau": 1000000,
+      "daily_plays": 15000000,
+      "catalog_size": 10000000,
+      "daily_uploads": 20000,
+      "live_sessions": 0,
+      "bandwidth": "200 TB",
+      "drm_protection": "None",
+      "concurrent": 500000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka streams user listening habits to machine learning models for real-time personalized music recommendations."
+    ],
+    "slug": "music-recommendation-api"
+  },
+  {
+    "project": {
+      "name": "Audio Fingerprinting",
+      "type": "Media",
+      "dau": 100000,
+      "daily_plays": 500000,
+      "catalog_size": 5000000,
+      "daily_uploads": 5000,
+      "live_sessions": 0,
+      "bandwidth": "10 TB",
+      "drm_protection": "None",
+      "concurrent": 20000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Elasticsearch provides fast, scalable vector search for matching audio fingerprints against a massive reference database."
+    ],
+    "slug": "audio-fingerprinting"
+  },
+  {
+    "project": {
+      "name": "Live Concert Ticketing",
+      "type": "Events",
+      "dau": 100000,
+      "daily_plays": 1000000,
+      "catalog_size": 50000,
+      "daily_uploads": 1000,
+      "live_sessions": 500,
+      "bandwidth": "5 TB",
+      "drm_protection": "None",
+      "concurrent": 50000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "PCI-DSS",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Redis manages high-throughput ticket inventory locks and flash-sale concurrency for popular live events."
+    ],
+    "slug": "live-concert-ticketing"
+  },
+  {
+    "project": {
+      "name": "Music Merch Store",
+      "type": "E-Commerce",
+      "dau": 100000,
+      "daily_plays": 800000,
+      "catalog_size": 10000,
+      "daily_uploads": 500,
+      "live_sessions": 0,
+      "bandwidth": "2 TB",
+      "drm_protection": "None",
+      "concurrent": 15000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "PCI-DSS",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "PostgreSQL ensures strict transactional integrity for high-volume merchandise orders and inventory management."
+    ],
+    "slug": "music-merch-store"
+  },
+  {
+    "project": {
+      "name": "Artist Fan Club",
+      "type": "Community",
+      "dau": 100000,
+      "daily_plays": 600000,
+      "catalog_size": 50000,
+      "daily_uploads": 2000,
+      "live_sessions": 100,
+      "bandwidth": "8 TB",
+      "drm_protection": "None",
+      "concurrent": 25000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "RabbitMQ routes exclusive fan club content and messages to multiple subscribers efficiently."
+    ],
+    "slug": "artist-fan-club"
+  },
+  {
+    "project": {
+      "name": "Music Journalism Hub",
+      "type": "News",
+      "dau": 100000,
+      "daily_plays": 400000,
+      "catalog_size": 100000,
+      "daily_uploads": 500,
+      "live_sessions": 0,
+      "bandwidth": "3 TB",
+      "drm_protection": "None",
+      "concurrent": 10000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Elasticsearch provides fast full-text search across millions of music reviews, interviews, and articles."
+    ],
+    "slug": "music-journalism-hub"
+  },
+  {
+    "project": {
+      "name": "Sheet Music Library",
+      "type": "Education",
+      "dau": 100000,
+      "daily_plays": 200000,
+      "catalog_size": 500000,
+      "daily_uploads": 1000,
+      "live_sessions": 0,
+      "bandwidth": "1 TB",
+      "drm_protection": "None",
+      "concurrent": 8000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Elasticsearch enables complex faceted search across millions of sheet music pages by instrument, difficulty, and genre."
+    ],
+    "slug": "sheet-music-library"
+  },
+  {
+    "project": {
+      "name": "Instrument Tuner App",
+      "type": "Utility",
+      "dau": 100,
+      "daily_plays": 1000,
+      "catalog_size": 10,
+      "daily_uploads": 0,
+      "live_sessions": 0,
+      "bandwidth": "1 GB",
+      "drm_protection": "None",
+      "concurrent": 20,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "SQLite",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Local",
+      "compute": "GCE",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "SQLite provides a lightweight, portable database for storing tuning presets without requiring external infrastructure."
+    ],
+    "slug": "instrument-tuner-app"
+  },
+  {
+    "project": {
+      "name": "Metronome Pro",
+      "type": "Utility",
+      "dau": 100,
+      "daily_plays": 500,
+      "catalog_size": 5,
+      "daily_uploads": 0,
+      "live_sessions": 0,
+      "bandwidth": "500 MB",
+      "drm_protection": "None",
+      "concurrent": 15,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "SQLite",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Local",
+      "compute": "VM",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "SQLite simplifies deployment for a low-traffic metronome app while maintaining data consistency for custom time signatures."
+    ],
+    "slug": "metronome-pro"
+  },
+  {
+    "project": {
+      "name": "Chord Library",
+      "type": "Education",
+      "dau": 100,
+      "daily_plays": 800,
+      "catalog_size": 2000,
+      "daily_uploads": 10,
+      "live_sessions": 0,
+      "bandwidth": "2 GB",
+      "drm_protection": "None",
+      "concurrent": 25,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "PostgreSQL supports full-text search natively for chord diagrams and fingering patterns without needing an external search engine."
+    ],
+    "slug": "chord-library"
+  },
+  {
+    "project": {
+      "name": "Ear Training App",
+      "type": "Education",
+      "dau": 100,
+      "daily_plays": 1200,
+      "catalog_size": 500,
+      "daily_uploads": 5,
+      "live_sessions": 0,
+      "bandwidth": "3 GB",
+      "drm_protection": "None",
+      "concurrent": 30,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "PostgreSQL enforces strict relational constraints required for tracking student progress through ear training exercises."
+    ],
+    "slug": "ear-training-app"
+  },
+  {
+    "project": {
+      "name": "Music Theory Quiz",
+      "type": "Education",
+      "dau": 100,
+      "daily_plays": 600,
+      "catalog_size": 1000,
+      "daily_uploads": 2,
+      "live_sessions": 0,
+      "bandwidth": "1 GB",
+      "drm_protection": "None",
+      "concurrent": 20,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "PostgreSQL handles relational quiz metadata and user scores efficiently for a small music theory learning platform."
+    ],
+    "slug": "music-theory-quiz"
+  }
+]

@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KernxTech | Dataset Architectures</title>
+    <link rel="stylesheet" href="{% static "style.css" %}">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-layout">
+        <!-- Sidebar / Navigation -->
+        <header class="navbar">
+            <div class="brand">
+                <i class="fa-solid fa-diagram-project brand-icon"></i>
+                <span class="brand-name">Kernx<strong>Tech</strong></span>
+            </div>
+            
+            <nav class="nav-links">
+                <a href="{% url 'dataset-list' %}" class="btn btn-secondary">
+                    <i class="fa-solid fa-database"></i> All Datasets
+                </a>
+                <a href="/" class="btn btn-secondary">
+                    <i class="fa-solid fa-house"></i> Dashboard
+                </a>
+                <a href="{% url 'profile' %}" class="user-profile-badge">
+                    <i class="fa-regular fa-user"></i>
+                    <span>{{ user.username }}</span>
+                </a>
+            </nav>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Hero Banner Section -->
+            <section class="dashboard-header">
+                <div class="header-text">
+                    <h1>Dataset Blueprint Architectures</h1>
+                    <p>Select a pre-built architecture pattern to view implementation details and system flow.</p>
+                </div>
+            </section>
+
+            <!-- Search and Controls Bar -->
+            <section class="controls-bar">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="arch-search" placeholder="Filter architectures..." onkeyup="filterArchitectures()">
+                </div>
+                <div class="stats-badge">
+                    <i class="fa-solid fa-sitemap"></i> Architectures: <strong>{% if dataset %}{{ dataset|length }}{% else %}0{% endif %}</strong>
+                </div>
+            </section>
+
+            <!-- Architectures Grid -->
+            <section class="architecture-section">
+                {% if dataset %}
+                    <div class="architecture-grid" id="arch-grid">
+                        <!-- Single fixed loop over dataset -->
+                        {% for architecture in dataset %}
+                            <div class="arch-card" data-name="{{ architecture.title|lower }}">
+                                <div class="card-header">
+                                    <div class="card-icon">
+                                        <i class="fa-solid fa-network-wired"></i>
+                                    </div>
+                                    <span class="badge">{{ architecture.type.slug|default:"System Design" }}</span>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="arch-title">{{ architecture.title }}</h3>
+                                    <p class="arch-desc">Production-ready reference pattern and component dependencies.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="{% url 'architecture-detail' architecture.type.slug architecture.id %}" class="btn btn-card-view">
+                                        <i class="fa-solid fa-arrow-right-to-bracket"></i> View Blueprint
+                                    </a>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <!-- Empty State -->
+                    <div class="empty-state">
+                        <div class="empty-icon">
+                            <i class="fa-solid fa-diagram-nested"></i>
+                        </div>
+                        <h2>No Architectures Available</h2>
+                        <p>There are no system architectures associated with this dataset yet.</p>
+                        <a href="{% url 'dataset-list' %}" class="btn btn-primary">
+                            <i class="fa-solid fa-arrow-left"></i> Back to Datasets
+                        </a>
+                    </div>
+                {% endif %}
+            </section>
+        </main>
+    </div>
+
+    <script src="{% static "script.js" %}"></script>
+</body>
+</html>

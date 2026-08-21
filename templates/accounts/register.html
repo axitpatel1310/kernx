@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}KernxTech | Register Account{% endblock title %}
+
+{% block content %}
+<div class="auth-container">
+    <div class="auth-card">
+        <div class="auth-header">
+            <i class="fa-solid fa-user-plus"></i>
+            <h2>Create Account</h2>
+            <p>Join KernxTech to design and explore cloud architecture blueprints.</p>
+        </div>
+
+        <form method="post" class="auth-form">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: 1rem;">
+                <i class="fa-solid fa-arrow-right-to-bracket"></i> Register Account
+            </button>
+        </form>
+
+        <div class="auth-footer">
+            Already have an account? <a href="{% url 'login' %}">Log In</a>
+        </div>
+    </div>
+</div>
+{% endblock content %}

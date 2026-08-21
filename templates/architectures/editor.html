@@ -1,0 +1,184 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KernxTech | Edit {{ architecture.name|default:"Architecture" }}</title>
+    <link rel="stylesheet" href="{% static "style.css" %}">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-layout">
+        <!-- Navigation Bar -->
+        <header class="navbar">
+            <div class="brand">
+                <i class="fa-solid fa-diagram-project brand-icon"></i>
+                <span class="brand-name">Kernx<strong>Tech</strong></span>
+            </div>
+            
+            <nav class="nav-links">
+                <a href="{% url 'dataset-list' %}" class="btn btn-secondary">
+                    <i class="fa-solid fa-database"></i> Catalog
+                </a>
+                <a href="/" class="btn btn-secondary">
+                    <i class="fa-solid fa-house"></i> Dashboard
+                </a>
+                <a href="{% url 'profile' %}" class="user-profile-badge">
+                    <i class="fa-regular fa-user"></i>
+                    <span>{{ user.username }}</span>
+                </a>
+            </nav>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Header Section -->
+            <section class="dashboard-header">
+                <div class="header-text">
+                    <h1>Edit & Learn Blueprint</h1>
+                    <p>Compare your custom architecture parameters against reference benchmarks and analyze design trade-offs.</p>
+                </div>
+            </section>
+
+            <!-- Workbench Split Layout -->
+            <div class="workbench-grid">
+                
+                <!-- Left: Reference Architecture Card -->
+                <div class="workbench-card">
+                    <div class="workbench-card-header">
+                        <i class="fa-solid fa-bookmark" style="color: var(--color-soft-sage);"></i>
+                        <h2>Reference Benchmark</h2>
+                    </div>
+
+                    <h3 style="color: var(--color-soft-sage); font-size: 0.9rem; margin-bottom: 0.5rem;">PROJECT METRICS</h3>
+                    <table class="spec-table" style="margin-bottom: 1.5rem;">
+                        <tbody>
+                            {% for key, value in reference.data.project.items %}
+                            <tr>
+                                <th>{{ key|title|cut:"_" }}</th>
+                                <td>{{ value }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+
+                    <h3 style="color: var(--color-soft-sage); font-size: 0.9rem; margin-bottom: 0.5rem;">RECOMMENDED STACK</h3>
+                    <table class="spec-table">
+                        <tbody>
+                            {% for key, value in reference.data.recommended_stack.items %}
+                            <tr>
+                                <th>{{ key|title }}</th>
+                                <td><span class="tech-badge">{{ value }}</span></td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Right: Editable Architecture Form -->
+                <div class="workbench-card">
+                    <div class="workbench-card-header">
+                        <i class="fa-solid fa-sliders" style="color: var(--color-accent-red);"></i>
+                        <h2>Your Customized Architecture</h2>
+                    </div>
+
+                    <form method="POST">
+                        {% csrf_token %}
+
+                        <h3 style="color: var(--color-soft-sage); font-size: 0.9rem; margin-bottom: 0.5rem;">PROJECT PARAMETERS</h3>
+                        <table class="form-table" style="margin-bottom: 1.5rem;">
+                            <tbody>
+                                {% for field in project_fields %}
+                                <tr>
+                                    <th>{{ field.name }}</th>
+                                    <td>
+                                        {% if field.field_type == "number" %}
+                                            <input 
+                                                type="number" 
+                                                name="project.{{ field.key }}" 
+                                                class="form-input" 
+                                                value="{% for k, v in architecture.data.project.items %}{% if k == field.key %}{{ v }}{% endif %}{% endfor %}"
+                                            >
+
+                                        {% elif field.field_type == "text" %}
+                                            <input 
+                                                type="text" 
+                                                name="project.{{ field.key }}" 
+                                                class="form-input" 
+                                                value="{% for k, v in architecture.data.project.items %}{% if k == field.key %}{{ v }}{% endif %}{% endfor %}"
+                                            >
+
+                                        {% elif field.field_type == "select" %}
+                                            <select name="project.{{ field.key }}" class="form-select">
+                                                {% for choice in field.choices.all %}
+                                                    <option 
+                                                        value="{{ choice.value }}"
+                                                        {% for k, v in architecture.data.project.items %}{% if k == field.key and v == choice.value %}selected{% endif %}{% endfor %}
+                                                    >
+                                                        {{ choice.value }}
+                                                    </option>
+                                                {% endfor %}
+                                            </select>
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+
+                        <h3 style="color: var(--color-soft-sage); font-size: 0.9rem; margin-bottom: 0.5rem;">TECHNOLOGY STACK</h3>
+                        <table class="form-table">
+                            <tbody>
+                                {% for category in technology_categories %}
+                                <tr>
+                                    <th>{{ category.name }}</th>
+                                    <td>
+                                        <select name="recommended_stack.{{ category.slug }}" class="form-select">
+                                            <option value="">-- Select Technology --</option>
+                                            {% for tech in category.technologies.all %}
+                                                <option 
+                                                    value="{{ tech.slug }}"
+                                                    {% for k, v in architecture.data.recommended_stack.items %}{% if k == category.slug and v == tech.slug %}selected{% endif %}{% endfor %}
+                                                >
+                                                    {{ tech.name }}
+                                                </option>
+                                            {% endfor %}
+                                        </select>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fa-solid fa-floppy-disk"></i> Save Changes
+                            </button>
+                            <a href="{% url 'analyze-user-architecture' architecture.id %}" class="btn btn-secondary">
+                                <i class="fa-solid fa-microchip"></i> Analyze Architecture
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Analysis Warnings Section -->
+            {% if analysis %}
+            <section class="analysis-card">
+                <div class="workbench-card-header" style="border-bottom-color: rgba(230, 72, 51, 0.3);">
+                    <i class="fa-solid fa-triangle-exclamation" style="color: var(--color-accent-red);"></i>
+                    <h2>Architecture Analysis & Trade-Offs</h2>
+                </div>
+                <div id="analysis" class="analysis-content">
+                    {{ analysis|safe }}
+                </div>
+            </section>
+            {% endif %}
+        </main>
+    </div>
+
+    <script src="{% static "script.js" %}"></script>
+</body>
+</html>

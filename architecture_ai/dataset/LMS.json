@@ -1,0 +1,3102 @@
+[
+  {
+    "project": {
+      "name": "Local Tutoring Center",
+      "type": "K-12",
+      "dau": 100,
+      "courses_catalog_size": 50,
+      "daily_assessments": 200,
+      "live_classes": 5,
+      "certificates_issued": 10,
+      "concurrent": 15,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "SQLite",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Local",
+      "compute": "EC2",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "SQLite provides zero-config relational storage for micro-scale student progress and course tracking without external database dependencies."
+    ],
+    "slug": "local-tutoring-center"
+  },
+  {
+    "project": {
+      "name": "Small Coding Bootcamp",
+      "type": "Tech",
+      "dau": 100,
+      "courses_catalog_size": 30,
+      "daily_assessments": 150,
+      "live_classes": 8,
+      "certificates_issued": 5,
+      "concurrent": 20,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "PostgreSQL handles structured curriculum metadata and code submission tracking reliably for a small localized bootcamp."
+    ],
+    "slug": "small-coding-bootcamp"
+  },
+  {
+    "project": {
+      "name": "Corporate Training Dept",
+      "type": "Enterprise",
+      "dau": 100,
+      "courses_catalog_size": 100,
+      "daily_assessments": 300,
+      "live_classes": 2,
+      "certificates_issued": 20,
+      "concurrent": 10,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "SOC2",
+      "arch": "Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "PostgreSQL provides robust relational integrity for employee compliance tracking and certification records."
+    ],
+    "slug": "corporate-training-dept"
+  },
+  {
+    "project": {
+      "name": "High School LMS",
+      "type": "K-12",
+      "dau": 100,
+      "courses_catalog_size": 80,
+      "daily_assessments": 500,
+      "live_classes": 15,
+      "certificates_issued": 0,
+      "concurrent": 30,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "FERPA",
+      "arch": "Monolith",
+      "cloud": "DigitalOcean"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Spaces",
+      "compute": "Droplet",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "PostgreSQL enforces strict relational constraints required for FERPA-compliant student grade and attendance tracking."
+    ],
+    "slug": "high-school-lms"
+  },
+  {
+    "project": {
+      "name": "Music Lesson Platform",
+      "type": "Arts",
+      "dau": 100,
+      "courses_catalog_size": 40,
+      "daily_assessments": 50,
+      "live_classes": 20,
+      "certificates_issued": 2,
+      "concurrent": 12,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "SQLite",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Local",
+      "compute": "EC2",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "SQLite simplifies deployment for a low-traffic music lesson scheduler while maintaining data consistency for student bookings."
+    ],
+    "slug": "music-lesson-platform"
+  },
+  {
+    "project": {
+      "name": "Local Language School",
+      "type": "Language",
+      "dau": 100,
+      "courses_catalog_size": 25,
+      "daily_assessments": 100,
+      "live_classes": 10,
+      "certificates_issued": 5,
+      "concurrent": 18,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "PostgreSQL supports full-text search natively for vocabulary and lesson materials without needing an external search engine."
+    ],
+    "slug": "local-language-school"
+  },
+  {
+    "project": {
+      "name": "Yoga Instructor Portal",
+      "type": "Fitness",
+      "dau": 100,
+      "courses_catalog_size": 60,
+      "daily_assessments": 20,
+      "live_classes": 12,
+      "certificates_issued": 8,
+      "concurrent": 14,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "PostgreSQL handles relational scheduling and instructor certification metadata efficiently for a small yoga community."
+    ],
+    "slug": "yoga-instructor-portal"
+  },
+  {
+    "project": {
+      "name": "Small Art Workshop",
+      "type": "Arts",
+      "dau": 100,
+      "courses_catalog_size": 15,
+      "daily_assessments": 10,
+      "live_classes": 5,
+      "certificates_issued": 0,
+      "concurrent": 8,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "SQLite",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Local",
+      "compute": "EC2",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "SQLite provides a lightweight, portable database for managing small-batch art workshop enrollments without infrastructure overhead."
+    ],
+    "slug": "small-art-workshop"
+  },
+  {
+    "project": {
+      "name": "Local Driving School",
+      "type": "Vocational",
+      "dau": 100,
+      "courses_catalog_size": 10,
+      "daily_assessments": 80,
+      "live_classes": 0,
+      "certificates_issued": 15,
+      "concurrent": 10,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "PostgreSQL enforces strict relational constraints required for tracking student driving hours and state certification requirements."
+    ],
+    "slug": "local-driving-school"
+  },
+  {
+    "project": {
+      "name": "Hobbyist Crafting Classes",
+      "type": "Hobby",
+      "dau": 100,
+      "courses_catalog_size": 35,
+      "daily_assessments": 30,
+      "live_classes": 6,
+      "certificates_issued": 0,
+      "concurrent": 12,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "DigitalOcean"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Spaces",
+      "compute": "Droplet",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "PostgreSQL on a single Droplet provides cost-effective, reliable storage for hobbyist class materials and community discussions."
+    ],
+    "slug": "hobbyist-crafting-classes"
+  },
+  {
+    "project": {
+      "name": "Regional Community College",
+      "type": "Higher Ed",
+      "dau": 10000,
+      "courses_catalog_size": 2000,
+      "daily_assessments": 15000,
+      "live_classes": 200,
+      "certificates_issued": 500,
+      "concurrent": 800,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "FERPA",
+      "arch": "Modular Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Redis caches user profiles and active session states to reduce PostgreSQL load during peak regional enrollment periods."
+    ],
+    "slug": "regional-community-college"
+  },
+  {
+    "project": {
+      "name": "Niche Tech Bootcamp",
+      "type": "Tech",
+      "dau": 10000,
+      "courses_catalog_size": 150,
+      "daily_assessments": 5000,
+      "live_classes": 50,
+      "certificates_issued": 100,
+      "concurrent": 600,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Redis provides fast access to code submission queues and real-time peer review status for intensive bootcamp cohorts."
+    ],
+    "slug": "niche-tech-bootcamp"
+  },
+  {
+    "project": {
+      "name": "Corporate Compliance Training",
+      "type": "Enterprise",
+      "dau": 10000,
+      "courses_catalog_size": 500,
+      "daily_assessments": 8000,
+      "live_classes": 10,
+      "certificates_issued": 2000,
+      "concurrent": 500,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "SOC2",
+      "arch": "Modular Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Redis accelerates feed generation by caching recent compliance updates and mandatory training deadlines for employees."
+    ],
+    "slug": "corporate-compliance-training"
+  },
+  {
+    "project": {
+      "name": "Regional K-12 District",
+      "type": "K-12",
+      "dau": 10000,
+      "courses_catalog_size": 1500,
+      "daily_assessments": 25000,
+      "live_classes": 500,
+      "certificates_issued": 0,
+      "concurrent": 1200,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "FERPA",
+      "arch": "Modular Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Redis manages real-time classroom attendance and live assignment submission states for a large regional student body."
+    ],
+    "slug": "regional-k-12-district"
+  },
+  {
+    "project": {
+      "name": "Professional Certification Prep",
+      "type": "Test Prep",
+      "dau": 10000,
+      "courses_catalog_size": 300,
+      "daily_assessments": 20000,
+      "live_classes": 30,
+      "certificates_issued": 50,
+      "concurrent": 700,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Redis handles real-time practice exam scoring and progress tracking for high-volume test preparation users."
+    ],
+    "slug": "professional-certification-prep"
+  },
+  {
+    "project": {
+      "name": "University Extension School",
+      "type": "Higher Ed",
+      "dau": 10000,
+      "courses_catalog_size": 800,
+      "daily_assessments": 10000,
+      "live_classes": 150,
+      "certificates_issued": 300,
+      "concurrent": 600,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "FERPA",
+      "arch": "Modular Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Redis tracks real-time discussion forum activity and live seminar participation for adult learners."
+    ],
+    "slug": "university-extension-school"
+  },
+  {
+    "project": {
+      "name": "Regional Medical CME",
+      "type": "Healthcare",
+      "dau": 10000,
+      "courses_catalog_size": 400,
+      "daily_assessments": 6000,
+      "live_classes": 80,
+      "certificates_issued": 1500,
+      "concurrent": 400,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "HIPAA",
+      "arch": "Modular Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "PostgreSQL with encrypted at-rest storage ensures HIPAA compliance for sensitive patient case studies in medical training."
+    ],
+    "slug": "regional-medical-cme"
+  },
+  {
+    "project": {
+      "name": "Local Trade Skills Academy",
+      "type": "Vocational",
+      "dau": 10000,
+      "courses_catalog_size": 100,
+      "daily_assessments": 4000,
+      "live_classes": 40,
+      "certificates_issued": 200,
+      "concurrent": 500,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Redis caches video tutorial progress and safety quiz states for hands-on trade skill learners."
+    ],
+    "slug": "local-trade-skills-academy"
+  },
+  {
+    "project": {
+      "name": "Regional Music Conservatory",
+      "type": "Arts",
+      "dau": 10000,
+      "courses_catalog_size": 250,
+      "daily_assessments": 2000,
+      "live_classes": 300,
+      "certificates_issued": 100,
+      "concurrent": 900,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Redis handles real-time audio file uploads and peer feedback queues for music composition students."
+    ],
+    "slug": "regional-music-conservatory"
+  },
+  {
+    "project": {
+      "name": "Niche Fitness Instructor Cert",
+      "type": "Fitness",
+      "dau": 10000,
+      "courses_catalog_size": 80,
+      "daily_assessments": 3000,
+      "live_classes": 60,
+      "certificates_issued": 50,
+      "concurrent": 450,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Redis manages real-time video submission queues for practical fitness assessment grading."
+    ],
+    "slug": "niche-fitness-instructor-cert"
+  },
+  {
+    "project": {
+      "name": "National Online University",
+      "type": "Higher Ed",
+      "dau": 100000,
+      "courses_catalog_size": 15000,
+      "daily_assessments": 200000,
+      "live_classes": 2000,
+      "certificates_issued": 10000,
+      "concurrent": 8000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "FERPA",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "RabbitMQ decouples assignment submissions from the grading and notification workflows to maintain low latency."
+    ],
+    "slug": "national-online-university"
+  },
+  {
+    "project": {
+      "name": "Global Tech Bootcamp",
+      "type": "Tech",
+      "dau": 100000,
+      "courses_catalog_size": 1000,
+      "daily_assessments": 150000,
+      "live_classes": 1000,
+      "certificates_issued": 5000,
+      "concurrent": 7000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "RabbitMQ manages asynchronous code compilation and automated testing queues for global coding cohorts."
+    ],
+    "slug": "global-tech-bootcamp"
+  },
+  {
+    "project": {
+      "name": "Enterprise LMS for Retail",
+      "type": "Enterprise",
+      "dau": 100000,
+      "courses_catalog_size": 5000,
+      "daily_assessments": 300000,
+      "live_classes": 500,
+      "certificates_issued": 50000,
+      "concurrent": 6000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "SOC2",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "RabbitMQ handles background compliance reporting and store manager certification tracking asynchronously."
+    ],
+    "slug": "enterprise-lms-for-retail"
+  },
+  {
+    "project": {
+      "name": "National K-12 Platform",
+      "type": "K-12",
+      "dau": 100000,
+      "courses_catalog_size": 20000,
+      "daily_assessments": 500000,
+      "live_classes": 10000,
+      "certificates_issued": 0,
+      "concurrent": 15000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "FERPA",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "RabbitMQ processes high-volume parent notification and student progress report generation asynchronously."
+    ],
+    "slug": "national-k-12-platform"
+  },
+  {
+    "project": {
+      "name": "National Medical CME",
+      "type": "Healthcare",
+      "dau": 100000,
+      "courses_catalog_size": 8000,
+      "daily_assessments": 100000,
+      "live_classes": 2000,
+      "certificates_issued": 80000,
+      "concurrent": 5000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "HIPAA",
+      "arch": "Microservices",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "RabbitMQ ensures HIPAA-compliant asynchronous processing of patient case studies and continuing education credits."
+    ],
+    "slug": "national-medical-cme"
+  },
+  {
+    "project": {
+      "name": "National Corporate L&D",
+      "type": "Enterprise",
+      "dau": 100000,
+      "courses_catalog_size": 10000,
+      "daily_assessments": 250000,
+      "live_classes": 1500,
+      "certificates_issued": 30000,
+      "concurrent": 7000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "SOC2",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "RabbitMQ manages asynchronous leadership development tracking and cross-departmental skill matrix updates."
+    ],
+    "slug": "national-corporate-ld"
+  },
+  {
+    "project": {
+      "name": "National Test Prep Platform",
+      "type": "Test Prep",
+      "dau": 100000,
+      "courses_catalog_size": 2000,
+      "daily_assessments": 800000,
+      "live_classes": 500,
+      "certificates_issued": 1000,
+      "concurrent": 12000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "RabbitMQ handles high-volume practice exam scoring and adaptive learning algorithm updates asynchronously."
+    ],
+    "slug": "national-test-prep-platform"
+  },
+  {
+    "project": {
+      "name": "National Trade Certification",
+      "type": "Vocational",
+      "dau": 100000,
+      "courses_catalog_size": 1500,
+      "daily_assessments": 120000,
+      "live_classes": 800,
+      "certificates_issued": 15000,
+      "concurrent": 6000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "RabbitMQ processes background safety compliance checks and physical skills assessment video reviews."
+    ],
+    "slug": "national-trade-certification"
+  },
+  {
+    "project": {
+      "name": "National Arts & Humanities",
+      "type": "Arts",
+      "dau": 100000,
+      "courses_catalog_size": 5000,
+      "daily_assessments": 80000,
+      "live_classes": 3000,
+      "certificates_issued": 2000,
+      "concurrent": 9000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "RabbitMQ decouples portfolio submission uploads from the peer review and instructor grading workflows."
+    ],
+    "slug": "national-arts-humanities"
+  },
+  {
+    "project": {
+      "name": "National Language Learning",
+      "type": "Language",
+      "dau": 100000,
+      "courses_catalog_size": 3000,
+      "daily_assessments": 400000,
+      "live_classes": 4000,
+      "certificates_issued": 5000,
+      "concurrent": 10000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "RabbitMQ manages asynchronous speech recognition processing and pronunciation feedback generation."
+    ],
+    "slug": "national-language-learning"
+  },
+  {
+    "project": {
+      "name": "Major Global University",
+      "type": "Higher Ed",
+      "dau": 1000000,
+      "courses_catalog_size": 100000,
+      "daily_assessments": 5000000,
+      "live_classes": 20000,
+      "certificates_issued": 200000,
+      "concurrent": 80000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "FERPA",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka streams student activity events to Elasticsearch for real-time transcript updates and personalized course recommendations."
+    ],
+    "slug": "major-global-university"
+  },
+  {
+    "project": {
+      "name": "Major Tech EdTech",
+      "type": "Tech",
+      "dau": 1000000,
+      "courses_catalog_size": 10000,
+      "daily_assessments": 3000000,
+      "live_classes": 10000,
+      "certificates_issued": 100000,
+      "concurrent": 70000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Kafka handles massive ingestion of code submission and automated test result events without dropping data during traffic spikes."
+    ],
+    "slug": "major-tech-edtech"
+  },
+  {
+    "project": {
+      "name": "Major Enterprise LMS",
+      "type": "Enterprise",
+      "dau": 1000000,
+      "courses_catalog_size": 50000,
+      "daily_assessments": 8000000,
+      "live_classes": 5000,
+      "certificates_issued": 500000,
+      "concurrent": 60000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "SOC2",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Kafka ensures SOC2-compliant audit logging of all employee training completions and certification revocations asynchronously."
+    ],
+    "slug": "major-enterprise-lms"
+  },
+  {
+    "project": {
+      "name": "Major K-12 Network",
+      "type": "K-12",
+      "dau": 1000000,
+      "courses_catalog_size": 200000,
+      "daily_assessments": 10000000,
+      "live_classes": 100000,
+      "certificates_issued": 0,
+      "concurrent": 150000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "FERPA",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka streams directory updates and student enrollment changes to maintain real-time search accuracy across millions of users."
+    ],
+    "slug": "major-k-12-network"
+  },
+  {
+    "project": {
+      "name": "Major Healthcare CME",
+      "type": "Healthcare",
+      "dau": 1000000,
+      "courses_catalog_size": 80000,
+      "daily_assessments": 2000000,
+      "live_classes": 20000,
+      "certificates_issued": 800000,
+      "concurrent": 50000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "HIPAA",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Kafka routes medical case discussions to Elasticsearch for immediate full-text search availability across millions of clinical records."
+    ],
+    "slug": "major-healthcare-cme"
+  },
+  {
+    "project": {
+      "name": "Major Corporate Academy",
+      "type": "Enterprise",
+      "dau": 1000000,
+      "courses_catalog_size": 100000,
+      "daily_assessments": 6000000,
+      "live_classes": 15000,
+      "certificates_issued": 300000,
+      "concurrent": 70000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "SOC2",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Kafka processes high-volume leadership assessment events to update global talent dashboards in real-time."
+    ],
+    "slug": "major-corporate-academy"
+  },
+  {
+    "project": {
+      "name": "Major Test Prep Global",
+      "type": "Test Prep",
+      "dau": 1000000,
+      "courses_catalog_size": 20000,
+      "daily_assessments": 15000000,
+      "live_classes": 5000,
+      "certificates_issued": 10000,
+      "concurrent": 120000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka orchestrates the adaptive learning pipeline, routing practice results to machine learning models for personalized study plans."
+    ],
+    "slug": "major-test-prep-global"
+  },
+  {
+    "project": {
+      "name": "Major Trade Cert Global",
+      "type": "Vocational",
+      "dau": 1000000,
+      "courses_catalog_size": 15000,
+      "daily_assessments": 3000000,
+      "live_classes": 8000,
+      "certificates_issued": 150000,
+      "concurrent": 60000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Kafka handles high-volume safety compliance video uploads and automated hazard detection workflows asynchronously."
+    ],
+    "slug": "major-trade-cert-global"
+  },
+  {
+    "project": {
+      "name": "Major Creative Arts LMS",
+      "type": "Arts",
+      "dau": 1000000,
+      "courses_catalog_size": 50000,
+      "daily_assessments": 2000000,
+      "live_classes": 30000,
+      "certificates_issued": 20000,
+      "concurrent": 90000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Kafka routes large media portfolio submissions to Elasticsearch for instant visual search and copyright verification."
+    ],
+    "slug": "major-creative-arts-lms"
+  },
+  {
+    "project": {
+      "name": "Major Language Platform",
+      "type": "Language",
+      "dau": 1000000,
+      "courses_catalog_size": 30000,
+      "daily_assessments": 10000000,
+      "live_classes": 40000,
+      "certificates_issued": 50000,
+      "concurrent": 100000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka processes high-throughput speech recognition events to update user fluency scores and match with live tutors."
+    ],
+    "slug": "major-language-platform"
+  },
+  {
+    "project": {
+      "name": "Mega Global EdTech",
+      "type": "Higher Ed",
+      "dau": 10000000,
+      "courses_catalog_size": 1000000,
+      "daily_assessments": 50000000,
+      "live_classes": 200000,
+      "certificates_issued": 2000000,
+      "concurrent": 800000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "GDPR",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra provides massive write throughput and horizontal scalability for the global student activity feed and assessment history."
+    ],
+    "slug": "mega-global-edtech"
+  },
+  {
+    "project": {
+      "name": "Mega Tech Bootcamp",
+      "type": "Tech",
+      "dau": 10000000,
+      "courses_catalog_size": 100000,
+      "daily_assessments": 30000000,
+      "live_classes": 100000,
+      "certificates_issued": 1000000,
+      "concurrent": 700000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Spanner",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra handles billions of daily code commit and test result increments with zero downtime for global coding cohorts."
+    ],
+    "slug": "mega-tech-bootcamp"
+  },
+  {
+    "project": {
+      "name": "Mega Enterprise LMS",
+      "type": "Enterprise",
+      "dau": 10000000,
+      "courses_catalog_size": 500000,
+      "daily_assessments": 80000000,
+      "live_classes": 50000,
+      "certificates_issued": 5000000,
+      "concurrent": 600000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "ISO27001",
+      "arch": "CQRS",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "CosmosDB",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "CosmosDB provides globally distributed, multi-model database capabilities with managed PaaS simplicity for global enterprise compliance tracking."
+    ],
+    "slug": "mega-enterprise-lms"
+  },
+  {
+    "project": {
+      "name": "Mega K-12 Network",
+      "type": "K-12",
+      "dau": 10000000,
+      "courses_catalog_size": 2000000,
+      "daily_assessments": 100000000,
+      "live_classes": 1000000,
+      "certificates_issued": 0,
+      "concurrent": 1500000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "COPPA",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra scales horizontally to track billions of daily student interactions and assignment submissions globally."
+    ],
+    "slug": "mega-k-12-network"
+  },
+  {
+    "project": {
+      "name": "Mega Healthcare CME",
+      "type": "Healthcare",
+      "dau": 10000000,
+      "courses_catalog_size": 800000,
+      "daily_assessments": 20000000,
+      "live_classes": 200000,
+      "certificates_issued": 8000000,
+      "concurrent": 500000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "HIPAA",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Spanner",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra provides the massive write throughput needed for high-volume clinical case discussions and global CME credit tracking."
+    ],
+    "slug": "mega-healthcare-cme"
+  },
+  {
+    "project": {
+      "name": "Mega Corporate Academy",
+      "type": "Enterprise",
+      "dau": 10000000,
+      "courses_catalog_size": 1000000,
+      "daily_assessments": 60000000,
+      "live_classes": 150000,
+      "certificates_issued": 3000000,
+      "concurrent": 700000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "SOC2",
+      "arch": "CQRS",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "CosmosDB",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "CosmosDB ensures high availability and partition tolerance for critical global talent management and leadership tracking."
+    ],
+    "slug": "mega-corporate-academy"
+  },
+  {
+    "project": {
+      "name": "Mega Test Prep Global",
+      "type": "Test Prep",
+      "dau": 10000000,
+      "courses_catalog_size": 200000,
+      "daily_assessments": 150000000,
+      "live_classes": 50000,
+      "certificates_issued": 100000,
+      "concurrent": 1200000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra handles the massive spike in write operations during global exam seasons and real-time adaptive testing."
+    ],
+    "slug": "mega-test-prep-global"
+  },
+  {
+    "project": {
+      "name": "Mega Trade Cert Global",
+      "type": "Vocational",
+      "dau": 10000000,
+      "courses_catalog_size": 150000,
+      "daily_assessments": 30000000,
+      "live_classes": 80000,
+      "certificates_issued": 1500000,
+      "concurrent": 600000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Spanner",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra provides massive write throughput and horizontal scalability for global safety compliance and physical skills tracking."
+    ],
+    "slug": "mega-trade-cert-global"
+  },
+  {
+    "project": {
+      "name": "Mega Creative Arts LMS",
+      "type": "Arts",
+      "dau": 10000000,
+      "courses_catalog_size": 500000,
+      "daily_assessments": 20000000,
+      "live_classes": 300000,
+      "certificates_issued": 200000,
+      "concurrent": 900000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "CosmosDB",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "CosmosDB provides globally distributed capabilities for managing high-volume global art portfolio submissions and peer reviews."
+    ],
+    "slug": "mega-creative-arts-lms"
+  },
+  {
+    "project": {
+      "name": "Mega Language Platform",
+      "type": "Language",
+      "dau": 10000000,
+      "courses_catalog_size": 300000,
+      "daily_assessments": 100000000,
+      "live_classes": 400000,
+      "certificates_issued": 500000,
+      "concurrent": 1000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra handles billions of daily speech recognition events and live tutor matching requests globally."
+    ],
+    "slug": "mega-language-platform"
+  },
+  {
+    "project": {
+      "name": "Hyper Global EdTech",
+      "type": "Higher Ed",
+      "dau": 100000000,
+      "courses_catalog_size": 10000000,
+      "daily_assessments": 500000000,
+      "live_classes": 2000000,
+      "certificates_issued": 20000000,
+      "concurrent": 8000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides global consistency and horizontal scalability for a hundred-million-user relational transcript and enrollment model."
+    ],
+    "slug": "hyper-global-edtech"
+  },
+  {
+    "project": {
+      "name": "Hyper Tech Bootcamp",
+      "type": "Tech",
+      "dau": 100000000,
+      "courses_catalog_size": 1000000,
+      "daily_assessments": 300000000,
+      "live_classes": 1000000,
+      "certificates_issued": 10000000,
+      "concurrent": 7000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Global Redis provides ultra-low latency caching for code submission queues and real-time peer review status across all continents."
+    ],
+    "slug": "hyper-tech-bootcamp"
+  },
+  {
+    "project": {
+      "name": "Hyper Enterprise LMS",
+      "type": "Enterprise",
+      "dau": 100000000,
+      "courses_catalog_size": 5000000,
+      "daily_assessments": 800000000,
+      "live_classes": 500000,
+      "certificates_issued": 50000000,
+      "concurrent": 6000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner automatically shards enterprise compliance data globally, ensuring strong consistency for global certification tracking."
+    ],
+    "slug": "hyper-enterprise-lms"
+  },
+  {
+    "project": {
+      "name": "Hyper K-12 Network",
+      "type": "K-12",
+      "dau": 100000000,
+      "courses_catalog_size": 20000000,
+      "daily_assessments": 1000000000,
+      "live_classes": 10000000,
+      "certificates_issued": 0,
+      "concurrent": 15000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Global Redis manages real-time classroom attendance and live assignment submission states for fifteen million concurrent students."
+    ],
+    "slug": "hyper-k-12-network"
+  },
+  {
+    "project": {
+      "name": "Hyper Healthcare CME",
+      "type": "Healthcare",
+      "dau": 100000000,
+      "courses_catalog_size": 8000000,
+      "daily_assessments": 200000000,
+      "live_classes": 2000000,
+      "certificates_issued": 80000000,
+      "concurrent": 5000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides the low-latency, globally distributed relational store required for cross-regional clinical case tracking."
+    ],
+    "slug": "hyper-healthcare-cme"
+  },
+  {
+    "project": {
+      "name": "Hyper Corporate Academy",
+      "type": "Enterprise",
+      "dau": 100000000,
+      "courses_catalog_size": 10000000,
+      "daily_assessments": 600000000,
+      "live_classes": 1500000,
+      "certificates_issued": 30000000,
+      "concurrent": 7000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner scales globally to track billions of daily leadership assessments and talent mobility events with strict consistency."
+    ],
+    "slug": "hyper-corporate-academy"
+  },
+  {
+    "project": {
+      "name": "Hyper Test Prep Global",
+      "type": "Test Prep",
+      "dau": 100000000,
+      "courses_catalog_size": 2000000,
+      "daily_assessments": 1500000000,
+      "live_classes": 500000,
+      "certificates_issued": 1000000,
+      "concurrent": 12000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Global Redis manages real-time adaptive testing states and question bank routing for twelve million concurrent test-takers."
+    ],
+    "slug": "hyper-test-prep-global"
+  },
+  {
+    "project": {
+      "name": "Hyper Trade Cert Global",
+      "type": "Vocational",
+      "dau": 100000000,
+      "courses_catalog_size": 1500000,
+      "daily_assessments": 300000000,
+      "live_classes": 800000,
+      "certificates_issued": 15000000,
+      "concurrent": 6000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner ensures global consistency for critical safety compliance tracking and cross-border vocational certification."
+    ],
+    "slug": "hyper-trade-cert-global"
+  },
+  {
+    "project": {
+      "name": "Hyper Creative Arts LMS",
+      "type": "Arts",
+      "dau": 100000000,
+      "courses_catalog_size": 5000000,
+      "daily_assessments": 200000000,
+      "live_classes": 3000000,
+      "certificates_issued": 2000000,
+      "concurrent": 9000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner handles the massive spike in write operations during global portfolio submissions and real-time peer reviews."
+    ],
+    "slug": "hyper-creative-arts-lms"
+  },
+  {
+    "project": {
+      "name": "Hyper Language Platform",
+      "type": "Language",
+      "dau": 100000000,
+      "courses_catalog_size": 3000000,
+      "daily_assessments": 1000000000,
+      "live_classes": 4000000,
+      "certificates_issued": 5000000,
+      "concurrent": 10000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides massive write throughput and horizontal scalability for global speech recognition and fluency tracking models."
+    ],
+    "slug": "hyper-language-platform"
+  },
+  {
+    "project": {
+      "name": "Omni Global EdTech",
+      "type": "Higher Ed",
+      "dau": 1000000000,
+      "courses_catalog_size": 100000000,
+      "daily_assessments": 5000000000,
+      "live_classes": 20000000,
+      "certificates_issued": 200000000,
+      "concurrent": 80000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides global consistency and horizontal scalability for a billion-user relational transcript model with edge AI personalization."
+    ],
+    "slug": "omni-global-edtech"
+  },
+  {
+    "project": {
+      "name": "Omni Tech Bootcamp",
+      "type": "Tech",
+      "dau": 1000000000,
+      "courses_catalog_size": 10000000,
+      "daily_assessments": 3000000000,
+      "live_classes": 10000000,
+      "certificates_issued": 100000000,
+      "concurrent": 70000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Global Redis provides ultra-low latency caching for code submission queues across all continents with edge AI code review."
+    ],
+    "slug": "omni-tech-bootcamp"
+  },
+  {
+    "project": {
+      "name": "Omni Enterprise LMS",
+      "type": "Enterprise",
+      "dau": 1000000000,
+      "courses_catalog_size": 50000000,
+      "daily_assessments": 8000000000,
+      "live_classes": 5000000,
+      "certificates_issued": 500000000,
+      "concurrent": 60000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner automatically shards enterprise compliance data globally, ensuring strong consistency for certification tracking with edge AI."
+    ],
+    "slug": "omni-enterprise-lms"
+  },
+  {
+    "project": {
+      "name": "Omni K-12 Network",
+      "type": "K-12",
+      "dau": 1000000000,
+      "courses_catalog_size": 200000000,
+      "daily_assessments": 10000000000,
+      "live_classes": 100000000,
+      "certificates_issued": 0,
+      "concurrent": 150000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Global Redis manages real-time classroom states for one hundred fifty million concurrent students with edge AI tutoring."
+    ],
+    "slug": "omni-k-12-network"
+  },
+  {
+    "project": {
+      "name": "Omni Healthcare CME",
+      "type": "Healthcare",
+      "dau": 1000000000,
+      "courses_catalog_size": 80000000,
+      "daily_assessments": 2000000000,
+      "live_classes": 20000000,
+      "certificates_issued": 800000000,
+      "concurrent": 50000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides the low-latency, globally distributed relational store required for cross-regional clinical case tracking with edge AI."
+    ],
+    "slug": "omni-healthcare-cme"
+  },
+  {
+    "project": {
+      "name": "Omni Corporate Academy",
+      "type": "Enterprise",
+      "dau": 1000000000,
+      "courses_catalog_size": 100000000,
+      "daily_assessments": 6000000000,
+      "live_classes": 15000000,
+      "certificates_issued": 300000000,
+      "concurrent": 70000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner scales globally to track billions of daily leadership assessments and talent mobility events with edge AI coaching."
+    ],
+    "slug": "omni-corporate-academy"
+  },
+  {
+    "project": {
+      "name": "Omni Test Prep Global",
+      "type": "Test Prep",
+      "dau": 1000000000,
+      "courses_catalog_size": 20000000,
+      "daily_assessments": 15000000000,
+      "live_classes": 5000000,
+      "certificates_issued": 10000000,
+      "concurrent": 120000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Global Redis manages real-time adaptive testing states for one hundred twenty million concurrent test-takers with edge AI proctoring."
+    ],
+    "slug": "omni-test-prep-global"
+  },
+  {
+    "project": {
+      "name": "Omni Trade Cert Global",
+      "type": "Vocational",
+      "dau": 1000000000,
+      "courses_catalog_size": 15000000,
+      "daily_assessments": 3000000000,
+      "live_classes": 8000000,
+      "certificates_issued": 150000000,
+      "concurrent": 60000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner ensures global consistency for critical safety compliance tracking and cross-border vocational certification with edge AI."
+    ],
+    "slug": "omni-trade-cert-global"
+  },
+  {
+    "project": {
+      "name": "Omni Creative Arts LMS",
+      "type": "Arts",
+      "dau": 1000000000,
+      "courses_catalog_size": 50000000,
+      "daily_assessments": 2000000000,
+      "live_classes": 30000000,
+      "certificates_issued": 20000000,
+      "concurrent": 90000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner handles the massive spike in write operations during global portfolio submissions with edge AI copyright verification."
+    ],
+    "slug": "omni-creative-arts-lms"
+  },
+  {
+    "project": {
+      "name": "Omni Language Platform",
+      "type": "Language",
+      "dau": 1000000000,
+      "courses_catalog_size": 30000000,
+      "daily_assessments": 10000000000,
+      "live_classes": 40000000,
+      "certificates_issued": 50000000,
+      "concurrent": 100000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides massive write throughput and horizontal scalability for global speech recognition with edge AI pronunciation coaching."
+    ],
+    "slug": "omni-language-platform"
+  },
+  {
+    "project": {
+      "name": "FERPA Strict K-12",
+      "type": "K-12",
+      "dau": 1000000,
+      "courses_catalog_size": 200000,
+      "daily_assessments": 10000000,
+      "live_classes": 100000,
+      "certificates_issued": 0,
+      "concurrent": 150000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "FERPA",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Sharded PostgreSQL on AWS provides FERPA-compliant relational storage with strict access controls and audit logging for student records."
+    ],
+    "slug": "ferpa-strict-k-12"
+  },
+  {
+    "project": {
+      "name": "HIPAA Medical Training",
+      "type": "Healthcare",
+      "dau": 1000000,
+      "courses_catalog_size": 80000,
+      "daily_assessments": 2000000,
+      "live_classes": 20000,
+      "certificates_issued": 800000,
+      "concurrent": 50000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "HIPAA",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Sharded PostgreSQL on Azure provides HIPAA-eligible relational storage with strict audit logging for sensitive patient case studies."
+    ],
+    "slug": "hipaa-medical-training"
+  },
+  {
+    "project": {
+      "name": "FedRAMP Gov Training",
+      "type": "Enterprise",
+      "dau": 1000000,
+      "courses_catalog_size": 100000,
+      "daily_assessments": 6000000,
+      "live_classes": 15000,
+      "certificates_issued": 300000,
+      "concurrent": 70000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "FedRAMP",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Azure Government cloud provides the necessary FedRAMP High authorization for secure internal government employee training."
+    ],
+    "slug": "fedramp-gov-training"
+  },
+  {
+    "project": {
+      "name": "COPPA Kids Learning",
+      "type": "K-12",
+      "dau": 10000000,
+      "courses_catalog_size": 2000000,
+      "daily_assessments": 100000000,
+      "live_classes": 1000000,
+      "certificates_issued": 0,
+      "concurrent": 1500000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "COPPA",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "CosmosDB",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "CosmosDB ensures strict data isolation and parental consent tracking required by COPPA compliance for global student accounts."
+    ],
+    "slug": "coppa-kids-learning"
+  },
+  {
+    "project": {
+      "name": "GDPR EU EdTech",
+      "type": "Higher Ed",
+      "dau": 10000000,
+      "courses_catalog_size": 1000000,
+      "daily_assessments": 50000000,
+      "live_classes": 200000,
+      "certificates_issued": 2000000,
+      "concurrent": 800000,
+      "geo": "EU-Only",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "GDPR",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "AWS EU regions ensure data residency compliance, while Cassandra handles the right to be forgotten efficiently for student records."
+    ],
+    "slug": "gdpr-eu-edtech"
+  },
+  {
+    "project": {
+      "name": "Offline-First Field Training",
+      "type": "Vocational",
+      "dau": 100000,
+      "courses_catalog_size": 1500,
+      "daily_assessments": 30000,
+      "live_classes": 800,
+      "certificates_issued": 15000,
+      "concurrent": 6000,
+      "geo": "Single",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Couchbase",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Couchbase provides built-in offline-first synchronization for field workers completing training in areas with intermittent connectivity."
+    ],
+    "slug": "offline-first-field-training"
+  },
+  {
+    "project": {
+      "name": "Web3 Decentralized Learning",
+      "type": "Higher Ed",
+      "dau": 1000000,
+      "courses_catalog_size": 100000,
+      "daily_assessments": 5000000,
+      "live_classes": 20000,
+      "certificates_issued": 200000,
+      "concurrent": 80000,
+      "geo": "Global",
+      "budget": "High",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "IPFS",
+      "storage": "IPFS",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "IPFS provides decentralized, content-addressed storage for course materials and verifiable on-chain credential issuance."
+    ],
+    "slug": "web3-decentralized-learning"
+  },
+  {
+    "project": {
+      "name": "AI Tutor Platform",
+      "type": "Test Prep",
+      "dau": 10000000,
+      "courses_catalog_size": 200000,
+      "daily_assessments": 150000000,
+      "live_classes": 50000,
+      "certificates_issued": 100000,
+      "concurrent": 1200000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Kafka integrates seamlessly with GPU compute nodes to process real-time AI tutor inference and personalized learning paths."
+    ],
+    "slug": "ai-tutor-platform"
+  },
+  {
+    "project": {
+      "name": "AR/VR Spatial Learning",
+      "type": "Vocational",
+      "dau": 10000000,
+      "courses_catalog_size": 150000,
+      "daily_assessments": 30000000,
+      "live_classes": 80000,
+      "certificates_issued": 1500000,
+      "concurrent": 600000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "CosmosDB",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "GCS provides massive, cost-effective object storage and high-throughput CDN for heavy 3D AR/VR training asset uploads."
+    ],
+    "slug": "arvr-spatial-learning"
+  },
+  {
+    "project": {
+      "name": "Low-Bandwidth Emerging Market",
+      "type": "K-12",
+      "dau": 10000000,
+      "courses_catalog_size": 2000000,
+      "daily_assessments": 100000000,
+      "live_classes": 1000000,
+      "certificates_issued": 0,
+      "concurrent": 1500000,
+      "geo": "Global",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Aggressive edge caching and optimized text-based payloads ensure usability in low-bandwidth emerging markets."
+    ],
+    "slug": "low-bandwidth-emerging-market"
+  },
+  {
+    "project": {
+      "name": "High-Security Financial Training",
+      "type": "Enterprise",
+      "dau": 1000000,
+      "courses_catalog_size": 100000,
+      "daily_assessments": 6000000,
+      "live_classes": 15000,
+      "certificates_issued": 300000,
+      "concurrent": 70000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "FINRA",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Sharded PostgreSQL on Azure provides FINRA-compliant relational storage with strict audit logging for financial compliance training."
+    ],
+    "slug": "high-security-financial-training"
+  },
+  {
+    "project": {
+      "name": "Live Proctoring Exam Platform",
+      "type": "Test Prep",
+      "dau": 1000000,
+      "courses_catalog_size": 20000,
+      "daily_assessments": 15000000,
+      "live_classes": 500000,
+      "certificates_issued": 10000,
+      "concurrent": 1200000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka streams high-volume live video proctoring feeds to AI anomaly detection services for real-time cheating prevention."
+    ],
+    "slug": "live-proctoring-exam-platform"
+  },
+  {
+    "project": {
+      "name": "Peer-to-Peer Mentorship",
+      "type": "Higher Ed",
+      "dau": 100000,
+      "courses_catalog_size": 15000,
+      "daily_assessments": 300000,
+      "live_classes": 8000,
+      "certificates_issued": 15000,
+      "concurrent": 6000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "RabbitMQ handles background mentor-mentee matching and session scheduling workflows asynchronously without blocking chat."
+    ],
+    "slug": "peer-to-peer-mentorship"
+  },
+  {
+    "project": {
+      "name": "Gamified Learning App",
+      "type": "K-12",
+      "dau": 1000000,
+      "courses_catalog_size": 200000,
+      "daily_assessments": 10000000,
+      "live_classes": 100000,
+      "certificates_issued": 0,
+      "concurrent": 150000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Redis Cluster manages real-time leaderboard updates and achievement badge unlocking for high-concurrency gamified learning."
+    ],
+    "slug": "gamified-learning-app"
+  },
+  {
+    "project": {
+      "name": "Micro-Credentialing Platform",
+      "type": "Enterprise",
+      "dau": 1000000,
+      "courses_catalog_size": 50000,
+      "daily_assessments": 8000000,
+      "live_classes": 50000,
+      "certificates_issued": 5000000,
+      "concurrent": 60000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "SOC2",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Kafka orchestrates the high-volume credential issuance pipeline, routing completion events to blockchain verification services."
+    ],
+    "slug": "micro-credentialing-platform"
+  },
+  {
+    "project": {
+      "name": "Corporate Onboarding LMS",
+      "type": "Enterprise",
+      "dau": 100000,
+      "courses_catalog_size": 5000,
+      "daily_assessments": 300000,
+      "live_classes": 1500,
+      "certificates_issued": 30000,
+      "concurrent": 7000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "SOC2",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "RabbitMQ manages asynchronous new hire provisioning and department-specific training assignment workflows."
+    ],
+    "slug": "corporate-onboarding-lms"
+  },
+  {
+    "project": {
+      "name": "University Research Collab",
+      "type": "Higher Ed",
+      "dau": 1000000,
+      "courses_catalog_size": 100000,
+      "daily_assessments": 5000000,
+      "live_classes": 20000,
+      "certificates_issued": 200000,
+      "concurrent": 80000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Kafka streams large research dataset uploads and collaboration events to Elasticsearch for real-time academic discovery."
+    ],
+    "slug": "university-research-collab"
+  },
+  {
+    "project": {
+      "name": "Special Education LMS",
+      "type": "K-12",
+      "dau": 1000000,
+      "courses_catalog_size": 200000,
+      "daily_assessments": 10000000,
+      "live_classes": 100000,
+      "certificates_issued": 0,
+      "concurrent": 150000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "FERPA",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Sharded PostgreSQL ensures strict data isolation and IEP (Individualized Education Program) tracking required for special education."
+    ],
+    "slug": "special-education-lms"
+  },
+  {
+    "project": {
+      "name": "Corporate Sales Enablement",
+      "type": "Enterprise",
+      "dau": 100000,
+      "courses_catalog_size": 10000,
+      "daily_assessments": 800000,
+      "live_classes": 5000,
+      "certificates_issued": 50000,
+      "concurrent": 6000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "RabbitMQ handles background role-play recording analysis and sales pitch scoring workflows asynchronously."
+    ],
+    "slug": "corporate-sales-enablement"
+  },
+  {
+    "project": {
+      "name": "Customer Success Academy",
+      "type": "Enterprise",
+      "dau": 100000,
+      "courses_catalog_size": 8000,
+      "daily_assessments": 600000,
+      "live_classes": 4000,
+      "certificates_issued": 40000,
+      "concurrent": 5000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "RabbitMQ manages asynchronous product update training distribution and customer feedback analysis workflows."
+    ],
+    "slug": "customer-success-academy"
+  },
+  {
+    "project": {
+      "name": "Open Source MOOC Platform",
+      "type": "Higher Ed",
+      "dau": 10000000,
+      "courses_catalog_size": 1000000,
+      "daily_assessments": 50000000,
+      "live_classes": 200000,
+      "certificates_issued": 2000000,
+      "concurrent": 800000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra provides massive write throughput for handling high-volume global MOOC enrollments and forum discussions."
+    ],
+    "slug": "open-source-mooc-platform"
+  },
+  {
+    "project": {
+      "name": "Corporate Diversity & Inclusion",
+      "type": "Enterprise",
+      "dau": 100000,
+      "courses_catalog_size": 2000,
+      "daily_assessments": 400000,
+      "live_classes": 2000,
+      "certificates_issued": 20000,
+      "concurrent": 4000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "RabbitMQ handles background anonymous feedback aggregation and inclusion metric reporting workflows."
+    ],
+    "slug": "corporate-diversity-inclusion"
+  },
+  {
+    "project": {
+      "name": "High-Stakes Certification",
+      "type": "Test Prep",
+      "dau": 1000000,
+      "courses_catalog_size": 20000,
+      "daily_assessments": 15000000,
+      "live_classes": 50000,
+      "certificates_issued": 100000,
+      "concurrent": 120000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Sharded PostgreSQL ensures strict transactional integrity for high-stakes exam scoring and official certification issuance."
+    ],
+    "slug": "high-stakes-certification"
+  },
+  {
+    "project": {
+      "name": "Vocational Trade Simulator",
+      "type": "Vocational",
+      "dau": 1000000,
+      "courses_catalog_size": 15000,
+      "daily_assessments": 3000000,
+      "live_classes": 8000,
+      "certificates_issued": 150000,
+      "concurrent": 60000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Kafka streams high-volume simulator telemetry data to Elasticsearch for real-time performance analysis and safety scoring."
+    ],
+    "slug": "vocational-trade-simulator"
+  },
+  {
+    "project": {
+      "name": "Executive Leadership Academy",
+      "type": "Enterprise",
+      "dau": 100000,
+      "courses_catalog_size": 1000,
+      "daily_assessments": 100000,
+      "live_classes": 500,
+      "certificates_issued": 5000,
+      "concurrent": 2000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "RabbitMQ manages asynchronous 360-degree feedback collection and executive coaching session scheduling."
+    ],
+    "slug": "executive-leadership-academy"
+  },
+  {
+    "project": {
+      "name": "Global University Consortium",
+      "type": "Higher Ed",
+      "dau": 100000000,
+      "courses_catalog_size": 10000000,
+      "daily_assessments": 500000000,
+      "live_classes": 2000000,
+      "certificates_issued": 20000000,
+      "concurrent": 8000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides global consistency for cross-university credit transfers and shared research repository management."
+    ],
+    "slug": "global-university-consortium"
+  },
+  {
+    "project": {
+      "name": "Emergency Response Training",
+      "type": "Vocational",
+      "dau": 1000000,
+      "courses_catalog_size": 15000,
+      "daily_assessments": 3000000,
+      "live_classes": 80000,
+      "certificates_issued": 150000,
+      "concurrent": 60000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Multi-AZ deployment with 99.99% SLA ensures critical emergency response training materials are always available during disasters."
+    ],
+    "slug": "emergency-response-training"
+  },
+  {
+    "project": {
+      "name": "Space Agency Astronaut Training",
+      "type": "Vocational",
+      "dau": 10000,
+      "courses_catalog_size": 500,
+      "daily_assessments": 50000,
+      "live_classes": 2000,
+      "certificates_issued": 100,
+      "concurrent": 500,
+      "geo": "Single",
+      "budget": "High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "PostgreSQL with high-availability replication ensures reliable storage for critical astronaut telemetry and mission simulation data."
+    ],
+    "slug": "space-agency-astronaut-training"
+  },
+  {
+    "project": {
+      "name": "Military Tactical Training",
+      "type": "Vocational",
+      "dau": 10000000,
+      "courses_catalog_size": 150000,
+      "daily_assessments": 30000000,
+      "live_classes": 800000,
+      "certificates_issued": 1500000,
+      "concurrent": 600000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "FedRAMP",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra ensures high availability and partition tolerance for critical tactical training data in disconnected or contested environments."
+    ],
+    "slug": "military-tactical-training"
+  },
+  {
+    "project": {
+      "name": "Decentralized Autonomous University",
+      "type": "Higher Ed",
+      "dau": 100000000,
+      "courses_catalog_size": 10000000,
+      "daily_assessments": 500000000,
+      "live_classes": 2000000,
+      "certificates_issued": 20000000,
+      "concurrent": 8000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides global consistency for managing decentralized governance voting and on-chain credential verification at scale."
+    ],
+    "slug": "decentralized-autonomous-university"
+  }
+]

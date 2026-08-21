@@ -1,0 +1,3202 @@
+[
+  {
+    "project": {
+      "name": "Local Credit Union",
+      "type": "Retail",
+      "dau": 100,
+      "transactions_per_day": 500,
+      "active_accounts": 2000,
+      "loan_applications": 10,
+      "fraud_alerts": 2,
+      "cross_border_tx": 0,
+      "concurrent": 10,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "SQLite",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Local",
+      "compute": "EC2",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "SQLite provides zero-config relational storage for micro-scale member accounts and transaction ledgers without external database dependencies."
+    ],
+    "slug": "local-credit-union"
+  },
+  {
+    "project": {
+      "name": "Community Bank",
+      "type": "Retail",
+      "dau": 100,
+      "transactions_per_day": 800,
+      "active_accounts": 5000,
+      "loan_applications": 20,
+      "fraud_alerts": 5,
+      "cross_border_tx": 0,
+      "concurrent": 15,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "PostgreSQL handles structured account metadata and double-entry transaction ledgers reliably for a small localized community bank."
+    ],
+    "slug": "community-bank"
+  },
+  {
+    "project": {
+      "name": "Small Micro-lender",
+      "type": "Lending",
+      "dau": 100,
+      "transactions_per_day": 300,
+      "active_accounts": 1000,
+      "loan_applications": 50,
+      "fraud_alerts": 1,
+      "cross_border_tx": 0,
+      "concurrent": 8,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "PostgreSQL provides robust relational integrity for tracking loan origination, repayment schedules, and borrower profiles."
+    ],
+    "slug": "small-micro-lender"
+  },
+  {
+    "project": {
+      "name": "Local Wealth Advisor",
+      "type": "Wealth",
+      "dau": 100,
+      "transactions_per_day": 200,
+      "active_accounts": 500,
+      "loan_applications": 5,
+      "fraud_alerts": 0,
+      "cross_border_tx": 0,
+      "concurrent": 5,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "DigitalOcean"
+    },
+    "recommended_stack": {
+      "db": "SQLite",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Local",
+      "compute": "Droplet",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "SQLite simplifies deployment for a low-traffic wealth advisory portal while maintaining data consistency for portfolio tracking."
+    ],
+    "slug": "local-wealth-advisor"
+  },
+  {
+    "project": {
+      "name": "Small Mortgage Broker",
+      "type": "Lending",
+      "dau": 100,
+      "transactions_per_day": 100,
+      "active_accounts": 800,
+      "loan_applications": 30,
+      "fraud_alerts": 2,
+      "cross_border_tx": 0,
+      "concurrent": 10,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "PostgreSQL enforces strict relational constraints required for tracking complex mortgage applications and document verification."
+    ],
+    "slug": "small-mortgage-broker"
+  },
+  {
+    "project": {
+      "name": "Campus Credit Union",
+      "type": "Retail",
+      "dau": 100,
+      "transactions_per_day": 1000,
+      "active_accounts": 3000,
+      "loan_applications": 15,
+      "fraud_alerts": 3,
+      "cross_border_tx": 0,
+      "concurrent": 20,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "PostgreSQL supports full-text search natively for member directories and transaction histories without needing an external search engine."
+    ],
+    "slug": "campus-credit-union"
+  },
+  {
+    "project": {
+      "name": "Local Crypto Exchange",
+      "type": "Crypto",
+      "dau": 100,
+      "transactions_per_day": 2000,
+      "active_accounts": 1500,
+      "loan_applications": 0,
+      "fraud_alerts": 10,
+      "cross_border_tx": 50,
+      "concurrent": 25,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "PostgreSQL handles relational scheduling and wallet metadata efficiently for a single local digital asset trading desk."
+    ],
+    "slug": "local-crypto-exchange"
+  },
+  {
+    "project": {
+      "name": "Small P2P Lending",
+      "type": "Lending",
+      "dau": 100,
+      "transactions_per_day": 400,
+      "active_accounts": 1200,
+      "loan_applications": 40,
+      "fraud_alerts": 2,
+      "cross_border_tx": 0,
+      "concurrent": 12,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "SQLite",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Local",
+      "compute": "EC2",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "SQLite provides a lightweight, portable database for managing small-batch peer-to-peer loan matching without infrastructure overhead."
+    ],
+    "slug": "small-p2p-lending"
+  },
+  {
+    "project": {
+      "name": "Local Payment Processor",
+      "type": "Payments",
+      "dau": 100,
+      "transactions_per_day": 5000,
+      "active_accounts": 2000,
+      "loan_applications": 0,
+      "fraud_alerts": 5,
+      "cross_border_tx": 100,
+      "concurrent": 15,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "PostgreSQL enforces strict relational constraints required for tracking merchant settlements and daily reconciliation batches."
+    ],
+    "slug": "local-payment-processor"
+  },
+  {
+    "project": {
+      "name": "Small Corporate Treasury",
+      "type": "Corporate",
+      "dau": 100,
+      "transactions_per_day": 300,
+      "active_accounts": 100,
+      "loan_applications": 2,
+      "fraud_alerts": 1,
+      "cross_border_tx": 0,
+      "concurrent": 5,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "PostgreSQL handles relational cash flow forecasting and multi-entity account metadata efficiently for a small corporate treasury."
+    ],
+    "slug": "small-corporate-treasury"
+  },
+  {
+    "project": {
+      "name": "Regional Credit Union",
+      "type": "Retail",
+      "dau": 10000,
+      "transactions_per_day": 50000,
+      "active_accounts": 200000,
+      "loan_applications": 500,
+      "fraud_alerts": 50,
+      "cross_border_tx": 1000,
+      "concurrent": 500,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Redis caches user profiles and active session states to reduce PostgreSQL load during peak regional payroll processing."
+    ],
+    "slug": "regional-credit-union"
+  },
+  {
+    "project": {
+      "name": "Small Neobank",
+      "type": "Neobank",
+      "dau": 10000,
+      "transactions_per_day": 80000,
+      "active_accounts": 150000,
+      "loan_applications": 1000,
+      "fraud_alerts": 100,
+      "cross_border_tx": 2000,
+      "concurrent": 800,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Redis provides fast access to real-time account balances and instant payment notification queues for mobile-first banking."
+    ],
+    "slug": "small-neobank"
+  },
+  {
+    "project": {
+      "name": "Regional Commercial Bank",
+      "type": "Corporate",
+      "dau": 10000,
+      "transactions_per_day": 30000,
+      "active_accounts": 50000,
+      "loan_applications": 200,
+      "fraud_alerts": 30,
+      "cross_border_tx": 500,
+      "concurrent": 300,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Redis accelerates feed generation by caching recent commercial loan rates and corporate client dashboards."
+    ],
+    "slug": "regional-commercial-bank"
+  },
+  {
+    "project": {
+      "name": "Mid-size Auto Lender",
+      "type": "Lending",
+      "dau": 10000,
+      "transactions_per_day": 20000,
+      "active_accounts": 300000,
+      "loan_applications": 2000,
+      "fraud_alerts": 40,
+      "cross_border_tx": 0,
+      "concurrent": 400,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Redis manages real-time credit decisioning queues and dealer portal session states for high-volume auto financing."
+    ],
+    "slug": "mid-size-auto-lender"
+  },
+  {
+    "project": {
+      "name": "Regional Wealth Management",
+      "type": "Wealth",
+      "dau": 10000,
+      "transactions_per_day": 10000,
+      "active_accounts": 20000,
+      "loan_applications": 50,
+      "fraud_alerts": 5,
+      "cross_border_tx": 0,
+      "concurrent": 200,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Redis tracks real-time market data feeds and portfolio valuation updates for regional high-net-worth clients."
+    ],
+    "slug": "regional-wealth-management"
+  },
+  {
+    "project": {
+      "name": "Small Payment Gateway",
+      "type": "Payments",
+      "dau": 10000,
+      "transactions_per_day": 200000,
+      "active_accounts": 100000,
+      "loan_applications": 0,
+      "fraud_alerts": 200,
+      "cross_border_tx": 10000,
+      "concurrent": 1000,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Redis handles real-time transaction routing and ephemeral payment token states for high-concurrency checkout flows."
+    ],
+    "slug": "small-payment-gateway"
+  },
+  {
+    "project": {
+      "name": "Regional Crypto Custody",
+      "type": "Crypto",
+      "dau": 10000,
+      "transactions_per_day": 50000,
+      "active_accounts": 80000,
+      "loan_applications": 0,
+      "fraud_alerts": 50,
+      "cross_border_tx": 5000,
+      "concurrent": 600,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Redis caches cold wallet balance snapshots and real-time withdrawal approval queues for institutional crypto clients."
+    ],
+    "slug": "regional-crypto-custody"
+  },
+  {
+    "project": {
+      "name": "Mid-size Mortgage Lender",
+      "type": "Lending",
+      "dau": 10000,
+      "transactions_per_day": 15000,
+      "active_accounts": 250000,
+      "loan_applications": 3000,
+      "fraud_alerts": 30,
+      "cross_border_tx": 0,
+      "concurrent": 350,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Redis manages real-time document upload states and underwriting pipeline progress for mortgage applicants."
+    ],
+    "slug": "mid-size-mortgage-lender"
+  },
+  {
+    "project": {
+      "name": "Local Clearing House",
+      "type": "Payments",
+      "dau": 10000,
+      "transactions_per_day": 100000,
+      "active_accounts": 10000,
+      "loan_applications": 0,
+      "fraud_alerts": 100,
+      "cross_border_tx": 5000,
+      "concurrent": 500,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Redis tracks real-time settlement batch statuses and inter-bank liquidity positions during daily clearing cycles."
+    ],
+    "slug": "local-clearing-house"
+  },
+  {
+    "project": {
+      "name": "Small Trade Finance",
+      "type": "Corporate",
+      "dau": 10000,
+      "transactions_per_day": 25000,
+      "active_accounts": 15000,
+      "loan_applications": 100,
+      "fraud_alerts": 20,
+      "cross_border_tx": 1000,
+      "concurrent": 250,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Redis caches letters of credit statuses and real-time shipping document verification workflows for trade finance clients."
+    ],
+    "slug": "small-trade-finance"
+  },
+  {
+    "project": {
+      "name": "Mid-sized Retail Bank",
+      "type": "Retail",
+      "dau": 100000,
+      "transactions_per_day": 500000,
+      "active_accounts": 2000000,
+      "loan_applications": 5000,
+      "fraud_alerts": 500,
+      "cross_border_tx": 10000,
+      "concurrent": 5000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "None",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "RabbitMQ decouples transaction ingestion from ledger updates and notification delivery to handle peak retail banking hours."
+    ],
+    "slug": "mid-sized-retail-bank"
+  },
+  {
+    "project": {
+      "name": "National Neobank",
+      "type": "Neobank",
+      "dau": 100000,
+      "transactions_per_day": 800000,
+      "active_accounts": 1500000,
+      "loan_applications": 10000,
+      "fraud_alerts": 1000,
+      "cross_border_tx": 20000,
+      "concurrent": 8000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "RabbitMQ manages asynchronous credit scoring and instant account provisioning queues for high-volume digital onboarding."
+    ],
+    "slug": "national-neobank"
+  },
+  {
+    "project": {
+      "name": "National Commercial Bank",
+      "type": "Corporate",
+      "dau": 100000,
+      "transactions_per_day": 300000,
+      "active_accounts": 500000,
+      "loan_applications": 2000,
+      "fraud_alerts": 300,
+      "cross_border_tx": 5000,
+      "concurrent": 3000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "RabbitMQ handles background compliance reporting and multi-signature approval workflows asynchronously without blocking transactions."
+    ],
+    "slug": "national-commercial-bank"
+  },
+  {
+    "project": {
+      "name": "National Auto Finance",
+      "type": "Lending",
+      "dau": 100000,
+      "transactions_per_day": 200000,
+      "active_accounts": 3000000,
+      "loan_applications": 20000,
+      "fraud_alerts": 400,
+      "cross_border_tx": 0,
+      "concurrent": 4000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "None",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "RabbitMQ processes high-volume loan origination and dealer payout calculations asynchronously during end-of-month peaks."
+    ],
+    "slug": "national-auto-finance"
+  },
+  {
+    "project": {
+      "name": "National Wealth Platform",
+      "type": "Wealth",
+      "dau": 100000,
+      "transactions_per_day": 100000,
+      "active_accounts": 200000,
+      "loan_applications": 500,
+      "fraud_alerts": 50,
+      "cross_border_tx": 0,
+      "concurrent": 2000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "RabbitMQ decouples trade execution from portfolio rebalancing and tax-loss harvesting workflows to maintain low latency."
+    ],
+    "slug": "national-wealth-platform"
+  },
+  {
+    "project": {
+      "name": "National Payment Processor",
+      "type": "Payments",
+      "dau": 100000,
+      "transactions_per_day": 2000000,
+      "active_accounts": 1000000,
+      "loan_applications": 0,
+      "fraud_alerts": 2000,
+      "cross_border_tx": 100000,
+      "concurrent": 10000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "RabbitMQ manages asynchronous merchant settlement batches and real-time fraud scoring without blocking the payment gateway."
+    ],
+    "slug": "national-payment-processor"
+  },
+  {
+    "project": {
+      "name": "National Crypto Exchange",
+      "type": "Crypto",
+      "dau": 100000,
+      "transactions_per_day": 500000,
+      "active_accounts": 800000,
+      "loan_applications": 0,
+      "fraud_alerts": 500,
+      "cross_border_tx": 50000,
+      "concurrent": 6000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "None",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "RabbitMQ handles high-throughput order matching and blockchain withdrawal processing asynchronously to prevent network congestion."
+    ],
+    "slug": "national-crypto-exchange"
+  },
+  {
+    "project": {
+      "name": "National Mortgage Servicer",
+      "type": "Lending",
+      "dau": 100000,
+      "transactions_per_day": 150000,
+      "active_accounts": 2500000,
+      "loan_applications": 30000,
+      "fraud_alerts": 300,
+      "cross_border_tx": 0,
+      "concurrent": 3500,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "RabbitMQ processes background escrow calculations and monthly statement generation for millions of active mortgages."
+    ],
+    "slug": "national-mortgage-servicer"
+  },
+  {
+    "project": {
+      "name": "National Trade Bank",
+      "type": "Corporate",
+      "dau": 100000,
+      "transactions_per_day": 250000,
+      "active_accounts": 150000,
+      "loan_applications": 1000,
+      "fraud_alerts": 200,
+      "cross_border_tx": 10000,
+      "concurrent": 2500,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "RabbitMQ manages asynchronous SWIFT message parsing and cross-border compliance screening workflows."
+    ],
+    "slug": "national-trade-bank"
+  },
+  {
+    "project": {
+      "name": "National Student Lender",
+      "type": "Lending",
+      "dau": 100000,
+      "transactions_per_day": 100000,
+      "active_accounts": 5000000,
+      "loan_applications": 50000,
+      "fraud_alerts": 200,
+      "cross_border_tx": 0,
+      "concurrent": 2000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "None",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "RabbitMQ decouples federal loan disbursement events from university enrollment verification workflows."
+    ],
+    "slug": "national-student-lender"
+  },
+  {
+    "project": {
+      "name": "Large Retail Bank",
+      "type": "Retail",
+      "dau": 1000000,
+      "transactions_per_day": 5000000,
+      "active_accounts": 20000000,
+      "loan_applications": 50000,
+      "fraud_alerts": 5000,
+      "cross_border_tx": 100000,
+      "concurrent": 50000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka streams transaction events to Elasticsearch for real-time fraud detection and personalized financial insights."
+    ],
+    "slug": "large-retail-bank"
+  },
+  {
+    "project": {
+      "name": "Major Neobank",
+      "type": "Neobank",
+      "dau": 1000000,
+      "transactions_per_day": 8000000,
+      "active_accounts": 15000000,
+      "loan_applications": 100000,
+      "fraud_alerts": 10000,
+      "cross_border_tx": 200000,
+      "concurrent": 80000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Kafka handles massive ingestion of real-time payment notifications and account balance updates without dropping events during peak loads."
+    ],
+    "slug": "major-neobank"
+  },
+  {
+    "project": {
+      "name": "Large Corporate Bank",
+      "type": "Corporate",
+      "dau": 1000000,
+      "transactions_per_day": 3000000,
+      "active_accounts": 5000000,
+      "loan_applications": 20000,
+      "fraud_alerts": 3000,
+      "cross_border_tx": 50000,
+      "concurrent": 30000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Kafka ensures SOX-compliant audit logging of all corporate transaction approvals and ledger modifications asynchronously."
+    ],
+    "slug": "large-corporate-bank"
+  },
+  {
+    "project": {
+      "name": "Major Investment Bank",
+      "type": "Investment",
+      "dau": 1000000,
+      "transactions_per_day": 10000000,
+      "active_accounts": 500000,
+      "loan_applications": 1000,
+      "fraud_alerts": 1000,
+      "cross_border_tx": 500000,
+      "concurrent": 100000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka streams high-frequency trading events and market data feeds to Elasticsearch for real-time risk management dashboards."
+    ],
+    "slug": "major-investment-bank"
+  },
+  {
+    "project": {
+      "name": "Large Wealth Manager",
+      "type": "Wealth",
+      "dau": 1000000,
+      "transactions_per_day": 1000000,
+      "active_accounts": 2000000,
+      "loan_applications": 5000,
+      "fraud_alerts": 500,
+      "cross_border_tx": 0,
+      "concurrent": 20000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Kafka routes complex portfolio rebalancing events to Elasticsearch for instant performance attribution and reporting."
+    ],
+    "slug": "large-wealth-manager"
+  },
+  {
+    "project": {
+      "name": "Major Payment Network",
+      "type": "Payments",
+      "dau": 1000000,
+      "transactions_per_day": 20000000,
+      "active_accounts": 10000000,
+      "loan_applications": 0,
+      "fraud_alerts": 20000,
+      "cross_border_tx": 1000000,
+      "concurrent": 100000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Kafka orchestrates the global payment routing pipeline, ensuring strict ordering for high-volume card network transactions."
+    ],
+    "slug": "major-payment-network"
+  },
+  {
+    "project": {
+      "name": "Large Crypto Custody",
+      "type": "Crypto",
+      "dau": 1000000,
+      "transactions_per_day": 5000000,
+      "active_accounts": 8000000,
+      "loan_applications": 0,
+      "fraud_alerts": 5000,
+      "cross_border_tx": 500000,
+      "concurrent": 60000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka handles massive ingestion of blockchain transaction events and cold storage reconciliation workflows asynchronously."
+    ],
+    "slug": "large-crypto-custody"
+  },
+  {
+    "project": {
+      "name": "Major Loan Servicer",
+      "type": "Lending",
+      "dau": 1000000,
+      "transactions_per_day": 1500000,
+      "active_accounts": 25000000,
+      "loan_applications": 300000,
+      "fraud_alerts": 3000,
+      "cross_border_tx": 0,
+      "concurrent": 35000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Kafka streams high-volume payment processing events to Elasticsearch for real-time delinquency tracking and collections routing."
+    ],
+    "slug": "major-loan-servicer"
+  },
+  {
+    "project": {
+      "name": "Large FX Broker",
+      "type": "FX",
+      "dau": 1000000,
+      "transactions_per_day": 15000000,
+      "active_accounts": 1000000,
+      "loan_applications": 1000,
+      "fraud_alerts": 2000,
+      "cross_border_tx": 1000000,
+      "concurrent": 150000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Kafka processes high-throughput currency conversion events and real-time hedging calculations for institutional FX clients."
+    ],
+    "slug": "large-fx-broker"
+  },
+  {
+    "project": {
+      "name": "Major Card Issuer",
+      "type": "Retail",
+      "dau": 1000000,
+      "transactions_per_day": 30000000,
+      "active_accounts": 50000000,
+      "loan_applications": 100000,
+      "fraud_alerts": 10000,
+      "cross_border_tx": 500000,
+      "concurrent": 200000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka handles the massive write throughput of global card authorization requests and real-time fraud scoring pipelines."
+    ],
+    "slug": "major-card-issuer"
+  },
+  {
+    "project": {
+      "name": "Mega Retail Bank",
+      "type": "Retail",
+      "dau": 10000000,
+      "transactions_per_day": 50000000,
+      "active_accounts": 200000000,
+      "loan_applications": 500000,
+      "fraud_alerts": 50000,
+      "cross_border_tx": 1000000,
+      "concurrent": 500000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "GDPR",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra provides massive write throughput and horizontal scalability for the global transaction ledger and account history."
+    ],
+    "slug": "mega-retail-bank"
+  },
+  {
+    "project": {
+      "name": "Global Neobank",
+      "type": "Neobank",
+      "dau": 10000000,
+      "transactions_per_day": 80000000,
+      "active_accounts": 150000000,
+      "loan_applications": 1000000,
+      "fraud_alerts": 100000,
+      "cross_border_tx": 2000000,
+      "concurrent": 800000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Spanner",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra handles billions of daily payment increments and real-time balance updates with zero downtime globally."
+    ],
+    "slug": "global-neobank"
+  },
+  {
+    "project": {
+      "name": "Mega Corporate Bank",
+      "type": "Corporate",
+      "dau": 10000000,
+      "transactions_per_day": 30000000,
+      "active_accounts": 50000000,
+      "loan_applications": 200000,
+      "fraud_alerts": 30000,
+      "cross_border_tx": 500000,
+      "concurrent": 300000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "CosmosDB",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "CosmosDB provides globally distributed, multi-model database capabilities for managing complex corporate credit facilities and syndications."
+    ],
+    "slug": "mega-corporate-bank"
+  },
+  {
+    "project": {
+      "name": "Global Investment Bank",
+      "type": "Investment",
+      "dau": 10000000,
+      "transactions_per_day": 100000000,
+      "active_accounts": 5000000,
+      "loan_applications": 10000,
+      "fraud_alerts": 10000,
+      "cross_border_tx": 5000000,
+      "concurrent": 1000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra scales horizontally to track billions of daily trade executions and market data ticks across global exchanges."
+    ],
+    "slug": "global-investment-bank"
+  },
+  {
+    "project": {
+      "name": "Mega Wealth Platform",
+      "type": "Wealth",
+      "dau": 10000000,
+      "transactions_per_day": 10000000,
+      "active_accounts": 20000000,
+      "loan_applications": 50000,
+      "fraud_alerts": 5000,
+      "cross_border_tx": 0,
+      "concurrent": 200000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Spanner",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra provides the massive write throughput needed for high-volume global portfolio rebalancing and dividend processing."
+    ],
+    "slug": "mega-wealth-platform"
+  },
+  {
+    "project": {
+      "name": "Global Payment Processor",
+      "type": "Payments",
+      "dau": 10000000,
+      "transactions_per_day": 200000000,
+      "active_accounts": 100000000,
+      "loan_applications": 0,
+      "fraud_alerts": 200000,
+      "cross_border_tx": 10000000,
+      "concurrent": 1000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "CosmosDB",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "CosmosDB ensures high availability and partition tolerance for critical global payment routing and merchant settlement tracking."
+    ],
+    "slug": "global-payment-processor"
+  },
+  {
+    "project": {
+      "name": "Mega Crypto Exchange",
+      "type": "Crypto",
+      "dau": 10000000,
+      "transactions_per_day": 50000000,
+      "active_accounts": 80000000,
+      "loan_applications": 0,
+      "fraud_alerts": 50000,
+      "cross_border_tx": 5000000,
+      "concurrent": 600000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra handles the massive spike in write operations during global crypto market volatility and high-frequency trading."
+    ],
+    "slug": "mega-crypto-exchange"
+  },
+  {
+    "project": {
+      "name": "Global Loan Syndicator",
+      "type": "Lending",
+      "dau": 10000000,
+      "transactions_per_day": 15000000,
+      "active_accounts": 250000000,
+      "loan_applications": 3000000,
+      "fraud_alerts": 30000,
+      "cross_border_tx": 0,
+      "concurrent": 350000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Spanner",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra provides massive write throughput and horizontal scalability for global loan syndication and secondary market trading."
+    ],
+    "slug": "global-loan-syndicator"
+  },
+  {
+    "project": {
+      "name": "Mega FX Provider",
+      "type": "FX",
+      "dau": 10000000,
+      "transactions_per_day": 150000000,
+      "active_accounts": 10000000,
+      "loan_applications": 10000,
+      "fraud_alerts": 20000,
+      "cross_border_tx": 10000000,
+      "concurrent": 1500000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "CosmosDB",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "CosmosDB provides globally distributed capabilities for managing complex multi-currency liquidity pools and real-time hedging."
+    ],
+    "slug": "mega-fx-provider"
+  },
+  {
+    "project": {
+      "name": "Global Card Network",
+      "type": "Retail",
+      "dau": 10000000,
+      "transactions_per_day": 300000000,
+      "active_accounts": 500000000,
+      "loan_applications": 1000000,
+      "fraud_alerts": 100000,
+      "cross_border_tx": 5000000,
+      "concurrent": 2000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra handles the massive write throughput of global card authorization requests and real-time fraud scoring pipelines."
+    ],
+    "slug": "global-card-network"
+  },
+  {
+    "project": {
+      "name": "Global Mega Bank",
+      "type": "Retail",
+      "dau": 100000000,
+      "transactions_per_day": 500000000,
+      "active_accounts": 2000000000,
+      "loan_applications": 5000000,
+      "fraud_alerts": 500000,
+      "cross_border_tx": 10000000,
+      "concurrent": 5000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides global consistency and horizontal scalability for a billion-user relational transaction ledger and account model."
+    ],
+    "slug": "global-mega-bank"
+  },
+  {
+    "project": {
+      "name": "Hyper Neobank",
+      "type": "Neobank",
+      "dau": 100000000,
+      "transactions_per_day": 800000000,
+      "active_accounts": 1500000000,
+      "loan_applications": 10000000,
+      "fraud_alerts": 1000000,
+      "cross_border_tx": 20000000,
+      "concurrent": 8000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Global Redis provides ultra-low latency caching for real-time account balances and instant payment notifications across all continents."
+    ],
+    "slug": "hyper-neobank"
+  },
+  {
+    "project": {
+      "name": "Global Mega Corp Bank",
+      "type": "Corporate",
+      "dau": 100000000,
+      "transactions_per_day": 300000000,
+      "active_accounts": 500000000,
+      "loan_applications": 2000000,
+      "fraud_alerts": 300000,
+      "cross_border_tx": 5000000,
+      "concurrent": 3000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner automatically shards corporate compliance data globally, ensuring strong consistency for international audit trails."
+    ],
+    "slug": "global-mega-corp-bank"
+  },
+  {
+    "project": {
+      "name": "Hyper Investment Bank",
+      "type": "Investment",
+      "dau": 100000000,
+      "transactions_per_day": 1000000000,
+      "active_accounts": 50000000,
+      "loan_applications": 100000,
+      "fraud_alerts": 100000,
+      "cross_border_tx": 50000000,
+      "concurrent": 10000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides the low-latency, globally distributed relational store required for cross-regional trade settlement and risk management."
+    ],
+    "slug": "hyper-investment-bank"
+  },
+  {
+    "project": {
+      "name": "Global Mega Wealth",
+      "type": "Wealth",
+      "dau": 100000000,
+      "transactions_per_day": 100000000,
+      "active_accounts": 200000000,
+      "loan_applications": 500000,
+      "fraud_alerts": 50000,
+      "cross_border_tx": 0,
+      "concurrent": 2000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner scales globally to track billions of daily portfolio transactions and dividend distributions with strict consistency."
+    ],
+    "slug": "global-mega-wealth"
+  },
+  {
+    "project": {
+      "name": "Hyper Payment Network",
+      "type": "Payments",
+      "dau": 100000000,
+      "transactions_per_day": 2000000000,
+      "active_accounts": 1000000000,
+      "loan_applications": 0,
+      "fraud_alerts": 2000000,
+      "cross_border_tx": 100000000,
+      "concurrent": 10000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Global Redis manages real-time payment routing states and fraud scoring for ten million concurrent transactions per second globally."
+    ],
+    "slug": "hyper-payment-network"
+  },
+  {
+    "project": {
+      "name": "Global Mega Crypto",
+      "type": "Crypto",
+      "dau": 100000000,
+      "transactions_per_day": 500000000,
+      "active_accounts": 800000000,
+      "loan_applications": 0,
+      "fraud_alerts": 500000,
+      "cross_border_tx": 50000000,
+      "concurrent": 6000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner ensures global consistency for critical cross-chain bridge transactions and real-time liquidity pool management."
+    ],
+    "slug": "global-mega-crypto"
+  },
+  {
+    "project": {
+      "name": "Hyper Loan Originator",
+      "type": "Lending",
+      "dau": 100000000,
+      "transactions_per_day": 150000000,
+      "active_accounts": 2500000000,
+      "loan_applications": 30000000,
+      "fraud_alerts": 300000,
+      "cross_border_tx": 0,
+      "concurrent": 3500000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner handles the massive spike in write operations during global loan origination cycles and secondary market trading."
+    ],
+    "slug": "hyper-loan-originator"
+  },
+  {
+    "project": {
+      "name": "Global FX Clearing",
+      "type": "FX",
+      "dau": 100000000,
+      "transactions_per_day": 1500000000,
+      "active_accounts": 100000000,
+      "loan_applications": 100000,
+      "fraud_alerts": 200000,
+      "cross_border_tx": 100000000,
+      "concurrent": 15000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides massive write throughput and horizontal scalability for global FX clearing and settlement models."
+    ],
+    "slug": "global-fx-clearing"
+  },
+  {
+    "project": {
+      "name": "Hyper Card Issuer",
+      "type": "Retail",
+      "dau": 100000000,
+      "transactions_per_day": 3000000000,
+      "active_accounts": 5000000000,
+      "loan_applications": 10000000,
+      "fraud_alerts": 1000000,
+      "cross_border_tx": 50000000,
+      "concurrent": 20000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner ensures global consistency for critical high-volume card authorization requests and cross-border fraud detection."
+    ],
+    "slug": "hyper-card-issuer"
+  },
+  {
+    "project": {
+      "name": "Omni Global Bank",
+      "type": "Retail",
+      "dau": 1000000000,
+      "transactions_per_day": 5000000000,
+      "active_accounts": 20000000000,
+      "loan_applications": 50000000,
+      "fraud_alerts": 5000000,
+      "cross_border_tx": 100000000,
+      "concurrent": 50000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides global consistency and horizontal scalability for a billion-user relational transaction ledger with edge AI fraud detection."
+    ],
+    "slug": "omni-global-bank"
+  },
+  {
+    "project": {
+      "name": "Omni Neobank",
+      "type": "Neobank",
+      "dau": 1000000000,
+      "transactions_per_day": 8000000000,
+      "active_accounts": 15000000000,
+      "loan_applications": 100000000,
+      "fraud_alerts": 10000000,
+      "cross_border_tx": 200000000,
+      "concurrent": 80000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Global Redis provides ultra-low latency caching for real-time account balances across all continents with edge AI personalization."
+    ],
+    "slug": "omni-neobank"
+  },
+  {
+    "project": {
+      "name": "Omni Corp Bank",
+      "type": "Corporate",
+      "dau": 1000000000,
+      "transactions_per_day": 3000000000,
+      "active_accounts": 5000000000,
+      "loan_applications": 20000000,
+      "fraud_alerts": 3000000,
+      "cross_border_tx": 50000000,
+      "concurrent": 30000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner automatically shards corporate compliance data globally, ensuring strong consistency for international audit trails with edge AI."
+    ],
+    "slug": "omni-corp-bank"
+  },
+  {
+    "project": {
+      "name": "Omni Investment Bank",
+      "type": "Investment",
+      "dau": 1000000000,
+      "transactions_per_day": 10000000000,
+      "active_accounts": 500000000,
+      "loan_applications": 1000000,
+      "fraud_alerts": 1000000,
+      "cross_border_tx": 500000000,
+      "concurrent": 100000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides the low-latency, globally distributed relational store required for cross-regional trade settlement with edge AI risk modeling."
+    ],
+    "slug": "omni-investment-bank"
+  },
+  {
+    "project": {
+      "name": "Omni Wealth Platform",
+      "type": "Wealth",
+      "dau": 1000000000,
+      "transactions_per_day": 1000000000,
+      "active_accounts": 2000000000,
+      "loan_applications": 5000000,
+      "fraud_alerts": 500000,
+      "cross_border_tx": 0,
+      "concurrent": 20000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner scales globally to track billions of daily portfolio transactions and dividend distributions with edge AI robo-advisory."
+    ],
+    "slug": "omni-wealth-platform"
+  },
+  {
+    "project": {
+      "name": "Omni Payment Rail",
+      "type": "Payments",
+      "dau": 1000000000,
+      "transactions_per_day": 20000000000,
+      "active_accounts": 10000000000,
+      "loan_applications": 0,
+      "fraud_alerts": 20000000,
+      "cross_border_tx": 1000000000,
+      "concurrent": 100000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Global Redis manages real-time payment routing states for one hundred million concurrent transactions per second globally with edge AI fraud prevention."
+    ],
+    "slug": "omni-payment-rail"
+  },
+  {
+    "project": {
+      "name": "Omni Crypto Reserve",
+      "type": "Crypto",
+      "dau": 1000000000,
+      "transactions_per_day": 5000000000,
+      "active_accounts": 8000000000,
+      "loan_applications": 0,
+      "fraud_alerts": 5000000,
+      "cross_border_tx": 500000000,
+      "concurrent": 60000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner ensures global consistency for critical cross-chain bridge transactions and real-time liquidity pool management with edge AI."
+    ],
+    "slug": "omni-crypto-reserve"
+  },
+  {
+    "project": {
+      "name": "Omni Loan Syndicate",
+      "type": "Lending",
+      "dau": 1000000000,
+      "transactions_per_day": 1500000000,
+      "active_accounts": 25000000000,
+      "loan_applications": 300000000,
+      "fraud_alerts": 3000000,
+      "cross_border_tx": 0,
+      "concurrent": 35000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner handles the massive spike in write operations during global loan origination cycles and secondary market trading with edge AI underwriting."
+    ],
+    "slug": "omni-loan-syndicate"
+  },
+  {
+    "project": {
+      "name": "Omni FX Market",
+      "type": "FX",
+      "dau": 1000000000,
+      "transactions_per_day": 15000000000,
+      "active_accounts": 1000000000,
+      "loan_applications": 1000000,
+      "fraud_alerts": 2000000,
+      "cross_border_tx": 1000000000,
+      "concurrent": 150000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides massive write throughput and horizontal scalability for global FX clearing and settlement models with edge AI hedging."
+    ],
+    "slug": "omni-fx-market"
+  },
+  {
+    "project": {
+      "name": "Omni Card Network",
+      "type": "Retail",
+      "dau": 1000000000,
+      "transactions_per_day": 30000000000,
+      "active_accounts": 50000000000,
+      "loan_applications": 100000000,
+      "fraud_alerts": 10000000,
+      "cross_border_tx": 500000000,
+      "concurrent": 200000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner ensures global consistency for critical high-volume card authorization requests and cross-border fraud detection with edge AI."
+    ],
+    "slug": "omni-card-network"
+  },
+  {
+    "project": {
+      "name": "FedRAMP Gov Bank",
+      "type": "Gov",
+      "dau": 1000000,
+      "transactions_per_day": 3000000,
+      "active_accounts": 5000000,
+      "loan_applications": 20000,
+      "fraud_alerts": 3000,
+      "cross_border_tx": 50000,
+      "concurrent": 30000,
+      "geo": "Single",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "FedRAMP",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Azure Government cloud provides the necessary FedRAMP High authorization for secure internal government employee payroll and benefits banking."
+    ],
+    "slug": "fedramp-gov-bank"
+  },
+  {
+    "project": {
+      "name": "HIPAA Health Savings",
+      "type": "Health",
+      "dau": 1000000,
+      "transactions_per_day": 1000000,
+      "active_accounts": 2000000,
+      "loan_applications": 5000,
+      "fraud_alerts": 500,
+      "cross_border_tx": 0,
+      "concurrent": 20000,
+      "geo": "Single",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "HIPAA",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Sharded PostgreSQL on AWS provides HIPAA-eligible relational storage with strict audit logging for sensitive health savings account transactions."
+    ],
+    "slug": "hipaa-health-savings"
+  },
+  {
+    "project": {
+      "name": "GDPR EU Bank",
+      "type": "EU",
+      "dau": 10000000,
+      "transactions_per_day": 50000000,
+      "active_accounts": 200000000,
+      "loan_applications": 500000,
+      "fraud_alerts": 50000,
+      "cross_border_tx": 1000000,
+      "concurrent": 500000,
+      "geo": "EU-Only",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "GDPR",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "AWS EU regions ensure data residency compliance, while Cassandra handles the right to be forgotten efficiently for customer transaction records."
+    ],
+    "slug": "gdpr-eu-bank"
+  },
+  {
+    "project": {
+      "name": "PCI-DSS High Sec Card",
+      "type": "Card",
+      "dau": 10000000,
+      "transactions_per_day": 300000000,
+      "active_accounts": 500000000,
+      "loan_applications": 1000000,
+      "fraud_alerts": 100000,
+      "cross_border_tx": 5000000,
+      "concurrent": 2000000,
+      "geo": "Multi-Region",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "PCI-DSS",
+      "arch": "CQRS",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "CosmosDB",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "CosmosDB ensures high availability and partition tolerance for critical global card authorization and PCI-DSS compliant tokenization."
+    ],
+    "slug": "pci-dss-high-sec-card"
+  },
+  {
+    "project": {
+      "name": "SOX Public Corp Bank",
+      "type": "Corporate",
+      "dau": 1000000,
+      "transactions_per_day": 3000000,
+      "active_accounts": 5000000,
+      "loan_applications": 20000,
+      "fraud_alerts": 3000,
+      "cross_border_tx": 50000,
+      "concurrent": 30000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "SOX",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Sharded PostgreSQL ensures strict transactional integrity and immutable audit logs required for SOX compliance in public corporate banking."
+    ],
+    "slug": "sox-public-corp-bank"
+  },
+  {
+    "project": {
+      "name": "Web3 Decentralized Bank",
+      "type": "DeFi",
+      "dau": 1000000,
+      "transactions_per_day": 5000000,
+      "active_accounts": 8000000,
+      "loan_applications": 0,
+      "fraud_alerts": 5000,
+      "cross_border_tx": 500000,
+      "concurrent": 60000,
+      "geo": "Global",
+      "budget": "High",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "IPFS",
+      "storage": "IPFS",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "IPFS provides decentralized, content-addressed storage for smart contract state and verifiable on-chain transaction receipts."
+    ],
+    "slug": "web3-decentralized-bank"
+  },
+  {
+    "project": {
+      "name": "Offline Branch Banking",
+      "type": "Utility",
+      "dau": 100000,
+      "transactions_per_day": 200000,
+      "active_accounts": 3000000,
+      "loan_applications": 30000,
+      "fraud_alerts": 300,
+      "cross_border_tx": 0,
+      "concurrent": 3500,
+      "geo": "Single",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Couchbase",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Couchbase provides built-in offline-first synchronization for branch tellers processing transactions in areas with intermittent connectivity."
+    ],
+    "slug": "offline-branch-banking"
+  },
+  {
+    "project": {
+      "name": "AI Fraud Detection Heavy",
+      "type": "AI",
+      "dau": 10000000,
+      "transactions_per_day": 300000000,
+      "active_accounts": 500000000,
+      "loan_applications": 1000000,
+      "fraud_alerts": 1000000,
+      "cross_border_tx": 5000000,
+      "concurrent": 2000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Kafka integrates seamlessly with GPU compute nodes to process real-time AI fraud inference and behavioral biometric pipelines."
+    ],
+    "slug": "ai-fraud-detection-heavy"
+  },
+  {
+    "project": {
+      "name": "Real-Time Payments",
+      "type": "RTP",
+      "dau": 10000000,
+      "transactions_per_day": 200000000,
+      "active_accounts": 100000000,
+      "loan_applications": 0,
+      "fraud_alerts": 200000,
+      "cross_border_tx": 10000000,
+      "concurrent": 1000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Spanner",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra handles the extreme write volume of real-time payment clearing and instant settlement events with sub-second latency."
+    ],
+    "slug": "real-time-payments"
+  },
+  {
+    "project": {
+      "name": "Cross-Border Remittance",
+      "type": "Remittance",
+      "dau": 10000000,
+      "transactions_per_day": 150000000,
+      "active_accounts": 10000000,
+      "loan_applications": 10000,
+      "fraud_alerts": 20000,
+      "cross_border_tx": 100000000,
+      "concurrent": 1500000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "CosmosDB",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "CosmosDB provides globally distributed capabilities for managing complex multi-currency liquidity pools and real-time FX hedging."
+    ],
+    "slug": "cross-border-remittance"
+  },
+  {
+    "project": {
+      "name": "High-Frequency Trading",
+      "type": "HFT",
+      "dau": 1000000,
+      "transactions_per_day": 1000000000,
+      "active_accounts": 500000,
+      "loan_applications": 1000,
+      "fraud_alerts": 1000,
+      "cross_border_tx": 50000000,
+      "concurrent": 1000000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.999%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Sharded PostgreSQL with in-memory Redis caching ensures ultra-low latency for high-frequency trade execution and order book management."
+    ],
+    "slug": "high-frequency-trading"
+  },
+  {
+    "project": {
+      "name": "Micro-lending Emerging",
+      "type": "Lending",
+      "dau": 10000000,
+      "transactions_per_day": 15000000,
+      "active_accounts": 250000000,
+      "loan_applications": 3000000,
+      "fraud_alerts": 30000,
+      "cross_border_tx": 0,
+      "concurrent": 350000,
+      "geo": "Global",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Aggressive edge caching and optimized payloads ensure usability in low-bandwidth emerging markets for mobile micro-lending."
+    ],
+    "slug": "micro-lending-emerging"
+  },
+  {
+    "project": {
+      "name": "Central Bank Digital Currency",
+      "type": "CBDC",
+      "dau": 1000000000,
+      "transactions_per_day": 20000000000,
+      "active_accounts": 10000000000,
+      "loan_applications": 0,
+      "fraud_alerts": 20000000,
+      "cross_border_tx": 1000000000,
+      "concurrent": 100000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides global consistency and horizontal scalability for a national CBDC transaction ledger and monetary policy tracking."
+    ],
+    "slug": "central-bank-digital-currency"
+  },
+  {
+    "project": {
+      "name": "Private Banking UHNW",
+      "type": "Wealth",
+      "dau": 100000,
+      "transactions_per_day": 100000,
+      "active_accounts": 200000,
+      "loan_applications": 500,
+      "fraud_alerts": 50,
+      "cross_border_tx": 0,
+      "concurrent": 2000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Sharded PostgreSQL ensures strict transactional integrity for high-value private banking transactions and complex trust management."
+    ],
+    "slug": "private-banking-uhnw"
+  },
+  {
+    "project": {
+      "name": "Syndicated Loan Platform",
+      "type": "Corporate",
+      "dau": 1000000,
+      "transactions_per_day": 1500000,
+      "active_accounts": 25000000,
+      "loan_applications": 300000,
+      "fraud_alerts": 3000,
+      "cross_border_tx": 0,
+      "concurrent": 35000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka orchestrates the high-volume loan syndication pipeline, routing participation requests to multiple global lender banks."
+    ],
+    "slug": "syndicated-loan-platform"
+  },
+  {
+    "project": {
+      "name": "Supply Chain Finance",
+      "type": "Corporate",
+      "dau": 1000000,
+      "transactions_per_day": 3000000,
+      "active_accounts": 5000000,
+      "loan_applications": 20000,
+      "fraud_alerts": 3000,
+      "cross_border_tx": 50000,
+      "concurrent": 30000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Kafka streams high-volume invoice factoring events to Elasticsearch for real-time supply chain liquidity tracking."
+    ],
+    "slug": "supply-chain-finance"
+  },
+  {
+    "project": {
+      "name": "Agricultural Credit Coop",
+      "type": "Lending",
+      "dau": 100000,
+      "transactions_per_day": 200000,
+      "active_accounts": 3000000,
+      "loan_applications": 30000,
+      "fraud_alerts": 300,
+      "cross_border_tx": 0,
+      "concurrent": 3500,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "RabbitMQ handles background crop yield forecasting and seasonal loan disbursement workflows asynchronously without blocking member services."
+    ],
+    "slug": "agricultural-credit-coop"
+  },
+  {
+    "project": {
+      "name": "Islamic Banking System",
+      "type": "Retail",
+      "dau": 1000000,
+      "transactions_per_day": 5000000,
+      "active_accounts": 20000000,
+      "loan_applications": 50000,
+      "fraud_alerts": 5000,
+      "cross_border_tx": 100000,
+      "concurrent": 50000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Sharded PostgreSQL ensures strict transactional integrity for complex Sharia-compliant profit-sharing and Murabaha financing models."
+    ],
+    "slug": "islamic-banking-system"
+  },
+  {
+    "project": {
+      "name": "Green ESG Bank",
+      "type": "Retail",
+      "dau": 1000000,
+      "transactions_per_day": 5000000,
+      "active_accounts": 20000000,
+      "loan_applications": 50000,
+      "fraud_alerts": 5000,
+      "cross_border_tx": 100000,
+      "concurrent": 50000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Kafka streams carbon footprint tracking and ESG compliance events to downstream impact dashboards and regulatory reporting."
+    ],
+    "slug": "green-esg-bank"
+  },
+  {
+    "project": {
+      "name": "Disaster Relief Banking",
+      "type": "Utility",
+      "dau": 10000000,
+      "transactions_per_day": 50000000,
+      "active_accounts": 200000000,
+      "loan_applications": 500000,
+      "fraud_alerts": 50000,
+      "cross_border_tx": 1000000,
+      "concurrent": 500000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "CosmosDB",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "CosmosDB ensures high availability and partition tolerance for critical emergency fund disbursement in unstable network conditions."
+    ],
+    "slug": "disaster-relief-banking"
+  },
+  {
+    "project": {
+      "name": "Space Economy Bank",
+      "type": "Future",
+      "dau": 100000,
+      "transactions_per_day": 100000,
+      "active_accounts": 200000,
+      "loan_applications": 500,
+      "fraud_alerts": 50,
+      "cross_border_tx": 0,
+      "concurrent": 2000,
+      "geo": "Single",
+      "budget": "High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "PostgreSQL with high-availability replication ensures reliable storage for critical space asset collateral and orbital transaction ledgers."
+    ],
+    "slug": "space-economy-bank"
+  },
+  {
+    "project": {
+      "name": "Quantum Secure Vault",
+      "type": "Security",
+      "dau": 1000000,
+      "transactions_per_day": 1000000,
+      "active_accounts": 2000000,
+      "loan_applications": 5000,
+      "fraud_alerts": 500,
+      "cross_border_tx": 0,
+      "concurrent": 20000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.999%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Sharded PostgreSQL with post-quantum cryptography ensures maximum security for ultra-high-value digital asset custody and key management."
+    ],
+    "slug": "quantum-secure-vault"
+  },
+  {
+    "project": {
+      "name": "Biometric Auth Heavy",
+      "type": "Security",
+      "dau": 10000000,
+      "transactions_per_day": 80000000,
+      "active_accounts": 150000000,
+      "loan_applications": 1000000,
+      "fraud_alerts": 100000,
+      "cross_border_tx": 2000000,
+      "concurrent": 800000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Spanner",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra handles the extreme write volume of real-time biometric template updates and continuous authentication events globally."
+    ],
+    "slug": "biometric-auth-heavy"
+  },
+  {
+    "project": {
+      "name": "Open Banking API Hub",
+      "type": "API",
+      "dau": 1000000,
+      "transactions_per_day": 10000000,
+      "active_accounts": 5000000,
+      "loan_applications": 10000,
+      "fraud_alerts": 1000,
+      "cross_border_tx": 500000,
+      "concurrent": 100000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka streams high-volume API request events to Elasticsearch for real-time developer analytics and rate-limiting enforcement."
+    ],
+    "slug": "open-banking-api-hub"
+  },
+  {
+    "project": {
+      "name": "Embedded Finance Platform",
+      "type": "B2B2C",
+      "dau": 10000000,
+      "transactions_per_day": 50000000,
+      "active_accounts": 200000000,
+      "loan_applications": 500000,
+      "fraud_alerts": 50000,
+      "cross_border_tx": 1000000,
+      "concurrent": 500000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Spanner",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra provides massive write throughput for handling high-volume embedded payment transactions across thousands of partner platforms."
+    ],
+    "slug": "embedded-finance-platform"
+  },
+  {
+    "project": {
+      "name": "Treasury Management System",
+      "type": "Corporate",
+      "dau": 1000000,
+      "transactions_per_day": 3000000,
+      "active_accounts": 5000000,
+      "loan_applications": 20000,
+      "fraud_alerts": 3000,
+      "cross_border_tx": 50000,
+      "concurrent": 30000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Kafka streams high-volume cash positioning events to Elasticsearch for real-time global liquidity and FX exposure management."
+    ],
+    "slug": "treasury-management-system"
+  },
+  {
+    "project": {
+      "name": "Correspondent Banking Network",
+      "type": "Corporate",
+      "dau": 10000000,
+      "transactions_per_day": 30000000,
+      "active_accounts": 50000000,
+      "loan_applications": 200000,
+      "fraud_alerts": 30000,
+      "cross_border_tx": 500000,
+      "concurrent": 300000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra handles the massive write throughput of global SWIFT message routing and correspondent bank settlement tracking."
+    ],
+    "slug": "correspondent-banking-network"
+  },
+  {
+    "project": {
+      "name": "Digital Asset Custody",
+      "type": "Crypto",
+      "dau": 1000000,
+      "transactions_per_day": 5000000,
+      "active_accounts": 8000000,
+      "loan_applications": 0,
+      "fraud_alerts": 5000,
+      "cross_border_tx": 500000,
+      "concurrent": 60000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Sharded PostgreSQL ensures strict transactional integrity for high-value digital asset custody and multi-signature wallet management."
+    ],
+    "slug": "digital-asset-custody"
+  },
+  {
+    "project": {
+      "name": "Tokenized Real Estate",
+      "type": "RealEstate",
+      "dau": 1000000,
+      "transactions_per_day": 1000000,
+      "active_accounts": 2000000,
+      "loan_applications": 5000,
+      "fraud_alerts": 500,
+      "cross_border_tx": 0,
+      "concurrent": 20000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka orchestrates the high-volume tokenized real estate transaction pipeline, routing fractional ownership events to blockchain ledgers."
+    ],
+    "slug": "tokenized-real-estate"
+  },
+  {
+    "project": {
+      "name": "Global Remittance Corridor",
+      "type": "Remittance",
+      "dau": 100000000,
+      "transactions_per_day": 1500000000,
+      "active_accounts": 100000000,
+      "loan_applications": 100000,
+      "fraud_alerts": 200000,
+      "cross_border_tx": 1000000000,
+      "concurrent": 15000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides global consistency for calculating real-time cross-border remittance fees, FX conversions, and compliance screening."
+    ],
+    "slug": "global-remittance-corridor"
+  }
+]

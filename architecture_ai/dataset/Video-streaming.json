@@ -1,0 +1,3302 @@
+[
+  {
+    "project": {
+      "name": "Indie Film VOD",
+      "type": "VOD",
+      "dau": 100,
+      "daily_streams": 200,
+      "vod_uploads": 5,
+      "live_streams": 0,
+      "transcoding_hours": 10,
+      "cdn_bandwidth": "1 TB",
+      "drm_protection": "None",
+      "concurrent": 20,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "SQLite",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "SQLite provides zero-config relational storage for micro-scale VOD metadata without external database dependencies."
+    ],
+    "slug": "indie-film-vod"
+  },
+  {
+    "project": {
+      "name": "Online Course Platform",
+      "type": "Education",
+      "dau": 500,
+      "daily_streams": 1000,
+      "vod_uploads": 20,
+      "live_streams": 2,
+      "transcoding_hours": 40,
+      "cdn_bandwidth": "5 TB",
+      "drm_protection": "None",
+      "concurrent": 50,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "PostgreSQL handles structured course progress and user enrollment data reliably for a small educational user base."
+    ],
+    "slug": "online-course-platform"
+  },
+  {
+    "project": {
+      "name": "Local Church Stream",
+      "type": "Live",
+      "dau": 200,
+      "daily_streams": 400,
+      "vod_uploads": 2,
+      "live_streams": 3,
+      "transcoding_hours": 15,
+      "cdn_bandwidth": "2 TB",
+      "drm_protection": "None",
+      "concurrent": 150,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "PostgreSQL provides robust relational integrity for user profiles and service schedules without requiring complex distributed systems."
+    ],
+    "slug": "local-church-stream"
+  },
+  {
+    "project": {
+      "name": "Corporate Training VOD",
+      "type": "Enterprise",
+      "dau": 300,
+      "daily_streams": 600,
+      "vod_uploads": 10,
+      "live_streams": 1,
+      "transcoding_hours": 20,
+      "cdn_bandwidth": "3 TB",
+      "drm_protection": "None",
+      "concurrent": 40,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "SOC2",
+      "arch": "Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "SQLite",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "SQLite simplifies deployment for internal corporate training while maintaining data consistency for compliance tracking."
+    ],
+    "slug": "corporate-training-vod"
+  },
+  {
+    "project": {
+      "name": "Gaming Highlights Hub",
+      "type": "VOD",
+      "dau": 800,
+      "daily_streams": 2000,
+      "vod_uploads": 50,
+      "live_streams": 0,
+      "transcoding_hours": 100,
+      "cdn_bandwidth": "10 TB",
+      "drm_protection": "None",
+      "concurrent": 100,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "DigitalOcean"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Spaces",
+      "compute": "Droplet",
+      "cdn": "DO CDN"
+    },
+    "reasoning": [
+      "PostgreSQL on a single Droplet provides cost-effective, reliable storage for gaming clip metadata and user uploads."
+    ],
+    "slug": "gaming-highlights-hub"
+  },
+  {
+    "project": {
+      "name": "Cooking Channel VOD",
+      "type": "VOD",
+      "dau": 150,
+      "daily_streams": 300,
+      "vod_uploads": 8,
+      "live_streams": 1,
+      "transcoding_hours": 16,
+      "cdn_bandwidth": "2 TB",
+      "drm_protection": "None",
+      "concurrent": 30,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "PostgreSQL handles relational recipe and video metadata efficiently for a small, localized cooking audience."
+    ],
+    "slug": "cooking-channel-vod"
+  },
+  {
+    "project": {
+      "name": "Fitness Subscription VOD",
+      "type": "VOD",
+      "dau": 400,
+      "daily_streams": 1200,
+      "vod_uploads": 15,
+      "live_streams": 5,
+      "transcoding_hours": 30,
+      "cdn_bandwidth": "8 TB",
+      "drm_protection": "None",
+      "concurrent": 80,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "PostgreSQL enforces strict relational constraints required for subscription management and user progress tracking."
+    ],
+    "slug": "fitness-subscription-vod"
+  },
+  {
+    "project": {
+      "name": "Music Video Archive",
+      "type": "VOD",
+      "dau": 600,
+      "daily_streams": 1800,
+      "vod_uploads": 30,
+      "live_streams": 0,
+      "transcoding_hours": 60,
+      "cdn_bandwidth": "15 TB",
+      "drm_protection": "None",
+      "concurrent": 90,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "PostgreSQL supports full-text search natively for artist and track metadata without needing an external search engine."
+    ],
+    "slug": "music-video-archive"
+  },
+  {
+    "project": {
+      "name": "University Lecture Archive",
+      "type": "Education",
+      "dau": 900,
+      "daily_streams": 2500,
+      "vod_uploads": 100,
+      "live_streams": 20,
+      "transcoding_hours": 200,
+      "cdn_bandwidth": "20 TB",
+      "drm_protection": "None",
+      "concurrent": 150,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "FERPA",
+      "arch": "Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "PostgreSQL provides the strict relational integrity and access controls required for FERPA-compliant academic records."
+    ],
+    "slug": "university-lecture-archive"
+  },
+  {
+    "project": {
+      "name": "Local News VOD",
+      "type": "News",
+      "dau": 250,
+      "daily_streams": 800,
+      "vod_uploads": 25,
+      "live_streams": 10,
+      "transcoding_hours": 50,
+      "cdn_bandwidth": "12 TB",
+      "drm_protection": "None",
+      "concurrent": 60,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "PostgreSQL handles relational scheduling and broadcast metadata efficiently for a single local news station."
+    ],
+    "slug": "local-news-vod"
+  },
+  {
+    "project": {
+      "name": "Regional Sports VOD",
+      "type": "Sports",
+      "dau": 10000,
+      "daily_streams": 30000,
+      "vod_uploads": 100,
+      "live_streams": 15,
+      "transcoding_hours": 300,
+      "cdn_bandwidth": "100 TB",
+      "drm_protection": "Widevine",
+      "concurrent": 2000,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Redis caches user profiles and session data to reduce PostgreSQL load during peak regional game broadcasts."
+    ],
+    "slug": "regional-sports-vod"
+  },
+  {
+    "project": {
+      "name": "Niche Anime Stream",
+      "type": "VOD",
+      "dau": 10000,
+      "daily_streams": 40000,
+      "vod_uploads": 50,
+      "live_streams": 5,
+      "transcoding_hours": 150,
+      "cdn_bandwidth": "150 TB",
+      "drm_protection": "PlayReady",
+      "concurrent": 3000,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Redis provides fast access to user watch history and recommendation graphs for anime binge-watching sessions."
+    ],
+    "slug": "niche-anime-stream"
+  },
+  {
+    "project": {
+      "name": "Indie Game Devlogs",
+      "type": "VOD",
+      "dau": 10000,
+      "daily_streams": 20000,
+      "vod_uploads": 200,
+      "live_streams": 10,
+      "transcoding_hours": 400,
+      "cdn_bandwidth": "80 TB",
+      "drm_protection": "None",
+      "concurrent": 1500,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Redis accelerates feed generation by caching recent devlog uploads and user activity timelines."
+    ],
+    "slug": "indie-game-devlogs"
+  },
+  {
+    "project": {
+      "name": "Regional News Live",
+      "type": "Live",
+      "dau": 10000,
+      "daily_streams": 50000,
+      "vod_uploads": 50,
+      "live_streams": 24,
+      "transcoding_hours": 500,
+      "cdn_bandwidth": "200 TB",
+      "drm_protection": "None",
+      "concurrent": 4000,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Redis manages real-time viewer counts and live chat states for continuous 24/7 news broadcasting."
+    ],
+    "slug": "regional-news-live"
+  },
+  {
+    "project": {
+      "name": "Corporate Webinars",
+      "type": "Enterprise",
+      "dau": 10000,
+      "daily_streams": 15000,
+      "vod_uploads": 30,
+      "live_streams": 20,
+      "transcoding_hours": 100,
+      "cdn_bandwidth": "50 TB",
+      "drm_protection": "None",
+      "concurrent": 2500,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "SOC2",
+      "arch": "Modular Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Redis handles real-time webinar attendance tracking and Q&A session states efficiently."
+    ],
+    "slug": "corporate-webinars"
+  },
+  {
+    "project": {
+      "name": "Fitness Live Classes",
+      "type": "Live",
+      "dau": 10000,
+      "daily_streams": 25000,
+      "vod_uploads": 40,
+      "live_streams": 30,
+      "transcoding_hours": 200,
+      "cdn_bandwidth": "120 TB",
+      "drm_protection": "None",
+      "concurrent": 3500,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Redis tracks real-time workout leaderboards and active user streaks during live fitness sessions."
+    ],
+    "slug": "fitness-live-classes"
+  },
+  {
+    "project": {
+      "name": "Music Concert Archive",
+      "type": "VOD",
+      "dau": 10000,
+      "daily_streams": 35000,
+      "vod_uploads": 20,
+      "live_streams": 5,
+      "transcoding_hours": 150,
+      "cdn_bandwidth": "180 TB",
+      "drm_protection": "FairPlay",
+      "concurrent": 2800,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Redis caches audio and video metadata to ensure fast gallery loading for concert archive browsing."
+    ],
+    "slug": "music-concert-archive"
+  },
+  {
+    "project": {
+      "name": "Educational K-12",
+      "type": "Education",
+      "dau": 10000,
+      "daily_streams": 40000,
+      "vod_uploads": 500,
+      "live_streams": 100,
+      "transcoding_hours": 1000,
+      "cdn_bandwidth": "100 TB",
+      "drm_protection": "None",
+      "concurrent": 5000,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "COPPA",
+      "arch": "Modular Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "PostgreSQL enforces strict relational constraints required for COPPA-compliant student data and parental consent management."
+    ],
+    "slug": "educational-k-12"
+  },
+  {
+    "project": {
+      "name": "Real Estate Tours",
+      "type": "VOD",
+      "dau": 10000,
+      "daily_streams": 20000,
+      "vod_uploads": 300,
+      "live_streams": 50,
+      "transcoding_hours": 600,
+      "cdn_bandwidth": "90 TB",
+      "drm_protection": "None",
+      "concurrent": 1800,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Redis caches geospatial query results for nearby property video tours to reduce database load."
+    ],
+    "slug": "real-estate-tours"
+  },
+  {
+    "project": {
+      "name": "Pet Training VOD",
+      "type": "VOD",
+      "dau": 10000,
+      "daily_streams": 25000,
+      "vod_uploads": 100,
+      "live_streams": 10,
+      "transcoding_hours": 250,
+      "cdn_bandwidth": "70 TB",
+      "drm_protection": "None",
+      "concurrent": 2000,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Redis handles real-time session states for interactive pet training courses and progress tracking."
+    ],
+    "slug": "pet-training-vod"
+  },
+  {
+    "project": {
+      "name": "National Sports VOD",
+      "type": "Sports",
+      "dau": 100000,
+      "daily_streams": 500000,
+      "vod_uploads": 500,
+      "live_streams": 50,
+      "transcoding_hours": 2000,
+      "cdn_bandwidth": "1 PB",
+      "drm_protection": "Widevine",
+      "concurrent": 20000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "RabbitMQ decouples video ingest from the transcoding pipeline, ensuring smooth processing of large sports broadcasts without blocking the main thread."
+    ],
+    "slug": "national-sports-vod"
+  },
+  {
+    "project": {
+      "name": "Regional OTT Platform",
+      "type": "VOD",
+      "dau": 100000,
+      "daily_streams": 400000,
+      "vod_uploads": 200,
+      "live_streams": 20,
+      "transcoding_hours": 1500,
+      "cdn_bandwidth": "800 TB",
+      "drm_protection": "PlayReady",
+      "concurrent": 15000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "RabbitMQ manages asynchronous video transcoding queues, ensuring reliable delivery of adaptive bitrate streams."
+    ],
+    "slug": "regional-ott-platform"
+  },
+  {
+    "project": {
+      "name": "B2B Video Hosting",
+      "type": "Enterprise",
+      "dau": 100000,
+      "daily_streams": 300000,
+      "vod_uploads": 1000,
+      "live_streams": 100,
+      "transcoding_hours": 3000,
+      "cdn_bandwidth": "500 TB",
+      "drm_protection": "None",
+      "concurrent": 10000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "SOC2",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "RabbitMQ handles background video processing and thumbnail generation tasks asynchronously for enterprise uploads."
+    ],
+    "slug": "b2b-video-hosting"
+  },
+  {
+    "project": {
+      "name": "Live Esports Platform",
+      "type": "Live",
+      "dau": 100000,
+      "daily_streams": 800000,
+      "vod_uploads": 100,
+      "live_streams": 50,
+      "transcoding_hours": 1000,
+      "cdn_bandwidth": "2 PB",
+      "drm_protection": "None",
+      "concurrent": 50000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "RabbitMQ processes high-volume live chat messages and real-time viewer count updates without overwhelming the core database."
+    ],
+    "slug": "live-esports-platform"
+  },
+  {
+    "project": {
+      "name": "University MOOC",
+      "type": "Education",
+      "dau": 100000,
+      "daily_streams": 600000,
+      "vod_uploads": 2000,
+      "live_streams": 200,
+      "transcoding_hours": 5000,
+      "cdn_bandwidth": "600 TB",
+      "drm_protection": "None",
+      "concurrent": 25000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "FERPA",
+      "arch": "Microservices",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "RabbitMQ decouples course video uploads from the indexing and notification workflows to maintain low latency."
+    ],
+    "slug": "university-mooc"
+  },
+  {
+    "project": {
+      "name": "Corporate LMS Video",
+      "type": "Enterprise",
+      "dau": 100000,
+      "daily_streams": 200000,
+      "vod_uploads": 500,
+      "live_streams": 50,
+      "transcoding_hours": 1500,
+      "cdn_bandwidth": "300 TB",
+      "drm_protection": "None",
+      "concurrent": 8000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "ISO27001",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "RabbitMQ manages asynchronous email digest generation and compliance reporting tasks for corporate training."
+    ],
+    "slug": "corporate-lms-video"
+  },
+  {
+    "project": {
+      "name": "Indie Music Video Hub",
+      "type": "VOD",
+      "dau": 100000,
+      "daily_streams": 700000,
+      "vod_uploads": 1000,
+      "live_streams": 30,
+      "transcoding_hours": 2500,
+      "cdn_bandwidth": "1.2 PB",
+      "drm_protection": "FairPlay",
+      "concurrent": 30000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "RabbitMQ handles asynchronous payout calculations and royalty tracking for independent music artists."
+    ],
+    "slug": "indie-music-video-hub"
+  },
+  {
+    "project": {
+      "name": "Regional News Network",
+      "type": "News",
+      "dau": 100000,
+      "daily_streams": 900000,
+      "vod_uploads": 300,
+      "live_streams": 24,
+      "transcoding_hours": 1200,
+      "cdn_bandwidth": "1.5 PB",
+      "drm_protection": "None",
+      "concurrent": 40000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "RabbitMQ routes breaking news video clips to the CDN and search index simultaneously for instant availability."
+    ],
+    "slug": "regional-news-network"
+  },
+  {
+    "project": {
+      "name": "Fitness Subscription VOD",
+      "type": "VOD",
+      "dau": 100000,
+      "daily_streams": 500000,
+      "vod_uploads": 150,
+      "live_streams": 40,
+      "transcoding_hours": 800,
+      "cdn_bandwidth": "700 TB",
+      "drm_protection": "None",
+      "concurrent": 20000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "RabbitMQ processes background fitness data aggregation and leaderboard recalculations asynchronously."
+    ],
+    "slug": "fitness-subscription-vod"
+  },
+  {
+    "project": {
+      "name": "Documentary Streaming",
+      "type": "VOD",
+      "dau": 100000,
+      "daily_streams": 350000,
+      "vod_uploads": 50,
+      "live_streams": 5,
+      "transcoding_hours": 500,
+      "cdn_bandwidth": "600 TB",
+      "drm_protection": "Widevine",
+      "concurrent": 12000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "RabbitMQ manages the video processing pipeline, routing uploads to transcoding and subtitle generation services."
+    ],
+    "slug": "documentary-streaming"
+  },
+  {
+    "project": {
+      "name": "Cooking Masterclass",
+      "type": "VOD",
+      "dau": 100000,
+      "daily_streams": 450000,
+      "vod_uploads": 200,
+      "live_streams": 20,
+      "transcoding_hours": 600,
+      "cdn_bandwidth": "500 TB",
+      "drm_protection": "None",
+      "concurrent": 18000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "RabbitMQ decouples recipe submission from search index updates to maintain low latency during peak cooking hours."
+    ],
+    "slug": "cooking-masterclass"
+  },
+  {
+    "project": {
+      "name": "Automotive Review VOD",
+      "type": "VOD",
+      "dau": 100000,
+      "daily_streams": 300000,
+      "vod_uploads": 150,
+      "live_streams": 10,
+      "transcoding_hours": 400,
+      "cdn_bandwidth": "800 TB",
+      "drm_protection": "None",
+      "concurrent": 15000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "RabbitMQ handles high-volume video uploads and thumbnail generation tasks asynchronously for car reviews."
+    ],
+    "slug": "automotive-review-vod"
+  },
+  {
+    "project": {
+      "name": "Travel Vlog Platform",
+      "type": "VOD",
+      "dau": 100000,
+      "daily_streams": 600000,
+      "vod_uploads": 500,
+      "live_streams": 30,
+      "transcoding_hours": 1000,
+      "cdn_bandwidth": "1.1 PB",
+      "drm_protection": "None",
+      "concurrent": 25000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "RabbitMQ processes background geospatial tagging and location-based video indexing asynchronously."
+    ],
+    "slug": "travel-vlog-platform"
+  },
+  {
+    "project": {
+      "name": "Tech Tutorial Hub",
+      "type": "Education",
+      "dau": 100000,
+      "daily_streams": 800000,
+      "vod_uploads": 300,
+      "live_streams": 50,
+      "transcoding_hours": 900,
+      "cdn_bandwidth": "400 TB",
+      "drm_protection": "None",
+      "concurrent": 35000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "RabbitMQ manages asynchronous code snippet extraction and searchable transcript generation for tech tutorials."
+    ],
+    "slug": "tech-tutorial-hub"
+  },
+  {
+    "project": {
+      "name": "Religious Broadcasting",
+      "type": "Live",
+      "dau": 100000,
+      "daily_streams": 400000,
+      "vod_uploads": 100,
+      "live_streams": 50,
+      "transcoding_hours": 1500,
+      "cdn_bandwidth": "900 TB",
+      "drm_protection": "None",
+      "concurrent": 45000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "RabbitMQ handles high-concurrency donation processing and prayer request workflows during live broadcasts."
+    ],
+    "slug": "religious-broadcasting"
+  },
+  {
+    "project": {
+      "name": "National OTT Service",
+      "type": "VOD",
+      "dau": 1000000,
+      "daily_streams": 5000000,
+      "vod_uploads": 2000,
+      "live_streams": 100,
+      "transcoding_hours": 10000,
+      "cdn_bandwidth": "5 PB",
+      "drm_protection": "Widevine",
+      "concurrent": 200000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka streams user activity events to Elasticsearch for real-time feed updates and personalized video recommendations."
+    ],
+    "slug": "national-ott-service"
+  },
+  {
+    "project": {
+      "name": "Global Anime Stream",
+      "type": "VOD",
+      "dau": 1000000,
+      "daily_streams": 8000000,
+      "vod_uploads": 500,
+      "live_streams": 20,
+      "transcoding_hours": 5000,
+      "cdn_bandwidth": "8 PB",
+      "drm_protection": "PlayReady",
+      "concurrent": 300000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Kafka handles massive ingestion of video metadata and user watch history events without dropping data during traffic spikes."
+    ],
+    "slug": "global-anime-stream"
+  },
+  {
+    "project": {
+      "name": "Enterprise Video Comm",
+      "type": "Enterprise",
+      "dau": 1000000,
+      "daily_streams": 2000000,
+      "vod_uploads": 5000,
+      "live_streams": 500,
+      "transcoding_hours": 15000,
+      "cdn_bandwidth": "2 PB",
+      "drm_protection": "None",
+      "concurrent": 100000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "SOC2",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Kafka ensures SOC2-compliant audit logging of all video access and sharing events asynchronously."
+    ],
+    "slug": "enterprise-video-comm"
+  },
+  {
+    "project": {
+      "name": "Live Sports Betting/Stream",
+      "type": "Sports",
+      "dau": 1000000,
+      "daily_streams": 10000000,
+      "vod_uploads": 1000,
+      "live_streams": 100,
+      "transcoding_hours": 8000,
+      "cdn_bandwidth": "15 PB",
+      "drm_protection": "Widevine",
+      "concurrent": 500000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "PCI-DSS",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka processes high-throughput betting events and live stream synchronization with strict ordering guarantees."
+    ],
+    "slug": "live-sports-bettingstream"
+  },
+  {
+    "project": {
+      "name": "Global Education Platform",
+      "type": "Education",
+      "dau": 1000000,
+      "daily_streams": 6000000,
+      "vod_uploads": 10000,
+      "live_streams": 1000,
+      "transcoding_hours": 20000,
+      "cdn_bandwidth": "3 PB",
+      "drm_protection": "None",
+      "concurrent": 250000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "FERPA",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Kafka streams directory updates and course enrollment changes to maintain real-time search accuracy across global campuses."
+    ],
+    "slug": "global-education-platform"
+  },
+  {
+    "project": {
+      "name": "Corporate Global LMS",
+      "type": "Enterprise",
+      "dau": 1000000,
+      "daily_streams": 3000000,
+      "vod_uploads": 8000,
+      "live_streams": 800,
+      "transcoding_hours": 25000,
+      "cdn_bandwidth": "1.5 PB",
+      "drm_protection": "None",
+      "concurrent": 150000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "ISO27001",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Kafka routes forum posts and training completions to Elasticsearch for immediate full-text search availability."
+    ],
+    "slug": "corporate-global-lms"
+  },
+  {
+    "project": {
+      "name": "Music Streaming Video",
+      "type": "VOD",
+      "dau": 1000000,
+      "daily_streams": 12000000,
+      "vod_uploads": 3000,
+      "live_streams": 100,
+      "transcoding_hours": 12000,
+      "cdn_bandwidth": "10 PB",
+      "drm_protection": "FairPlay",
+      "concurrent": 400000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka processes high-volume subscription and tip events to update artist dashboards and royalty calculations in real-time."
+    ],
+    "slug": "music-streaming-video"
+  },
+  {
+    "project": {
+      "name": "Regional News Live+VOD",
+      "type": "News",
+      "dau": 1000000,
+      "daily_streams": 9000000,
+      "vod_uploads": 2000,
+      "live_streams": 50,
+      "transcoding_hours": 6000,
+      "cdn_bandwidth": "12 PB",
+      "drm_protection": "None",
+      "concurrent": 350000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Kafka streams breaking news alerts and video metadata to Elasticsearch for instant local search result updates."
+    ],
+    "slug": "regional-news-livevod"
+  },
+  {
+    "project": {
+      "name": "Fitness Global App",
+      "type": "VOD",
+      "dau": 1000000,
+      "daily_streams": 5000000,
+      "vod_uploads": 1500,
+      "live_streams": 200,
+      "transcoding_hours": 4000,
+      "cdn_bandwidth": "4 PB",
+      "drm_protection": "None",
+      "concurrent": 200000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "HIPAA",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Kafka ensures HIPAA-compliant audit logging of all health-related workout metrics and video access asynchronously."
+    ],
+    "slug": "fitness-global-app"
+  },
+  {
+    "project": {
+      "name": "Documentary Global",
+      "type": "VOD",
+      "dau": 1000000,
+      "daily_streams": 4000000,
+      "vod_uploads": 500,
+      "live_streams": 20,
+      "transcoding_hours": 3000,
+      "cdn_bandwidth": "6 PB",
+      "drm_protection": "Widevine",
+      "concurrent": 150000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka orchestrates the video processing pipeline, routing uploads to transcoding, subtitle generation, and CDN distribution."
+    ],
+    "slug": "documentary-global"
+  },
+  {
+    "project": {
+      "name": "Cooking Global Network",
+      "type": "VOD",
+      "dau": 1000000,
+      "daily_streams": 6000000,
+      "vod_uploads": 2000,
+      "live_streams": 100,
+      "transcoding_hours": 5000,
+      "cdn_bandwidth": "3 PB",
+      "drm_protection": "None",
+      "concurrent": 250000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Kafka routes recipe submissions and video uploads to Elasticsearch for immediate full-text search availability."
+    ],
+    "slug": "cooking-global-network"
+  },
+  {
+    "project": {
+      "name": "Auto Global Reviews",
+      "type": "VOD",
+      "dau": 1000000,
+      "daily_streams": 3500000,
+      "vod_uploads": 1500,
+      "live_streams": 50,
+      "transcoding_hours": 4000,
+      "cdn_bandwidth": "5 PB",
+      "drm_protection": "None",
+      "concurrent": 180000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Kafka handles high-volume video uploads and thumbnail generation tasks asynchronously for global car reviews."
+    ],
+    "slug": "auto-global-reviews"
+  },
+  {
+    "project": {
+      "name": "Travel Global VOD",
+      "type": "VOD",
+      "dau": 1000000,
+      "daily_streams": 7000000,
+      "vod_uploads": 5000,
+      "live_streams": 200,
+      "transcoding_hours": 10000,
+      "cdn_bandwidth": "8 PB",
+      "drm_protection": "PlayReady",
+      "concurrent": 300000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka processes background geospatial tagging and location-based video indexing asynchronously for global travel content."
+    ],
+    "slug": "travel-global-vod"
+  },
+  {
+    "project": {
+      "name": "Tech Global Tutorials",
+      "type": "Education",
+      "dau": 1000000,
+      "daily_streams": 9000000,
+      "vod_uploads": 3000,
+      "live_streams": 300,
+      "transcoding_hours": 8000,
+      "cdn_bandwidth": "2 PB",
+      "drm_protection": "None",
+      "concurrent": 400000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Kafka manages asynchronous code snippet extraction and searchable transcript generation for global tech tutorials."
+    ],
+    "slug": "tech-global-tutorials"
+  },
+  {
+    "project": {
+      "name": "Faith Global Broadcast",
+      "type": "Live",
+      "dau": 1000000,
+      "daily_streams": 5000000,
+      "vod_uploads": 1000,
+      "live_streams": 200,
+      "transcoding_hours": 12000,
+      "cdn_bandwidth": "6 PB",
+      "drm_protection": "None",
+      "concurrent": 500000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Kafka handles high-concurrency global donation processing and prayer request workflows during live broadcasts."
+    ],
+    "slug": "faith-global-broadcast"
+  },
+  {
+    "project": {
+      "name": "Mega OTT Platform",
+      "type": "VOD",
+      "dau": 10000000,
+      "daily_streams": 50000000,
+      "vod_uploads": 20000,
+      "live_streams": 1000,
+      "transcoding_hours": 100000,
+      "cdn_bandwidth": "50 PB",
+      "drm_protection": "Multi-DRM",
+      "concurrent": 2000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "GDPR",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra provides massive write throughput and horizontal scalability for the global activity feed and video metadata."
+    ],
+    "slug": "mega-ott-platform"
+  },
+  {
+    "project": {
+      "name": "Global Anime Mega",
+      "type": "VOD",
+      "dau": 10000000,
+      "daily_streams": 80000000,
+      "vod_uploads": 5000,
+      "live_streams": 200,
+      "transcoding_hours": 50000,
+      "cdn_bandwidth": "80 PB",
+      "drm_protection": "Multi-DRM",
+      "concurrent": 3000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Spanner",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra handles billions of daily view count increments and timeline updates with zero downtime for anime streaming."
+    ],
+    "slug": "global-anime-mega"
+  },
+  {
+    "project": {
+      "name": "Enterprise Mega Video",
+      "type": "Enterprise",
+      "dau": 10000000,
+      "daily_streams": 20000000,
+      "vod_uploads": 50000,
+      "live_streams": 5000,
+      "transcoding_hours": 150000,
+      "cdn_bandwidth": "20 PB",
+      "drm_protection": "None",
+      "concurrent": 1000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "SOC2",
+      "arch": "CQRS",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "CosmosDB",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "CosmosDB provides globally distributed, multi-model database capabilities with managed PaaS simplicity for enterprise video."
+    ],
+    "slug": "enterprise-mega-video"
+  },
+  {
+    "project": {
+      "name": "Live Esports Mega",
+      "type": "Live",
+      "dau": 10000000,
+      "daily_streams": 100000000,
+      "vod_uploads": 10000,
+      "live_streams": 1000,
+      "transcoding_hours": 80000,
+      "cdn_bandwidth": "150 PB",
+      "drm_protection": "None",
+      "concurrent": 5000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra handles the massive write throughput of live chat messages and real-time viewer counts for global esports."
+    ],
+    "slug": "live-esports-mega"
+  },
+  {
+    "project": {
+      "name": "Global Edu Mega",
+      "type": "Education",
+      "dau": 10000000,
+      "daily_streams": 60000000,
+      "vod_uploads": 100000,
+      "live_streams": 10000,
+      "transcoding_hours": 200000,
+      "cdn_bandwidth": "30 PB",
+      "drm_protection": "None",
+      "concurrent": 2500000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "FERPA",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Spanner",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra scales horizontally to track billions of daily course completions and video interactions globally."
+    ],
+    "slug": "global-edu-mega"
+  },
+  {
+    "project": {
+      "name": "Corporate LMS Mega",
+      "type": "Enterprise",
+      "dau": 10000000,
+      "daily_streams": 30000000,
+      "vod_uploads": 80000,
+      "live_streams": 8000,
+      "transcoding_hours": 250000,
+      "cdn_bandwidth": "15 PB",
+      "drm_protection": "None",
+      "concurrent": 1500000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "ISO27001",
+      "arch": "CQRS",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "CosmosDB",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "CosmosDB provides the massive write scalability needed for high-volume corporate training compliance and tracking."
+    ],
+    "slug": "corporate-lms-mega"
+  },
+  {
+    "project": {
+      "name": "Music Video Mega",
+      "type": "VOD",
+      "dau": 10000000,
+      "daily_streams": 120000000,
+      "vod_uploads": 30000,
+      "live_streams": 1000,
+      "transcoding_hours": 120000,
+      "cdn_bandwidth": "100 PB",
+      "drm_protection": "Multi-DRM",
+      "concurrent": 4000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra scales horizontally to track billions of daily music video plays and playlist additions globally."
+    ],
+    "slug": "music-video-mega"
+  },
+  {
+    "project": {
+      "name": "News Mega Network",
+      "type": "News",
+      "dau": 10000000,
+      "daily_streams": 90000000,
+      "vod_uploads": 20000,
+      "live_streams": 500,
+      "transcoding_hours": 60000,
+      "cdn_bandwidth": "120 PB",
+      "drm_protection": "None",
+      "concurrent": 3500000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Spanner",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra provides the write scalability needed for high-volume news article comments and video reactions."
+    ],
+    "slug": "news-mega-network"
+  },
+  {
+    "project": {
+      "name": "Fitness Mega App",
+      "type": "VOD",
+      "dau": 10000000,
+      "daily_streams": 50000000,
+      "vod_uploads": 15000,
+      "live_streams": 2000,
+      "transcoding_hours": 40000,
+      "cdn_bandwidth": "40 PB",
+      "drm_protection": "None",
+      "concurrent": 2000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "HIPAA",
+      "arch": "CQRS",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "CosmosDB",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "CosmosDB ensures high availability and partition tolerance for critical health-related fitness metrics and video access."
+    ],
+    "slug": "fitness-mega-app"
+  },
+  {
+    "project": {
+      "name": "Docu Mega Global",
+      "type": "VOD",
+      "dau": 10000000,
+      "daily_streams": 40000000,
+      "vod_uploads": 5000,
+      "live_streams": 200,
+      "transcoding_hours": 30000,
+      "cdn_bandwidth": "60 PB",
+      "drm_protection": "Multi-DRM",
+      "concurrent": 1500000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra handles the massive spike in write operations during live global documentary premieres and real-time scoring."
+    ],
+    "slug": "docu-mega-global"
+  },
+  {
+    "project": {
+      "name": "Cooking Mega Network",
+      "type": "VOD",
+      "dau": 10000000,
+      "daily_streams": 60000000,
+      "vod_uploads": 20000,
+      "live_streams": 1000,
+      "transcoding_hours": 50000,
+      "cdn_bandwidth": "30 PB",
+      "drm_protection": "None",
+      "concurrent": 2500000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Spanner",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra provides the massive write throughput and horizontal scalability for global recipe and video metadata."
+    ],
+    "slug": "cooking-mega-network"
+  },
+  {
+    "project": {
+      "name": "Auto Mega Reviews",
+      "type": "VOD",
+      "dau": 10000000,
+      "daily_streams": 35000000,
+      "vod_uploads": 15000,
+      "live_streams": 500,
+      "transcoding_hours": 40000,
+      "cdn_bandwidth": "50 PB",
+      "drm_protection": "None",
+      "concurrent": 1800000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "CosmosDB",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "CosmosDB provides globally distributed, multi-model database capabilities for high-volume global car review metadata."
+    ],
+    "slug": "auto-mega-reviews"
+  },
+  {
+    "project": {
+      "name": "Travel Mega VOD",
+      "type": "VOD",
+      "dau": 10000000,
+      "daily_streams": 70000000,
+      "vod_uploads": 50000,
+      "live_streams": 2000,
+      "transcoding_hours": 100000,
+      "cdn_bandwidth": "80 PB",
+      "drm_protection": "Multi-DRM",
+      "concurrent": 3000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra handles billions of daily geospatial check-ins and location-based video interactions globally."
+    ],
+    "slug": "travel-mega-vod"
+  },
+  {
+    "project": {
+      "name": "Tech Mega Tutorials",
+      "type": "Education",
+      "dau": 10000000,
+      "daily_streams": 90000000,
+      "vod_uploads": 30000,
+      "live_streams": 3000,
+      "transcoding_hours": 80000,
+      "cdn_bandwidth": "20 PB",
+      "drm_protection": "None",
+      "concurrent": 4000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Spanner",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra scales horizontally to track billions of daily code snippet interactions and tutorial completions."
+    ],
+    "slug": "tech-mega-tutorials"
+  },
+  {
+    "project": {
+      "name": "Faith Mega Broadcast",
+      "type": "Live",
+      "dau": 10000000,
+      "daily_streams": 50000000,
+      "vod_uploads": 10000,
+      "live_streams": 2000,
+      "transcoding_hours": 120000,
+      "cdn_bandwidth": "60 PB",
+      "drm_protection": "None",
+      "concurrent": 5000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "CosmosDB",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "CosmosDB ensures high availability and partition tolerance for critical global donation processing and prayer requests."
+    ],
+    "slug": "faith-mega-broadcast"
+  },
+  {
+    "project": {
+      "name": "Global Mega OTT",
+      "type": "VOD",
+      "dau": 100000000,
+      "daily_streams": 500000000,
+      "vod_uploads": 200000,
+      "live_streams": 10000,
+      "transcoding_hours": 1000000,
+      "cdn_bandwidth": "500 PB",
+      "drm_protection": "Multi-DRM",
+      "concurrent": 20000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides global consistency and horizontal scalability for a hundred-million-user relational video metadata model."
+    ],
+    "slug": "global-mega-ott"
+  },
+  {
+    "project": {
+      "name": "Global Anime Mega+",
+      "type": "VOD",
+      "dau": 100000000,
+      "daily_streams": 800000000,
+      "vod_uploads": 50000,
+      "live_streams": 2000,
+      "transcoding_hours": 500000,
+      "cdn_bandwidth": "800 PB",
+      "drm_protection": "Multi-DRM",
+      "concurrent": 30000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Global Redis provides ultra-low latency caching for video metadata and user sessions across all continents for anime."
+    ],
+    "slug": "global-anime-mega"
+  },
+  {
+    "project": {
+      "name": "Enterprise Global Mega",
+      "type": "Enterprise",
+      "dau": 100000000,
+      "daily_streams": 200000000,
+      "vod_uploads": 500000,
+      "live_streams": 50000,
+      "transcoding_hours": 1500000,
+      "cdn_bandwidth": "200 PB",
+      "drm_protection": "None",
+      "concurrent": 10000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner automatically shards enterprise video metadata globally, ensuring strong consistency for compliance tracking."
+    ],
+    "slug": "enterprise-global-mega"
+  },
+  {
+    "project": {
+      "name": "Live Esports Global",
+      "type": "Live",
+      "dau": 100000000,
+      "daily_streams": 1000000000,
+      "vod_uploads": 100000,
+      "live_streams": 10000,
+      "transcoding_hours": 800000,
+      "cdn_bandwidth": "1500 PB",
+      "drm_protection": "None",
+      "concurrent": 50000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Global Redis manages real-time geospatial matching and chat states for fifty million concurrent esports viewers globally."
+    ],
+    "slug": "live-esports-global"
+  },
+  {
+    "project": {
+      "name": "Global Edu Mega+",
+      "type": "Education",
+      "dau": 100000000,
+      "daily_streams": 600000000,
+      "vod_uploads": 1000000,
+      "live_streams": 100000,
+      "transcoding_hours": 2000000,
+      "cdn_bandwidth": "300 PB",
+      "drm_protection": "None",
+      "concurrent": 25000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides the low-latency, globally distributed relational store required for cross-regional education stats."
+    ],
+    "slug": "global-edu-mega"
+  },
+  {
+    "project": {
+      "name": "Corporate LMS Global",
+      "type": "Enterprise",
+      "dau": 100000000,
+      "daily_streams": 300000000,
+      "vod_uploads": 800000,
+      "live_streams": 80000,
+      "transcoding_hours": 2500000,
+      "cdn_bandwidth": "150 PB",
+      "drm_protection": "None",
+      "concurrent": 15000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner scales globally to track billions of daily corporate training completions and compliance interactions."
+    ],
+    "slug": "corporate-lms-global"
+  },
+  {
+    "project": {
+      "name": "Music Video Global",
+      "type": "VOD",
+      "dau": 100000000,
+      "daily_streams": 1200000000,
+      "vod_uploads": 300000,
+      "live_streams": 10000,
+      "transcoding_hours": 1200000,
+      "cdn_bandwidth": "1000 PB",
+      "drm_protection": "Multi-DRM",
+      "concurrent": 40000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner ensures global consistency for live music video premieres and real-time fan engagement metrics."
+    ],
+    "slug": "music-video-global"
+  },
+  {
+    "project": {
+      "name": "News Global Mega",
+      "type": "News",
+      "dau": 100000000,
+      "daily_streams": 900000000,
+      "vod_uploads": 200000,
+      "live_streams": 5000,
+      "transcoding_hours": 600000,
+      "cdn_bandwidth": "1200 PB",
+      "drm_protection": "None",
+      "concurrent": 35000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides the massive write scalability and global read replication needed for breaking global news feeds."
+    ],
+    "slug": "news-global-mega"
+  },
+  {
+    "project": {
+      "name": "Fitness Global Mega",
+      "type": "VOD",
+      "dau": 100000000,
+      "daily_streams": 500000000,
+      "vod_uploads": 150000,
+      "live_streams": 20000,
+      "transcoding_hours": 400000,
+      "cdn_bandwidth": "400 PB",
+      "drm_protection": "None",
+      "concurrent": 20000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner guarantees strong global consistency for critical health-related fitness metrics and video access tracking."
+    ],
+    "slug": "fitness-global-mega"
+  },
+  {
+    "project": {
+      "name": "Docu Global Mega",
+      "type": "VOD",
+      "dau": 100000000,
+      "daily_streams": 400000000,
+      "vod_uploads": 50000,
+      "live_streams": 2000,
+      "transcoding_hours": 300000,
+      "cdn_bandwidth": "600 PB",
+      "drm_protection": "Multi-DRM",
+      "concurrent": 15000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner handles the massive spike in write operations during live global documentary premieres with strict consistency."
+    ],
+    "slug": "docu-global-mega"
+  },
+  {
+    "project": {
+      "name": "Cooking Global Mega",
+      "type": "VOD",
+      "dau": 100000000,
+      "daily_streams": 600000000,
+      "vod_uploads": 200000,
+      "live_streams": 10000,
+      "transcoding_hours": 500000,
+      "cdn_bandwidth": "300 PB",
+      "drm_protection": "None",
+      "concurrent": 25000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides massive write throughput and horizontal scalability for global recipe and video metadata models."
+    ],
+    "slug": "cooking-global-mega"
+  },
+  {
+    "project": {
+      "name": "Auto Global Mega",
+      "type": "VOD",
+      "dau": 100000000,
+      "daily_streams": 350000000,
+      "vod_uploads": 150000,
+      "live_streams": 5000,
+      "transcoding_hours": 400000,
+      "cdn_bandwidth": "500 PB",
+      "drm_protection": "None",
+      "concurrent": 18000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides globally distributed, multi-model database capabilities for high-volume global car review metadata."
+    ],
+    "slug": "auto-global-mega"
+  },
+  {
+    "project": {
+      "name": "Travel Global Mega",
+      "type": "VOD",
+      "dau": 100000000,
+      "daily_streams": 700000000,
+      "vod_uploads": 500000,
+      "live_streams": 20000,
+      "transcoding_hours": 1000000,
+      "cdn_bandwidth": "800 PB",
+      "drm_protection": "Multi-DRM",
+      "concurrent": 30000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner handles billions of daily geospatial check-ins and location-based video interactions with global consistency."
+    ],
+    "slug": "travel-global-mega"
+  },
+  {
+    "project": {
+      "name": "Tech Global Mega",
+      "type": "Education",
+      "dau": 100000000,
+      "daily_streams": 900000000,
+      "vod_uploads": 300000,
+      "live_streams": 30000,
+      "transcoding_hours": 800000,
+      "cdn_bandwidth": "200 PB",
+      "drm_protection": "None",
+      "concurrent": 40000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner scales globally to track billions of daily code snippet interactions and tutorial completions with strict consistency."
+    ],
+    "slug": "tech-global-mega"
+  },
+  {
+    "project": {
+      "name": "Faith Global Mega",
+      "type": "Live",
+      "dau": 100000000,
+      "daily_streams": 500000000,
+      "vod_uploads": 100000,
+      "live_streams": 20000,
+      "transcoding_hours": 1200000,
+      "cdn_bandwidth": "600 PB",
+      "drm_protection": "None",
+      "concurrent": 50000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner guarantees strong global consistency for critical global donation processing and prayer request tracking."
+    ],
+    "slug": "faith-global-mega"
+  },
+  {
+    "project": {
+      "name": "Hyper OTT",
+      "type": "VOD",
+      "dau": 1000000000,
+      "daily_streams": 5000000000,
+      "vod_uploads": 2000000,
+      "live_streams": 100000,
+      "transcoding_hours": 10000000,
+      "cdn_bandwidth": "5 EB",
+      "drm_protection": "Multi-DRM",
+      "concurrent": 200000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides global consistency and horizontal scalability for a billion-user relational video metadata model with edge AI."
+    ],
+    "slug": "hyper-ott"
+  },
+  {
+    "project": {
+      "name": "Hyper Anime",
+      "type": "VOD",
+      "dau": 1000000000,
+      "daily_streams": 8000000000,
+      "vod_uploads": 500000,
+      "live_streams": 20000,
+      "transcoding_hours": 5000000,
+      "cdn_bandwidth": "8 EB",
+      "drm_protection": "Multi-DRM",
+      "concurrent": 300000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Global Redis provides ultra-low latency caching for video metadata and user sessions across all continents for anime with edge AI."
+    ],
+    "slug": "hyper-anime"
+  },
+  {
+    "project": {
+      "name": "Hyper Enterprise",
+      "type": "Enterprise",
+      "dau": 1000000000,
+      "daily_streams": 2000000000,
+      "vod_uploads": 5000000,
+      "live_streams": 500000,
+      "transcoding_hours": 15000000,
+      "cdn_bandwidth": "2 EB",
+      "drm_protection": "None",
+      "concurrent": 100000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner automatically shards enterprise video metadata globally, ensuring strong consistency for compliance tracking with edge AI."
+    ],
+    "slug": "hyper-enterprise"
+  },
+  {
+    "project": {
+      "name": "Hyper Esports",
+      "type": "Live",
+      "dau": 1000000000,
+      "daily_streams": 10000000000,
+      "vod_uploads": 1000000,
+      "live_streams": 100000,
+      "transcoding_hours": 8000000,
+      "cdn_bandwidth": "15 EB",
+      "drm_protection": "None",
+      "concurrent": 500000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Global Redis manages real-time geospatial matching and chat states for five hundred million concurrent esports viewers globally with edge AI."
+    ],
+    "slug": "hyper-esports"
+  },
+  {
+    "project": {
+      "name": "Hyper Edu",
+      "type": "Education",
+      "dau": 1000000000,
+      "daily_streams": 6000000000,
+      "vod_uploads": 10000000,
+      "live_streams": 1000000,
+      "transcoding_hours": 20000000,
+      "cdn_bandwidth": "3 EB",
+      "drm_protection": "None",
+      "concurrent": 250000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides the low-latency, globally distributed relational store required for cross-regional education stats with edge AI."
+    ],
+    "slug": "hyper-edu"
+  },
+  {
+    "project": {
+      "name": "Hyper LMS",
+      "type": "Enterprise",
+      "dau": 1000000000,
+      "daily_streams": 3000000000,
+      "vod_uploads": 8000000,
+      "live_streams": 800000,
+      "transcoding_hours": 25000000,
+      "cdn_bandwidth": "1.5 EB",
+      "drm_protection": "None",
+      "concurrent": 150000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner scales globally to track billions of daily corporate training completions and compliance interactions with edge AI."
+    ],
+    "slug": "hyper-lms"
+  },
+  {
+    "project": {
+      "name": "Hyper Music",
+      "type": "VOD",
+      "dau": 1000000000,
+      "daily_streams": 12000000000,
+      "vod_uploads": 3000000,
+      "live_streams": 100000,
+      "transcoding_hours": 12000000,
+      "cdn_bandwidth": "10 EB",
+      "drm_protection": "Multi-DRM",
+      "concurrent": 400000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner ensures global consistency for live music video premieres and real-time fan engagement metrics with edge AI."
+    ],
+    "slug": "hyper-music"
+  },
+  {
+    "project": {
+      "name": "Hyper News",
+      "type": "News",
+      "dau": 1000000000,
+      "daily_streams": 9000000000,
+      "vod_uploads": 2000000,
+      "live_streams": 50000,
+      "transcoding_hours": 6000000,
+      "cdn_bandwidth": "12 EB",
+      "drm_protection": "None",
+      "concurrent": 350000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides the massive write scalability and global read replication needed for breaking global news feeds with edge AI."
+    ],
+    "slug": "hyper-news"
+  },
+  {
+    "project": {
+      "name": "Hyper Fitness",
+      "type": "VOD",
+      "dau": 1000000000,
+      "daily_streams": 5000000000,
+      "vod_uploads": 1500000,
+      "live_streams": 200000,
+      "transcoding_hours": 4000000,
+      "cdn_bandwidth": "4 EB",
+      "drm_protection": "None",
+      "concurrent": 200000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner guarantees strong global consistency for critical health-related fitness metrics and video access tracking with edge AI."
+    ],
+    "slug": "hyper-fitness"
+  },
+  {
+    "project": {
+      "name": "Hyper Docu",
+      "type": "VOD",
+      "dau": 1000000000,
+      "daily_streams": 4000000000,
+      "vod_uploads": 500000,
+      "live_streams": 20000,
+      "transcoding_hours": 3000000,
+      "cdn_bandwidth": "6 EB",
+      "drm_protection": "Multi-DRM",
+      "concurrent": 150000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner handles the massive spike in write operations during live global documentary premieres with strict consistency and edge AI."
+    ],
+    "slug": "hyper-docu"
+  },
+  {
+    "project": {
+      "name": "HIPAA Medical Video",
+      "type": "Health",
+      "dau": 1000000,
+      "daily_streams": 2000000,
+      "vod_uploads": 50000,
+      "live_streams": 1000,
+      "transcoding_hours": 100000,
+      "cdn_bandwidth": "5 PB",
+      "drm_protection": "None",
+      "concurrent": 100000,
+      "geo": "Single",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "HIPAA",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "PostgreSQL on AWS provides HIPAA-eligible relational storage with strict access controls and audit logging for medical video data."
+    ],
+    "slug": "hipaa-medical-video"
+  },
+  {
+    "project": {
+      "name": "FedRAMP Gov Video",
+      "type": "Enterprise",
+      "dau": 1000000,
+      "daily_streams": 1500000,
+      "vod_uploads": 20000,
+      "live_streams": 500,
+      "transcoding_hours": 50000,
+      "cdn_bandwidth": "2 PB",
+      "drm_protection": "None",
+      "concurrent": 50000,
+      "geo": "Single",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "FedRAMP",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Azure Government cloud provides the necessary FedRAMP High authorization for secure internal government video communications."
+    ],
+    "slug": "fedramp-gov-video"
+  },
+  {
+    "project": {
+      "name": "Low-Bandwidth Emerging Live",
+      "type": "Live",
+      "dau": 10000000,
+      "daily_streams": 50000000,
+      "vod_uploads": 10000,
+      "live_streams": 1000,
+      "transcoding_hours": 20000,
+      "cdn_bandwidth": "10 PB",
+      "drm_protection": "None",
+      "concurrent": 2000000,
+      "geo": "Global",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Aggressive edge caching and multi-CDN routing ensure low-bandwidth usability in emerging markets by serving optimized adaptive bitrate streams."
+    ],
+    "slug": "low-bandwidth-emerging-live"
+  },
+  {
+    "project": {
+      "name": "Web3 Decentralized VOD",
+      "type": "VOD",
+      "dau": 1000000,
+      "daily_streams": 5000000,
+      "vod_uploads": 100000,
+      "live_streams": 100,
+      "transcoding_hours": 50000,
+      "cdn_bandwidth": "2 PB",
+      "drm_protection": "None",
+      "concurrent": 200000,
+      "geo": "Global",
+      "budget": "High",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "IPFS",
+      "storage": "IPFS",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "IPFS provides decentralized, content-addressed storage for user-generated media, ensuring censorship resistance and peer-to-peer delivery."
+    ],
+    "slug": "web3-decentralized-vod"
+  },
+  {
+    "project": {
+      "name": "AR/VR Spatial Video",
+      "type": "VOD",
+      "dau": 10000000,
+      "daily_streams": 20000000,
+      "vod_uploads": 50000,
+      "live_streams": 500,
+      "transcoding_hours": 200000,
+      "cdn_bandwidth": "50 PB",
+      "drm_protection": "None",
+      "concurrent": 1000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Spanner",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "GCS provides massive, cost-effective object storage and high-throughput CDN for heavy 8K/3D spatial video uploads and streaming."
+    ],
+    "slug": "arvr-spatial-video"
+  },
+  {
+    "project": {
+      "name": "Offline-First Field Video",
+      "type": "Enterprise",
+      "dau": 100000,
+      "daily_streams": 200000,
+      "vod_uploads": 10000,
+      "live_streams": 50,
+      "transcoding_hours": 5000,
+      "cdn_bandwidth": "500 TB",
+      "drm_protection": "None",
+      "concurrent": 10000,
+      "geo": "Single",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Couchbase",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Couchbase provides built-in offline-first synchronization for field workers recording video in areas with intermittent connectivity."
+    ],
+    "slug": "offline-first-field-video"
+  },
+  {
+    "project": {
+      "name": "Ultra-Low Latency Live",
+      "type": "Live",
+      "dau": 10000000,
+      "daily_streams": 80000000,
+      "vod_uploads": 5000,
+      "live_streams": 5000,
+      "transcoding_hours": 100000,
+      "cdn_bandwidth": "100 PB",
+      "drm_protection": "None",
+      "concurrent": 5000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra handles the extreme write volume of WebRTC and LL-HLS live chat and interaction events with sub-second latency."
+    ],
+    "slug": "ultra-low-latency-live"
+  },
+  {
+    "project": {
+      "name": "8K Raw Footage Archive",
+      "type": "VOD",
+      "dau": 1000000,
+      "daily_streams": 1000000,
+      "vod_uploads": 10000,
+      "live_streams": 10,
+      "transcoding_hours": 500000,
+      "cdn_bandwidth": "20 PB",
+      "drm_protection": "None",
+      "concurrent": 50000,
+      "geo": "Single",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "GCS provides massive, highly durable object storage specifically optimized for storing and serving multi-terabyte 8K raw video files."
+    ],
+    "slug": "8k-raw-footage-archive"
+  },
+  {
+    "project": {
+      "name": "Interactive Branching Video",
+      "type": "VOD",
+      "dau": 1000000,
+      "daily_streams": 5000000,
+      "vod_uploads": 2000,
+      "live_streams": 50,
+      "transcoding_hours": 10000,
+      "cdn_bandwidth": "5 PB",
+      "drm_protection": "None",
+      "concurrent": 200000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "CosmosDB",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "CosmosDB provides the low-latency, globally distributed state management required for tracking user choices in interactive branching narratives."
+    ],
+    "slug": "interactive-branching-video"
+  },
+  {
+    "project": {
+      "name": "AI Generated Video Stream",
+      "type": "VOD",
+      "dau": 10000000,
+      "daily_streams": 30000000,
+      "vod_uploads": 1000000,
+      "live_streams": 10000,
+      "transcoding_hours": 500000,
+      "cdn_bandwidth": "20 PB",
+      "drm_protection": "None",
+      "concurrent": 1000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Kafka integrates seamlessly with GPU compute nodes to process real-time AI video generation and inference pipelines at scale."
+    ],
+    "slug": "ai-generated-video-stream"
+  }
+]

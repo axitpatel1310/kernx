@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="analysis-section">
+
+    {% if analysis %}
+
+        <div class="analysis-card">
+
+            <div class="card-header">
+                <i class="fa-solid fa-microchip card-icon"></i>
+                <h2>Architectural Analysis</h2>
+            </div>
+
+            <div class="analysis-content">
+                {{ analysis|safe }}
+            </div>
+
+        </div>
+
+    {% endif %}
+
+    <div class="action-footer">
+
+        <a href="{% url 'home' %}" class="btn btn-secondary">
+            <i class="fa-solid fa-house"></i>
+            Return To Home
+        </a>
+
+    </div>
+
+</div>
+
+{% endblock content %}

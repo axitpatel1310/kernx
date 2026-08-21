@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+
+{% block title %}KernxTech | Kernx Commerce Store{% endblock title %}
+
+{% block content %}
+<!-- Store Header -->
+<section class="dashboard-header">
+    <div class="header-text">
+        <h1>Kernx Commerce</h1>
+        <p>Master system design, cloud architecture, and algorithms with video lectures, hand-crafted books, and quick-reference cheatsheets.</p>
+    </div>
+</section>
+
+<!-- Search & Filter Controls Bar -->
+<div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem; border-bottom: 1px solid var(--color-accent-brown); padding-bottom: 1.5rem;">
+    
+    <!-- Real-time Search Input Bar -->
+    <div style="position: relative; max-width: 500px; width: 100%;">
+        <i class="fa-solid fa-magnifying-glass" style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--color-soft-sage);"></i>
+        <input 
+            type="text" 
+            id="store-search" 
+            class="form-input" 
+            placeholder="Search lectures, books, cheatsheets..." 
+            onkeyup="searchCatalog()"
+            style="padding-left: 2.75rem; background: var(--color-surface-dark);"
+        >
+    </div>
+
+    <!-- Filter Tabs -->
+    <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+        <button type="button" class="btn btn-primary filter-btn" data-filter="all" onclick="filterCatalog('all', this)">
+            <i class="fa-solid fa-border-all"></i> All Products
+        </button>
+        <button type="button" class="btn btn-secondary filter-btn" data-filter="lectures" onclick="filterCatalog('lectures', this)">
+            <i class="fa-solid fa-video"></i> Video Lectures
+        </button>
+        <button type="button" class="btn btn-secondary filter-btn" data-filter="books" onclick="filterCatalog('books', this)">
+            <i class="fa-solid fa-book"></i> Books & Guides
+        </button>
+        <button type="button" class="btn btn-secondary filter-btn" data-filter="cheatsheets" onclick="filterCatalog('cheatsheets', this)">
+            <i class="fa-solid fa-file-code"></i> Cheatsheets
+        </button>
+    </div>
+</div>
+<div id="catalog-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+
+    {% for i in products %}    
+        <div class="workbench-card product-item" 
+            {% if i.type_of == "Course" %}
+                data-category="lectures" 
+            {% elif i.type_of == "E_book" or "Quick_Guide" %}
+                data-category="books"
+            {% elif i.type_of == "Cheatsheet" %}
+                data-category="cheatsheets"
+            {% endif %}
+            style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                <span class="tech-badge" style="background: rgba(230, 72, 51, 0.2); color: var(--color-accent-red); border: 1px solid var(--color-accent-red);">
+                {% if i.type_of == "Course" %}
+                    <i class="fa-solid fa-video"></i> Lecture Series
+                {% elif i.type_of == "E_book" or Quick_Guide %}
+                    <i class="fa-solid fa-file-code"></i> Lecture Series
+                {% elif i.type_of == "Cheatsheet" %}
+                    <i class="fa-solid fa-file-code"></i> Lecture Series
+                {% endif %}
+    
+                </span>
+                <span style="font-size: 1.25rem; font-weight: 700; color: var(--color-cream);">$49</span>
+            </div>
+            <h2 class="product-title" style="font-size: 1.2rem; color: var(--color-cream); margin-bottom: 0.5rem;">{{i.name}}</h2>
+            <p class="product-description" style="color: var(--color-soft-sage); font-size: 0.875rem; line-height: 1.6; margin-bottom: 1.25rem;">
+                {{i.description|safe}}
+            </p>
+        </div>
+        <div>
+            <div style="padding: 0.75rem 0; border-top: 1px solid rgba(135, 79, 65, 0.3); font-size: 0.8rem; color: var(--color-soft-sage); margin-bottom: 1rem;">
+                
+                <i class="fa-regular 
+                {% if i.type_of == "Course" %}
+                fa-clock
+                {% elif i.type_of == "E_book" or "Quick_Guide" %}
+                fa-book
+                {% elif i.type_of == "Cheatsheet" %}
+                fa-file-pdf
+                {% endif %}
+                "></i> {{i.duration}} &bull; Lifetime Access
+            </div>
+            <a href="{% url "product-details" i.id %}" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                <i class="fa-solid fa-cart-shopping"></i> View product
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+
+</div>
+<div id="no-results" style="display: none; text-align: center; padding: 3rem 1rem;">
+    <i class="fa-solid fa-magnifying-glass" style="font-size: 2.5rem; color: var(--color-soft-sage); margin-bottom: 1rem;"></i>
+    <h3 style="color: var(--color-cream);">No matching products found</h3>
+    <p style="color: var(--color-soft-sage); font-size: 0.9rem;">Try searching for different keywords or changing your filter selection.</p>
+</div>
+<script>
+let activeCategory = 'all';
+
+function filterCatalog(category, selectedBtn) {
+    activeCategory = category;
+
+    // Toggle active button style
+    const buttons = document.querySelectorAll('.filter-btn');
+    buttons.forEach(btn => {
+        btn.classList.remove('btn-primary');
+        btn.classList.add('btn-secondary');
+    });
+    selectedBtn.classList.remove('btn-secondary');
+    selectedBtn.classList.add('btn-primary');
+
+    applyFilters();
+}
+
+function searchCatalog() {
+    applyFilters();
+}
+
+function applyFilters() {
+    const query = document.getElementById('store-search').value.toLowerCase().trim();
+    const items = document.querySelectorAll('.product-item');
+    let visibleCount = 0;
+
+    items.forEach(item => {
+        const categoryMatch = (activeCategory === 'all' || item.getAttribute('data-category') === activeCategory);
+        
+        const title = item.querySelector('.product-title').textContent.toLowerCase();
+        const description = item.querySelector('.product-description').textContent.toLowerCase();
+        const searchMatch = title.includes(query) || description.includes(query);
+
+        if (categoryMatch && searchMatch) {
+            item.style.display = 'flex';
+            visibleCount++;
+        } else {
+            item.style.display = 'none';
+        }
+    });
+
+    // Toggle Empty State message
+    const noResults = document.getElementById('no-results');
+    noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+}
+</script>
+{% endblock content %}

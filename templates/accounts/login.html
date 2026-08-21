@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block title %}KernxTech | Login{% endblock title %}
+
+{% block content %}
+<div class="auth-container">
+    <div class="auth-card">
+        <div class="auth-header">
+            <i class="fa-solid fa-lock"></i>
+            <h2>Welcome Back</h2>
+            <p>Log in to access your system architectures and custom blueprints.</p>
+        </div>
+
+        {% if error %}
+            <div class="auth-form" style="margin-bottom: 1rem;">
+                <ul class="errorlist">
+                    <li><i class="fa-solid fa-circle-exclamation"></i> {{ error }}</li>
+                </ul>
+            </div>
+        {% endif %}
+
+        <form method="post" class="auth-form">
+            {% csrf_token %}
+            
+            <p>
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="name@company.com"
+                    required
+                >
+            </p>
+
+            <p>
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="••••••••"
+                    required
+                >
+            </p>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: 1rem;">
+                <i class="fa-solid fa-right-to-bracket"></i> Login
+            </button>
+        </form>
+
+        <div class="auth-footer" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+            <a href="{% url 'register' %}">Create an Account</a>
+            <a href="{% url 'password_reset' %}" style="color: var(--color-soft-sage); font-weight: normal;">Forgot Password?</a>
+        </div>
+    </div>
+</div>
+{% endblock content %}

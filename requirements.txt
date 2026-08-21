@@ -1,0 +1,8 @@
+Django
+ollama
+markdown
+Pillow
+python-dotenv
+psycopg2-binary
+psycopg
+django_ckeditor_5

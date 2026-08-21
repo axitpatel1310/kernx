@@ -1,0 +1,3062 @@
+[
+  {
+    "project": {
+      "name": "Hobbyist Craft Store",
+      "type": "B2C",
+      "dau": 100,
+      "daily_orders": 20,
+      "payment_gateway": "Stripe",
+      "inventory_size": 500,
+      "flash_sales": 0,
+      "cart_abandonment": 60,
+      "returns_rate": 5,
+      "average_order_value": 45,
+      "concurrent": 10,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "SQLite",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "SQLite provides zero-config relational storage for micro-scale inventory and order tracking without external database dependencies."
+    ],
+    "slug": "hobbyist-craft-store"
+  },
+  {
+    "project": {
+      "name": "Local Bakery Pre-orders",
+      "type": "B2C",
+      "dau": 100,
+      "daily_orders": 30,
+      "payment_gateway": "PayPal",
+      "inventory_size": 50,
+      "flash_sales": 0,
+      "cart_abandonment": 40,
+      "returns_rate": 2,
+      "average_order_value": 25,
+      "concurrent": 15,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "PostgreSQL handles structured daily pre-orders and pickup scheduling reliably for a small local bakery."
+    ],
+    "slug": "local-bakery-pre-orders"
+  },
+  {
+    "project": {
+      "name": "Indie Bookshop",
+      "type": "B2C",
+      "dau": 100,
+      "daily_orders": 15,
+      "payment_gateway": "Stripe",
+      "inventory_size": 2000,
+      "flash_sales": 0,
+      "cart_abandonment": 70,
+      "returns_rate": 8,
+      "average_order_value": 30,
+      "concurrent": 12,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "PostgreSQL supports full-text search natively for book titles and authors without needing an external search engine."
+    ],
+    "slug": "indie-bookshop"
+  },
+  {
+    "project": {
+      "name": "Local Farm CSA",
+      "type": "B2C",
+      "dau": 100,
+      "daily_orders": 40,
+      "payment_gateway": "Custom",
+      "inventory_size": 100,
+      "flash_sales": 0,
+      "cart_abandonment": 30,
+      "returns_rate": 1,
+      "average_order_value": 50,
+      "concurrent": 20,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "DigitalOcean"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Spaces",
+      "compute": "Droplet",
+      "cdn": "DO CDN"
+    },
+    "reasoning": [
+      "PostgreSQL on a single Droplet provides cost-effective, reliable storage for weekly CSA subscription management."
+    ],
+    "slug": "local-farm-csa"
+  },
+  {
+    "project": {
+      "name": "Small Artisan Jewelry",
+      "type": "B2C",
+      "dau": 100,
+      "daily_orders": 10,
+      "payment_gateway": "Stripe",
+      "inventory_size": 200,
+      "flash_sales": 0,
+      "cart_abandonment": 65,
+      "returns_rate": 10,
+      "average_order_value": 120,
+      "concurrent": 8,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "SQLite",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "SQLite simplifies deployment for a low-traffic boutique while maintaining data consistency for custom jewelry orders."
+    ],
+    "slug": "small-artisan-jewelry"
+  },
+  {
+    "project": {
+      "name": "Neighborhood Plant Shop",
+      "type": "B2C",
+      "dau": 100,
+      "daily_orders": 25,
+      "payment_gateway": "PayPal",
+      "inventory_size": 300,
+      "flash_sales": 0,
+      "cart_abandonment": 50,
+      "returns_rate": 3,
+      "average_order_value": 35,
+      "concurrent": 12,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "PostgreSQL handles relational plant care metadata and local delivery scheduling efficiently."
+    ],
+    "slug": "neighborhood-plant-shop"
+  },
+  {
+    "project": {
+      "name": "Local Coffee Roaster",
+      "type": "B2C",
+      "dau": 100,
+      "daily_orders": 35,
+      "payment_gateway": "Stripe",
+      "inventory_size": 50,
+      "flash_sales": 0,
+      "cart_abandonment": 45,
+      "returns_rate": 1,
+      "average_order_value": 20,
+      "concurrent": 15,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "PostgreSQL enforces strict relational constraints required for subscription coffee roasting and delivery schedules."
+    ],
+    "slug": "local-coffee-roaster"
+  },
+  {
+    "project": {
+      "name": "Small Vinyl Record Store",
+      "type": "B2C",
+      "dau": 100,
+      "daily_orders": 12,
+      "payment_gateway": "Stripe",
+      "inventory_size": 5000,
+      "flash_sales": 0,
+      "cart_abandonment": 75,
+      "returns_rate": 4,
+      "average_order_value": 40,
+      "concurrent": 10,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "PostgreSQL supports full-text search natively for artist and album metadata without needing an external search engine."
+    ],
+    "slug": "small-vinyl-record-store"
+  },
+  {
+    "project": {
+      "name": "Local Candle Maker",
+      "type": "B2C",
+      "dau": 100,
+      "daily_orders": 18,
+      "payment_gateway": "PayPal",
+      "inventory_size": 100,
+      "flash_sales": 0,
+      "cart_abandonment": 55,
+      "returns_rate": 2,
+      "average_order_value": 28,
+      "concurrent": 8,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "SQLite",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Local",
+      "compute": "GCE",
+      "cdn": "None"
+    },
+    "reasoning": [
+      "SQLite provides a lightweight, portable database for managing small-batch candle inventory without infrastructure overhead."
+    ],
+    "slug": "local-candle-maker"
+  },
+  {
+    "project": {
+      "name": "Small Pet Supply Shop",
+      "type": "B2C",
+      "dau": 100,
+      "daily_orders": 22,
+      "payment_gateway": "Stripe",
+      "inventory_size": 800,
+      "flash_sales": 0,
+      "cart_abandonment": 60,
+      "returns_rate": 6,
+      "average_order_value": 55,
+      "concurrent": 12,
+      "geo": "Single",
+      "budget": "Low",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "None",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "PostgreSQL handles relational pet profile data and recurring food delivery schedules efficiently."
+    ],
+    "slug": "small-pet-supply-shop"
+  },
+  {
+    "project": {
+      "name": "Regional Clothing Boutique",
+      "type": "B2C",
+      "dau": 10000,
+      "daily_orders": 1500,
+      "payment_gateway": "Stripe",
+      "inventory_size": 10000,
+      "flash_sales": 2,
+      "cart_abandonment": 70,
+      "returns_rate": 25,
+      "average_order_value": 85,
+      "concurrent": 500,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Redis caches user profiles and session data to reduce PostgreSQL load during peak regional browsing."
+    ],
+    "slug": "regional-clothing-boutique"
+  },
+  {
+    "project": {
+      "name": "Niche Electronics Parts",
+      "type": "B2B",
+      "dau": 10000,
+      "daily_orders": 800,
+      "payment_gateway": "Net-30",
+      "inventory_size": 50000,
+      "flash_sales": 0,
+      "cart_abandonment": 40,
+      "returns_rate": 2,
+      "average_order_value": 250,
+      "concurrent": 300,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Redis provides fast access to complex part compatibility graphs and B2B pricing tiers."
+    ],
+    "slug": "niche-electronics-parts"
+  },
+  {
+    "project": {
+      "name": "Regional Grocery Delivery",
+      "type": "B2C",
+      "dau": 10000,
+      "daily_orders": 2000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 8000,
+      "flash_sales": 5,
+      "cart_abandonment": 30,
+      "returns_rate": 4,
+      "average_order_value": 120,
+      "concurrent": 800,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Redis manages real-time delivery slot availability and live inventory counts for perishable goods."
+    ],
+    "slug": "regional-grocery-delivery"
+  },
+  {
+    "project": {
+      "name": "Specialty Tea & Coffee",
+      "type": "B2C",
+      "dau": 10000,
+      "daily_orders": 1200,
+      "payment_gateway": "PayPal",
+      "inventory_size": 500,
+      "flash_sales": 1,
+      "cart_abandonment": 65,
+      "returns_rate": 1,
+      "average_order_value": 45,
+      "concurrent": 400,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Redis accelerates feed generation by caching recent product launches and user subscription timelines."
+    ],
+    "slug": "specialty-tea-coffee"
+  },
+  {
+    "project": {
+      "name": "Local Furniture Maker",
+      "type": "B2C",
+      "dau": 10000,
+      "daily_orders": 300,
+      "payment_gateway": "Stripe",
+      "inventory_size": 200,
+      "flash_sales": 0,
+      "cart_abandonment": 80,
+      "returns_rate": 5,
+      "average_order_value": 1500,
+      "concurrent": 250,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Redis handles real-time session states for complex furniture customization and 3D configuration tools."
+    ],
+    "slug": "local-furniture-maker"
+  },
+  {
+    "project": {
+      "name": "Regional Auto Parts",
+      "type": "B2B",
+      "dau": 10000,
+      "daily_orders": 1800,
+      "payment_gateway": "Net-30",
+      "inventory_size": 100000,
+      "flash_sales": 0,
+      "cart_abandonment": 20,
+      "returns_rate": 8,
+      "average_order_value": 350,
+      "concurrent": 600,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Redis caches geospatial query results for nearby store inventory and local pickup availability."
+    ],
+    "slug": "regional-auto-parts"
+  },
+  {
+    "project": {
+      "name": "Niche Board Game Store",
+      "type": "B2C",
+      "dau": 10000,
+      "daily_orders": 900,
+      "payment_gateway": "Stripe",
+      "inventory_size": 3000,
+      "flash_sales": 3,
+      "cart_abandonment": 60,
+      "returns_rate": 3,
+      "average_order_value": 75,
+      "concurrent": 350,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Redis manages real-time stock counts for limited edition board game pre-orders and flash sales."
+    ],
+    "slug": "niche-board-game-store"
+  },
+  {
+    "project": {
+      "name": "Regional Organic Produce",
+      "type": "B2C",
+      "dau": 10000,
+      "daily_orders": 2500,
+      "payment_gateway": "Stripe",
+      "inventory_size": 500,
+      "flash_sales": 0,
+      "cart_abandonment": 25,
+      "returns_rate": 2,
+      "average_order_value": 90,
+      "concurrent": 900,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "GCS",
+      "compute": "GCE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Redis tracks real-time harvest yields and dynamically updates available inventory for daily box subscriptions."
+    ],
+    "slug": "regional-organic-produce"
+  },
+  {
+    "project": {
+      "name": "Local Sporting Goods",
+      "type": "B2C",
+      "dau": 10000,
+      "daily_orders": 1100,
+      "payment_gateway": "PayPal",
+      "inventory_size": 15000,
+      "flash_sales": 4,
+      "cart_abandonment": 65,
+      "returns_rate": 12,
+      "average_order_value": 110,
+      "concurrent": 450,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "Blob",
+      "compute": "VM",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Redis handles real-time session states for equipment sizing guides and local store reservation systems."
+    ],
+    "slug": "local-sporting-goods"
+  },
+  {
+    "project": {
+      "name": "Niche Cosmetics Brand",
+      "type": "B2C",
+      "dau": 10000,
+      "daily_orders": 1400,
+      "payment_gateway": "Stripe",
+      "inventory_size": 2000,
+      "flash_sales": 6,
+      "cart_abandonment": 75,
+      "returns_rate": 15,
+      "average_order_value": 65,
+      "concurrent": 550,
+      "geo": "Single",
+      "budget": "Medium",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Modular Monolith",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "None",
+      "search": "None",
+      "storage": "S3",
+      "compute": "EC2",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Redis caches personalized product recommendations and shade-matching quiz results for fast browsing."
+    ],
+    "slug": "niche-cosmetics-brand"
+  },
+  {
+    "project": {
+      "name": "National Fashion Brand",
+      "type": "B2C",
+      "dau": 100000,
+      "daily_orders": 15000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 100000,
+      "flash_sales": 10,
+      "cart_abandonment": 72,
+      "returns_rate": 30,
+      "average_order_value": 120,
+      "concurrent": 5000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "PCI-DSS",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "RabbitMQ decouples order placement from inventory updates and email notifications to handle flash sale spikes."
+    ],
+    "slug": "national-fashion-brand"
+  },
+  {
+    "project": {
+      "name": "National Electronics Retailer",
+      "type": "B2C",
+      "dau": 100000,
+      "daily_orders": 12000,
+      "payment_gateway": "PayPal",
+      "inventory_size": 200000,
+      "flash_sales": 5,
+      "cart_abandonment": 68,
+      "returns_rate": 10,
+      "average_order_value": 450,
+      "concurrent": 4000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "PCI-DSS",
+      "arch": "Microservices",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "RabbitMQ manages asynchronous warranty registration and extended protection plan processing tasks."
+    ],
+    "slug": "national-electronics-retailer"
+  },
+  {
+    "project": {
+      "name": "National Grocery Chain",
+      "type": "B2C",
+      "dau": 100000,
+      "daily_orders": 25000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 50000,
+      "flash_sales": 20,
+      "cart_abandonment": 25,
+      "returns_rate": 3,
+      "average_order_value": 150,
+      "concurrent": 8000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "RabbitMQ handles background loyalty point accrual and receipt generation asynchronously without blocking checkout."
+    ],
+    "slug": "national-grocery-chain"
+  },
+  {
+    "project": {
+      "name": "National Pet Supplies",
+      "type": "B2C",
+      "dau": 100000,
+      "daily_orders": 18000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 80000,
+      "flash_sales": 8,
+      "cart_abandonment": 55,
+      "returns_rate": 4,
+      "average_order_value": 85,
+      "concurrent": 6000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "RabbitMQ processes high-volume subscription renewals for recurring pet food deliveries asynchronously."
+    ],
+    "slug": "national-pet-supplies"
+  },
+  {
+    "project": {
+      "name": "National Home Decor",
+      "type": "B2C",
+      "dau": 100000,
+      "daily_orders": 9000,
+      "payment_gateway": "PayPal",
+      "inventory_size": 150000,
+      "flash_sales": 4,
+      "cart_abandonment": 80,
+      "returns_rate": 15,
+      "average_order_value": 300,
+      "concurrent": 3500,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "RabbitMQ decouples large item freight shipping calculations from the main checkout flow to maintain low latency."
+    ],
+    "slug": "national-home-decor"
+  },
+  {
+    "project": {
+      "name": "National Toy Store",
+      "type": "B2C",
+      "dau": 100000,
+      "daily_orders": 20000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 60000,
+      "flash_sales": 15,
+      "cart_abandonment": 60,
+      "returns_rate": 8,
+      "average_order_value": 65,
+      "concurrent": 7000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "COPPA",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "RabbitMQ manages asynchronous age-verification and parental consent workflows required for COPPA compliance."
+    ],
+    "slug": "national-toy-store"
+  },
+  {
+    "project": {
+      "name": "National Outdoor Gear",
+      "type": "B2C",
+      "dau": 100000,
+      "daily_orders": 11000,
+      "payment_gateway": "PayPal",
+      "inventory_size": 90000,
+      "flash_sales": 6,
+      "cart_abandonment": 65,
+      "returns_rate": 12,
+      "average_order_value": 220,
+      "concurrent": 4500,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "RabbitMQ handles background gear rental processing and deposit refund workflows asynchronously."
+    ],
+    "slug": "national-outdoor-gear"
+  },
+  {
+    "project": {
+      "name": "National Beauty Products",
+      "type": "B2C",
+      "dau": 100000,
+      "daily_orders": 16000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 40000,
+      "flash_sales": 12,
+      "cart_abandonment": 78,
+      "returns_rate": 18,
+      "average_order_value": 95,
+      "concurrent": 5500,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "RabbitMQ processes high-volume loyalty tier upgrades and personalized sample inclusion tasks asynchronously."
+    ],
+    "slug": "national-beauty-products"
+  },
+  {
+    "project": {
+      "name": "National Office Supplies",
+      "type": "B2B",
+      "dau": 100000,
+      "daily_orders": 8000,
+      "payment_gateway": "Net-30",
+      "inventory_size": 300000,
+      "flash_sales": 0,
+      "cart_abandonment": 15,
+      "returns_rate": 2,
+      "average_order_value": 500,
+      "concurrent": 3000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "SOC2",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "RabbitMQ manages asynchronous bulk order approval workflows and multi-tier B2B pricing calculations."
+    ],
+    "slug": "national-office-supplies"
+  },
+  {
+    "project": {
+      "name": "National Health Supplements",
+      "type": "B2C",
+      "dau": 100000,
+      "daily_orders": 14000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 25000,
+      "flash_sales": 5,
+      "cart_abandonment": 50,
+      "returns_rate": 1,
+      "average_order_value": 75,
+      "concurrent": 5000,
+      "geo": "Multi-Region",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "HIPAA",
+      "arch": "Microservices",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "ECS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "RabbitMQ ensures HIPAA-compliant asynchronous processing of health questionnaire data and personalized vitamin packs."
+    ],
+    "slug": "national-health-supplements"
+  },
+  {
+    "project": {
+      "name": "Global Fashion Marketplace",
+      "type": "Marketplace",
+      "dau": 1000000,
+      "daily_orders": 150000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 5000000,
+      "flash_sales": 50,
+      "cart_abandonment": 75,
+      "returns_rate": 35,
+      "average_order_value": 130,
+      "concurrent": 50000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "PCI-DSS",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka streams order events to Elasticsearch for real-time search indexing and seller dashboard updates."
+    ],
+    "slug": "global-fashion-marketplace"
+  },
+  {
+    "project": {
+      "name": "Global Electronics Marketplace",
+      "type": "Marketplace",
+      "dau": 1000000,
+      "daily_orders": 120000,
+      "payment_gateway": "PayPal",
+      "inventory_size": 8000000,
+      "flash_sales": 30,
+      "cart_abandonment": 70,
+      "returns_rate": 12,
+      "average_order_value": 500,
+      "concurrent": 40000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "PCI-DSS",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Kafka handles massive ingestion of product review and rating events without dropping data during traffic spikes."
+    ],
+    "slug": "global-electronics-marketplace"
+  },
+  {
+    "project": {
+      "name": "Global Grocery Delivery",
+      "type": "B2C",
+      "dau": 1000000,
+      "daily_orders": 250000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 200000,
+      "flash_sales": 100,
+      "cart_abandonment": 20,
+      "returns_rate": 4,
+      "average_order_value": 160,
+      "concurrent": 80000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Kafka ensures real-time synchronization of live inventory across hundreds of physical store locations globally."
+    ],
+    "slug": "global-grocery-delivery"
+  },
+  {
+    "project": {
+      "name": "Global Auto Parts",
+      "type": "B2B",
+      "dau": 1000000,
+      "daily_orders": 80000,
+      "payment_gateway": "Net-30",
+      "inventory_size": 10000000,
+      "flash_sales": 0,
+      "cart_abandonment": 10,
+      "returns_rate": 6,
+      "average_order_value": 400,
+      "concurrent": 30000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "SOC2",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka streams complex vehicle compatibility checks and B2B credit line updates to downstream services asynchronously."
+    ],
+    "slug": "global-auto-parts"
+  },
+  {
+    "project": {
+      "name": "Global Furniture Marketplace",
+      "type": "Marketplace",
+      "dau": 1000000,
+      "daily_orders": 90000,
+      "payment_gateway": "PayPal",
+      "inventory_size": 3000000,
+      "flash_sales": 20,
+      "cart_abandonment": 85,
+      "returns_rate": 18,
+      "average_order_value": 800,
+      "concurrent": 35000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Kafka routes large item freight shipping quotes and white-glove delivery scheduling to specialized logistics microservices."
+    ],
+    "slug": "global-furniture-marketplace"
+  },
+  {
+    "project": {
+      "name": "Global Beauty Marketplace",
+      "type": "Marketplace",
+      "dau": 1000000,
+      "daily_orders": 160000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 1500000,
+      "flash_sales": 60,
+      "cart_abandonment": 80,
+      "returns_rate": 20,
+      "average_order_value": 110,
+      "concurrent": 55000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Kafka processes high-volume influencer affiliate link tracking and commission payout events in real-time."
+    ],
+    "slug": "global-beauty-marketplace"
+  },
+  {
+    "project": {
+      "name": "Global Sneaker Marketplace",
+      "type": "Marketplace",
+      "dau": 1000000,
+      "daily_orders": 200000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 500000,
+      "flash_sales": 100,
+      "cart_abandonment": 65,
+      "returns_rate": 5,
+      "average_order_value": 250,
+      "concurrent": 70000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "PCI-DSS",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka handles high-throughput bidding events and real-time authentication verification for limited-edition sneaker drops."
+    ],
+    "slug": "global-sneaker-marketplace"
+  },
+  {
+    "project": {
+      "name": "Global Art & Collectibles",
+      "type": "Marketplace",
+      "dau": 1000000,
+      "daily_orders": 50000,
+      "payment_gateway": "Wire",
+      "inventory_size": 2000000,
+      "flash_sales": 10,
+      "cart_abandonment": 90,
+      "returns_rate": 1,
+      "average_order_value": 2000,
+      "concurrent": 20000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "AML",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Kafka streams high-value transaction events to anti-money laundering (AML) and provenance verification services."
+    ],
+    "slug": "global-art-collectibles"
+  },
+  {
+    "project": {
+      "name": "Global B2B Wholesale",
+      "type": "B2B",
+      "dau": 1000000,
+      "daily_orders": 100000,
+      "payment_gateway": "Net-60",
+      "inventory_size": 15000000,
+      "flash_sales": 0,
+      "cart_abandonment": 5,
+      "returns_rate": 3,
+      "average_order_value": 5000,
+      "concurrent": 40000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "SOC2",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Kafka orchestrates complex multi-tier pricing, volume discount calculations, and ERP synchronization asynchronously."
+    ],
+    "slug": "global-b2b-wholesale"
+  },
+  {
+    "project": {
+      "name": "Global Digital Goods",
+      "type": "Digital",
+      "dau": 1000000,
+      "daily_orders": 300000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 1000000,
+      "flash_sales": 40,
+      "cart_abandonment": 50,
+      "returns_rate": 0,
+      "average_order_value": 15,
+      "concurrent": 100000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka handles massive concurrent license key generation and digital download link provisioning without bottlenecks."
+    ],
+    "slug": "global-digital-goods"
+  },
+  {
+    "project": {
+      "name": "Mega Fashion Marketplace",
+      "type": "Marketplace",
+      "dau": 10000000,
+      "daily_orders": 1500000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 50000000,
+      "flash_sales": 500,
+      "cart_abandonment": 78,
+      "returns_rate": 40,
+      "average_order_value": 140,
+      "concurrent": 500000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "GDPR",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra provides massive write throughput and horizontal scalability for the global cart and order activity feed."
+    ],
+    "slug": "mega-fashion-marketplace"
+  },
+  {
+    "project": {
+      "name": "Mega Electronics Marketplace",
+      "type": "Marketplace",
+      "dau": 10000000,
+      "daily_orders": 1200000,
+      "payment_gateway": "PayPal",
+      "inventory_size": 80000000,
+      "flash_sales": 300,
+      "cart_abandonment": 72,
+      "returns_rate": 15,
+      "average_order_value": 550,
+      "concurrent": 400000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Spanner",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra handles billions of daily product view and wishlist increments with zero downtime globally."
+    ],
+    "slug": "mega-electronics-marketplace"
+  },
+  {
+    "project": {
+      "name": "Mega Grocery Delivery",
+      "type": "B2C",
+      "dau": 10000000,
+      "daily_orders": 2500000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 2000000,
+      "flash_sales": 1000,
+      "cart_abandonment": 22,
+      "returns_rate": 5,
+      "average_order_value": 170,
+      "concurrent": 800000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "CosmosDB",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "CosmosDB provides globally distributed, multi-model database capabilities for managing real-time store inventory across continents."
+    ],
+    "slug": "mega-grocery-delivery"
+  },
+  {
+    "project": {
+      "name": "Mega Auto Parts",
+      "type": "B2B",
+      "dau": 10000000,
+      "daily_orders": 800000,
+      "payment_gateway": "Net-30",
+      "inventory_size": 100000000,
+      "flash_sales": 0,
+      "cart_abandonment": 12,
+      "returns_rate": 7,
+      "average_order_value": 450,
+      "concurrent": 300000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "SOC2",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra scales horizontally to track billions of daily vehicle compatibility checks and B2B catalog searches."
+    ],
+    "slug": "mega-auto-parts"
+  },
+  {
+    "project": {
+      "name": "Mega Furniture Marketplace",
+      "type": "Marketplace",
+      "dau": 10000000,
+      "daily_orders": 900000,
+      "payment_gateway": "PayPal",
+      "inventory_size": 30000000,
+      "flash_sales": 200,
+      "cart_abandonment": 88,
+      "returns_rate": 20,
+      "average_order_value": 850,
+      "concurrent": 350000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Spanner",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra provides the massive write throughput needed for high-volume AR room visualization and product configuration events."
+    ],
+    "slug": "mega-furniture-marketplace"
+  },
+  {
+    "project": {
+      "name": "Mega Beauty Marketplace",
+      "type": "Marketplace",
+      "dau": 10000000,
+      "daily_orders": 1600000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 15000000,
+      "flash_sales": 600,
+      "cart_abandonment": 82,
+      "returns_rate": 22,
+      "average_order_value": 120,
+      "concurrent": 550000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "CosmosDB",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "CosmosDB ensures high availability and partition tolerance for critical global influencer affiliate tracking and payouts."
+    ],
+    "slug": "mega-beauty-marketplace"
+  },
+  {
+    "project": {
+      "name": "Mega Sneaker Marketplace",
+      "type": "Marketplace",
+      "dau": 10000000,
+      "daily_orders": 2000000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 5000000,
+      "flash_sales": 1000,
+      "cart_abandonment": 68,
+      "returns_rate": 6,
+      "average_order_value": 280,
+      "concurrent": 700000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "PCI-DSS",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra handles the massive spike in write operations during global limited-edition sneaker drops and real-time bidding."
+    ],
+    "slug": "mega-sneaker-marketplace"
+  },
+  {
+    "project": {
+      "name": "Mega Art & Collectibles",
+      "type": "Marketplace",
+      "dau": 10000000,
+      "daily_orders": 500000,
+      "payment_gateway": "Wire",
+      "inventory_size": 20000000,
+      "flash_sales": 100,
+      "cart_abandonment": 92,
+      "returns_rate": 1,
+      "average_order_value": 2500,
+      "concurrent": 200000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "AML",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Spanner",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra provides massive write throughput and horizontal scalability for global auction bidding and provenance tracking."
+    ],
+    "slug": "mega-art-collectibles"
+  },
+  {
+    "project": {
+      "name": "Mega B2B Wholesale",
+      "type": "B2B",
+      "dau": 10000000,
+      "daily_orders": 1000000,
+      "payment_gateway": "Net-60",
+      "inventory_size": 150000000,
+      "flash_sales": 0,
+      "cart_abandonment": 8,
+      "returns_rate": 4,
+      "average_order_value": 6000,
+      "concurrent": 400000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "SOC2",
+      "arch": "CQRS",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "CosmosDB",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "CosmosDB provides globally distributed capabilities for managing complex multi-tier B2B pricing and credit lines."
+    ],
+    "slug": "mega-b2b-wholesale"
+  },
+  {
+    "project": {
+      "name": "Mega Digital Goods",
+      "type": "Digital",
+      "dau": 10000000,
+      "daily_orders": 3000000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 10000000,
+      "flash_sales": 400,
+      "cart_abandonment": 55,
+      "returns_rate": 0,
+      "average_order_value": 18,
+      "concurrent": 1000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra handles billions of daily digital license activations and concurrent download link generations globally."
+    ],
+    "slug": "mega-digital-goods"
+  },
+  {
+    "project": {
+      "name": "Hyper Fashion Marketplace",
+      "type": "Marketplace",
+      "dau": 100000000,
+      "daily_orders": 15000000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 500000000,
+      "flash_sales": 5000,
+      "cart_abandonment": 80,
+      "returns_rate": 45,
+      "average_order_value": 150,
+      "concurrent": 5000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides global consistency and horizontal scalability for a hundred-million-user relational order and inventory model."
+    ],
+    "slug": "hyper-fashion-marketplace"
+  },
+  {
+    "project": {
+      "name": "Hyper Electronics Marketplace",
+      "type": "Marketplace",
+      "dau": 100000000,
+      "daily_orders": 12000000,
+      "payment_gateway": "PayPal",
+      "inventory_size": 800000000,
+      "flash_sales": 3000,
+      "cart_abandonment": 75,
+      "returns_rate": 18,
+      "average_order_value": 600,
+      "concurrent": 4000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Global Redis provides ultra-low latency caching for product metadata and user sessions across all continents."
+    ],
+    "slug": "hyper-electronics-marketplace"
+  },
+  {
+    "project": {
+      "name": "Hyper Grocery Delivery",
+      "type": "B2C",
+      "dau": 100000000,
+      "daily_orders": 25000000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 20000000,
+      "flash_sales": 10000,
+      "cart_abandonment": 25,
+      "returns_rate": 6,
+      "average_order_value": 180,
+      "concurrent": 8000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner automatically shards store inventory globally, ensuring strong consistency for real-time perishable stock tracking."
+    ],
+    "slug": "hyper-grocery-delivery"
+  },
+  {
+    "project": {
+      "name": "Hyper Auto Parts",
+      "type": "B2B",
+      "dau": 100000000,
+      "daily_orders": 8000000,
+      "payment_gateway": "Net-30",
+      "inventory_size": 1000000000,
+      "flash_sales": 0,
+      "cart_abandonment": 15,
+      "returns_rate": 8,
+      "average_order_value": 500,
+      "concurrent": 3000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Global Redis manages real-time vehicle compatibility lookups and B2B catalog searches for millions of concurrent mechanics."
+    ],
+    "slug": "hyper-auto-parts"
+  },
+  {
+    "project": {
+      "name": "Hyper Furniture Marketplace",
+      "type": "Marketplace",
+      "dau": 100000000,
+      "daily_orders": 9000000,
+      "payment_gateway": "PayPal",
+      "inventory_size": 300000000,
+      "flash_sales": 2000,
+      "cart_abandonment": 90,
+      "returns_rate": 25,
+      "average_order_value": 900,
+      "concurrent": 3500000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides the low-latency, globally distributed relational store required for cross-regional freight logistics."
+    ],
+    "slug": "hyper-furniture-marketplace"
+  },
+  {
+    "project": {
+      "name": "Hyper Beauty Marketplace",
+      "type": "Marketplace",
+      "dau": 100000000,
+      "daily_orders": 16000000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 150000000,
+      "flash_sales": 6000,
+      "cart_abandonment": 85,
+      "returns_rate": 25,
+      "average_order_value": 130,
+      "concurrent": 5500000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner scales globally to track billions of daily influencer affiliate clicks and commission calculations with strict consistency."
+    ],
+    "slug": "hyper-beauty-marketplace"
+  },
+  {
+    "project": {
+      "name": "Hyper Sneaker Marketplace",
+      "type": "Marketplace",
+      "dau": 100000000,
+      "daily_orders": 20000000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 50000000,
+      "flash_sales": 10000,
+      "cart_abandonment": 70,
+      "returns_rate": 8,
+      "average_order_value": 300,
+      "concurrent": 7000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Global Redis manages real-time bidding states and inventory locks for seven million concurrent users during global sneaker drops."
+    ],
+    "slug": "hyper-sneaker-marketplace"
+  },
+  {
+    "project": {
+      "name": "Hyper Art & Collectibles",
+      "type": "Marketplace",
+      "dau": 100000000,
+      "daily_orders": 5000000,
+      "payment_gateway": "Wire",
+      "inventory_size": 200000000,
+      "flash_sales": 1000,
+      "cart_abandonment": 95,
+      "returns_rate": 1,
+      "average_order_value": 3000,
+      "concurrent": 2000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner guarantees strong global consistency for critical high-value auction bidding and cross-border AML verification."
+    ],
+    "slug": "hyper-art-collectibles"
+  },
+  {
+    "project": {
+      "name": "Hyper B2B Wholesale",
+      "type": "B2B",
+      "dau": 100000000,
+      "daily_orders": 10000000,
+      "payment_gateway": "Net-60",
+      "inventory_size": 1500000000,
+      "flash_sales": 0,
+      "cart_abandonment": 10,
+      "returns_rate": 5,
+      "average_order_value": 7000,
+      "concurrent": 4000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner handles the massive spike in write operations during global B2B procurement cycles with strict transactional integrity."
+    ],
+    "slug": "hyper-b2b-wholesale"
+  },
+  {
+    "project": {
+      "name": "Hyper Digital Goods",
+      "type": "Digital",
+      "dau": 100000000,
+      "daily_orders": 30000000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 100000000,
+      "flash_sales": 4000,
+      "cart_abandonment": 60,
+      "returns_rate": 0,
+      "average_order_value": 20,
+      "concurrent": 10000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides massive write throughput and horizontal scalability for global digital license activations and DRM tracking."
+    ],
+    "slug": "hyper-digital-goods"
+  },
+  {
+    "project": {
+      "name": "PCI-DSS High Security Payments",
+      "type": "B2C",
+      "dau": 1000000,
+      "daily_orders": 150000,
+      "payment_gateway": "Custom",
+      "inventory_size": 500000,
+      "flash_sales": 20,
+      "cart_abandonment": 65,
+      "returns_rate": 10,
+      "average_order_value": 200,
+      "concurrent": 50000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "PCI-DSS",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Sharded PostgreSQL on AWS provides PCI-DSS compliant relational storage with strict access controls for custom payment processing."
+    ],
+    "slug": "pci-dss-high-security-payments"
+  },
+  {
+    "project": {
+      "name": "GDPR EU-Only Marketplace",
+      "type": "Marketplace",
+      "dau": 10000000,
+      "daily_orders": 1500000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 5000000,
+      "flash_sales": 50,
+      "cart_abandonment": 75,
+      "returns_rate": 35,
+      "average_order_value": 130,
+      "concurrent": 500000,
+      "geo": "EU-Only",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "GDPR",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "AWS EU regions ensure data residency compliance, while sharded PostgreSQL handles the right to be forgotten efficiently."
+    ],
+    "slug": "gdpr-eu-only-marketplace"
+  },
+  {
+    "project": {
+      "name": "HIPAA Medical Supplies",
+      "type": "B2B",
+      "dau": 1000000,
+      "daily_orders": 80000,
+      "payment_gateway": "Net-30",
+      "inventory_size": 1000000,
+      "flash_sales": 0,
+      "cart_abandonment": 10,
+      "returns_rate": 2,
+      "average_order_value": 400,
+      "concurrent": 30000,
+      "geo": "Single",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "HIPAA",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Sharded PostgreSQL on Azure provides HIPAA-eligible relational storage with strict audit logging for medical supply orders."
+    ],
+    "slug": "hipaa-medical-supplies"
+  },
+  {
+    "project": {
+      "name": "FedRAMP Gov Procurement",
+      "type": "B2B",
+      "dau": 1000000,
+      "daily_orders": 50000,
+      "payment_gateway": "Wire",
+      "inventory_size": 2000000,
+      "flash_sales": 0,
+      "cart_abandonment": 5,
+      "returns_rate": 1,
+      "average_order_value": 1000,
+      "concurrent": 20000,
+      "geo": "Single",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "FedRAMP",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Azure Government cloud provides the necessary FedRAMP High authorization for secure internal government procurement."
+    ],
+    "slug": "fedramp-gov-procurement"
+  },
+  {
+    "project": {
+      "name": "COPPA Kids Toys",
+      "type": "B2C",
+      "dau": 10000000,
+      "daily_orders": 1500000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 50000,
+      "flash_sales": 20,
+      "cart_abandonment": 60,
+      "returns_rate": 8,
+      "average_order_value": 50,
+      "concurrent": 500000,
+      "geo": "Multi-Region",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "COPPA",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Sharded PostgreSQL ensures strict data isolation and parental consent tracking required by COPPA compliance for kids' accounts."
+    ],
+    "slug": "coppa-kids-toys"
+  },
+  {
+    "project": {
+      "name": "Low-Bandwidth Emerging Market",
+      "type": "B2C",
+      "dau": 10000000,
+      "daily_orders": 2000000,
+      "payment_gateway": "Mobile Money",
+      "inventory_size": 500000,
+      "flash_sales": 100,
+      "cart_abandonment": 40,
+      "returns_rate": 5,
+      "average_order_value": 15,
+      "concurrent": 800000,
+      "geo": "Global",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Aggressive edge caching and optimized payloads ensure usability in low-bandwidth emerging markets with mobile money integration."
+    ],
+    "slug": "low-bandwidth-emerging-market"
+  },
+  {
+    "project": {
+      "name": "Web3 Crypto Merch",
+      "type": "Digital",
+      "dau": 1000000,
+      "daily_orders": 100000,
+      "payment_gateway": "Crypto",
+      "inventory_size": 100000,
+      "flash_sales": 10,
+      "cart_abandonment": 50,
+      "returns_rate": 0,
+      "average_order_value": 100,
+      "concurrent": 40000,
+      "geo": "Global",
+      "budget": "High",
+      "sla": "99.0%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "PostgreSQL",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "IPFS",
+      "storage": "IPFS",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "IPFS provides decentralized, content-addressed storage for digital NFT merchandise and crypto wallet integrations."
+    ],
+    "slug": "web3-crypto-merch"
+  },
+  {
+    "project": {
+      "name": "AI Personal Shopper",
+      "type": "B2C",
+      "dau": 10000000,
+      "daily_orders": 1500000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 5000000,
+      "flash_sales": 50,
+      "cart_abandonment": 70,
+      "returns_rate": 30,
+      "average_order_value": 150,
+      "concurrent": 500000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Spanner",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Kafka integrates seamlessly with GPU compute nodes to process real-time AI personal shopping and recommendation pipelines."
+    ],
+    "slug": "ai-personal-shopper"
+  },
+  {
+    "project": {
+      "name": "Offline-First Field Sales",
+      "type": "B2B",
+      "dau": 100000,
+      "daily_orders": 50000,
+      "payment_gateway": "Invoice",
+      "inventory_size": 100000,
+      "flash_sales": 0,
+      "cart_abandonment": 5,
+      "returns_rate": 2,
+      "average_order_value": 300,
+      "concurrent": 10000,
+      "geo": "Single",
+      "budget": "High",
+      "sla": "99.9%",
+      "compliance": "None",
+      "arch": "Microservices",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Couchbase",
+      "cache": "Redis",
+      "queue": "RabbitMQ",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Couchbase provides built-in offline-first synchronization for B2B field sales reps ordering in areas with intermittent connectivity."
+    ],
+    "slug": "offline-first-field-sales"
+  },
+  {
+    "project": {
+      "name": "Subscription Box Service",
+      "type": "B2C",
+      "dau": 1000000,
+      "daily_orders": 100000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 20000,
+      "flash_sales": 5,
+      "cart_abandonment": 40,
+      "returns_rate": 10,
+      "average_order_value": 45,
+      "concurrent": 40000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Sharded PostgreSQL ensures strict transactional integrity for high-volume recurring billing and subscription lifecycle management."
+    ],
+    "slug": "subscription-box-service"
+  },
+  {
+    "project": {
+      "name": "Flash Sale Platform",
+      "type": "B2C",
+      "dau": 10000000,
+      "daily_orders": 2000000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 100000,
+      "flash_sales": 500,
+      "cart_abandonment": 80,
+      "returns_rate": 15,
+      "average_order_value": 80,
+      "concurrent": 1000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra handles the massive spike in write operations and inventory locks during high-concurrency flash sale events."
+    ],
+    "slug": "flash-sale-platform"
+  },
+  {
+    "project": {
+      "name": "Auction/Bidding Platform",
+      "type": "Marketplace",
+      "dau": 10000000,
+      "daily_orders": 500000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 2000000,
+      "flash_sales": 0,
+      "cart_abandonment": 90,
+      "returns_rate": 1,
+      "average_order_value": 250,
+      "concurrent": 800000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "CosmosDB",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "CosmosDB provides the low-latency, globally distributed state management required for tracking real-time auction bids."
+    ],
+    "slug": "auctionbidding-platform"
+  },
+  {
+    "project": {
+      "name": "Dropshipping Aggregator",
+      "type": "Marketplace",
+      "dau": 1000000,
+      "daily_orders": 150000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 10000000,
+      "flash_sales": 20,
+      "cart_abandonment": 75,
+      "returns_rate": 20,
+      "average_order_value": 35,
+      "concurrent": 50000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka streams order events to thousands of external dropshipping supplier APIs for real-time fulfillment routing."
+    ],
+    "slug": "dropshipping-aggregator"
+  },
+  {
+    "project": {
+      "name": "Multi-Vendor Marketplace",
+      "type": "Marketplace",
+      "dau": 10000000,
+      "daily_orders": 1500000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 5000000,
+      "flash_sales": 50,
+      "cart_abandonment": 75,
+      "returns_rate": 35,
+      "average_order_value": 130,
+      "concurrent": 500000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Spanner",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra provides massive write throughput for handling complex multi-vendor cart splits and individual seller payouts."
+    ],
+    "slug": "multi-vendor-marketplace"
+  },
+  {
+    "project": {
+      "name": "Digital Downloads",
+      "type": "Digital",
+      "dau": 1000000,
+      "daily_orders": 300000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 1000000,
+      "flash_sales": 40,
+      "cart_abandonment": 50,
+      "returns_rate": 0,
+      "average_order_value": 15,
+      "concurrent": 100000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "S3 and CloudFront deliver large digital download files with low latency, while Redis caches user-specific download tokens."
+    ],
+    "slug": "digital-downloads"
+  },
+  {
+    "project": {
+      "name": "Grocery Delivery with Live Inventory",
+      "type": "B2C",
+      "dau": 10000000,
+      "daily_orders": 2500000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 200000,
+      "flash_sales": 100,
+      "cart_abandonment": 20,
+      "returns_rate": 4,
+      "average_order_value": 160,
+      "concurrent": 800000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "CosmosDB",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "CosmosDB ensures high availability and partition tolerance for critical real-time perishable inventory tracking across stores."
+    ],
+    "slug": "grocery-delivery-with-live-inventory"
+  },
+  {
+    "project": {
+      "name": "Cross-Border E-Commerce",
+      "type": "Marketplace",
+      "dau": 100000000,
+      "daily_orders": 15000000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 500000000,
+      "flash_sales": 5000,
+      "cart_abandonment": 80,
+      "returns_rate": 45,
+      "average_order_value": 150,
+      "concurrent": 5000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "Global",
+      "arch": "Active-Active",
+      "cloud": "Multi-Cloud"
+    },
+    "recommended_stack": {
+      "db": "Spanner",
+      "cache": "Global Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Multi-Region Storage",
+      "compute": "Multi-Cloud",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Spanner provides global consistency for calculating real-time cross-border duties, taxes, and multi-currency conversions."
+    ],
+    "slug": "cross-border-e-commerce"
+  },
+  {
+    "project": {
+      "name": "High-Return Fashion",
+      "type": "B2C",
+      "dau": 1000000,
+      "daily_orders": 150000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 500000,
+      "flash_sales": 20,
+      "cart_abandonment": 75,
+      "returns_rate": 40,
+      "average_order_value": 130,
+      "concurrent": 50000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka streams high-volume return initiation events to reverse logistics and refund processing microservices asynchronously."
+    ],
+    "slug": "high-return-fashion"
+  },
+  {
+    "project": {
+      "name": "Heavy/Bulky Goods Logistics",
+      "type": "B2C",
+      "dau": 1000000,
+      "daily_orders": 90000,
+      "payment_gateway": "PayPal",
+      "inventory_size": 3000000,
+      "flash_sales": 5,
+      "cart_abandonment": 85,
+      "returns_rate": 15,
+      "average_order_value": 800,
+      "concurrent": 35000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Cloud CDN"
+    },
+    "reasoning": [
+      "Kafka routes complex freight shipping quotes and white-glove delivery scheduling to specialized logistics microservices."
+    ],
+    "slug": "heavybulky-goods-logistics"
+  },
+  {
+    "project": {
+      "name": "Luxury Goods Authentication",
+      "type": "Marketplace",
+      "dau": 1000000,
+      "daily_orders": 50000,
+      "payment_gateway": "Wire",
+      "inventory_size": 200000,
+      "flash_sales": 5,
+      "cart_abandonment": 90,
+      "returns_rate": 1,
+      "average_order_value": 3000,
+      "concurrent": 20000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "AML",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Kafka streams high-value transaction events to physical authentication and provenance verification services asynchronously."
+    ],
+    "slug": "luxury-goods-authentication"
+  },
+  {
+    "project": {
+      "name": "B2B Bulk Ordering",
+      "type": "B2B",
+      "dau": 10000000,
+      "daily_orders": 1000000,
+      "payment_gateway": "Net-60",
+      "inventory_size": 150000000,
+      "flash_sales": 0,
+      "cart_abandonment": 8,
+      "returns_rate": 4,
+      "average_order_value": 6000,
+      "concurrent": 400000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "SOC2",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra handles the massive write throughput of bulk cart updates and multi-tier volume discount calculations."
+    ],
+    "slug": "b2b-bulk-ordering"
+  },
+  {
+    "project": {
+      "name": "Social Commerce",
+      "type": "Marketplace",
+      "dau": 10000000,
+      "daily_orders": 1500000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 5000000,
+      "flash_sales": 50,
+      "cart_abandonment": 75,
+      "returns_rate": 35,
+      "average_order_value": 130,
+      "concurrent": 500000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Spanner",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra provides massive write throughput for handling high-volume social sharing, influencer tagging, and in-feed purchases."
+    ],
+    "slug": "social-commerce"
+  },
+  {
+    "project": {
+      "name": "Live Shopping/Video Commerce",
+      "type": "B2C",
+      "dau": 10000000,
+      "daily_orders": 2000000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 1000000,
+      "flash_sales": 200,
+      "cart_abandonment": 60,
+      "returns_rate": 20,
+      "average_order_value": 90,
+      "concurrent": 1000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "CosmosDB",
+      "cache": "Redis",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "CosmosDB ensures high availability for real-time live chat, Q&A, and instant checkout during high-concurrency video streams."
+    ],
+    "slug": "live-shoppingvideo-commerce"
+  },
+  {
+    "project": {
+      "name": "Voice Commerce",
+      "type": "B2C",
+      "dau": 1000000,
+      "daily_orders": 150000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 500000,
+      "flash_sales": 10,
+      "cart_abandonment": 50,
+      "returns_rate": 15,
+      "average_order_value": 60,
+      "concurrent": 50000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka integrates seamlessly with voice AI nodes to process real-time natural language order intent and fulfillment."
+    ],
+    "slug": "voice-commerce"
+  },
+  {
+    "project": {
+      "name": "AR/VR Try-On Commerce",
+      "type": "B2C",
+      "dau": 10000000,
+      "daily_orders": 1500000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 5000000,
+      "flash_sales": 50,
+      "cart_abandonment": 75,
+      "returns_rate": 35,
+      "average_order_value": 130,
+      "concurrent": 500000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Spanner",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "GCS provides massive, cost-effective object storage and high-throughput CDN for heavy 3D AR asset uploads and streaming."
+    ],
+    "slug": "arvr-try-on-commerce"
+  },
+  {
+    "project": {
+      "name": "Eco-Friendly/Sustainable Goods",
+      "type": "B2C",
+      "dau": 1000000,
+      "daily_orders": 150000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 500000,
+      "flash_sales": 10,
+      "cart_abandonment": 65,
+      "returns_rate": 10,
+      "average_order_value": 85,
+      "concurrent": 50000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Kafka streams carbon footprint tracking and sustainable sourcing verification events to downstream impact dashboards."
+    ],
+    "slug": "eco-friendlysustainable-goods"
+  },
+  {
+    "project": {
+      "name": "Handmade/Artisan Marketplace",
+      "type": "Marketplace",
+      "dau": 1000000,
+      "daily_orders": 150000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 5000000,
+      "flash_sales": 20,
+      "cart_abandonment": 70,
+      "returns_rate": 5,
+      "average_order_value": 65,
+      "concurrent": 50000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "CloudFront"
+    },
+    "reasoning": [
+      "Kafka handles high-volume custom order requests and artisan messaging workflows asynchronously without blocking the main thread."
+    ],
+    "slug": "handmadeartisan-marketplace"
+  },
+  {
+    "project": {
+      "name": "Wholesale/Liquidation",
+      "type": "B2B",
+      "dau": 10000000,
+      "daily_orders": 1000000,
+      "payment_gateway": "Wire",
+      "inventory_size": 150000000,
+      "flash_sales": 100,
+      "cart_abandonment": 15,
+      "returns_rate": 2,
+      "average_order_value": 5000,
+      "concurrent": 400000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "GCP"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "Spanner",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "GCS",
+      "compute": "GKE",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra provides massive write throughput for handling high-volume pallet bidding and bulk liquidation lot updates."
+    ],
+    "slug": "wholesaleliquidation"
+  },
+  {
+    "project": {
+      "name": "Duty-Free Travel Retail",
+      "type": "B2C",
+      "dau": 1000000,
+      "daily_orders": 150000,
+      "payment_gateway": "Stripe",
+      "inventory_size": 200000,
+      "flash_sales": 10,
+      "cart_abandonment": 40,
+      "returns_rate": 1,
+      "average_order_value": 250,
+      "concurrent": 50000,
+      "geo": "Multi-Region",
+      "budget": "Very High",
+      "sla": "99.99%",
+      "compliance": "None",
+      "arch": "Event-Driven",
+      "cloud": "Azure"
+    },
+    "recommended_stack": {
+      "db": "Sharded PostgreSQL",
+      "cache": "Redis Cluster",
+      "queue": "Kafka",
+      "search": "Elasticsearch",
+      "storage": "Blob",
+      "compute": "AKS",
+      "cdn": "Azure CDN"
+    },
+    "reasoning": [
+      "Kafka streams flight itinerary data to dynamically calculate duty-free allowances and tax exemptions in real-time."
+    ],
+    "slug": "duty-free-travel-retail"
+  },
+  {
+    "project": {
+      "name": "Emergency/Disaster Relief Supply",
+      "type": "B2B",
+      "dau": 10000000,
+      "daily_orders": 2000000,
+      "payment_gateway": "Grant",
+      "inventory_size": 500000,
+      "flash_sales": 0,
+      "cart_abandonment": 0,
+      "returns_rate": 0,
+      "average_order_value": 1000,
+      "concurrent": 1000000,
+      "geo": "Global",
+      "budget": "Enterprise",
+      "sla": "99.999%",
+      "compliance": "None",
+      "arch": "CQRS",
+      "cloud": "AWS"
+    },
+    "recommended_stack": {
+      "db": "Cassandra",
+      "cache": "DynamoDB",
+      "queue": "Kafka",
+      "search": "OpenSearch",
+      "storage": "S3",
+      "compute": "EKS",
+      "cdn": "Multi-CDN"
+    },
+    "reasoning": [
+      "Cassandra ensures high availability and partition tolerance for critical emergency supply chain routing during natural disasters."
+    ],
+    "slug": "emergencydisaster-relief-supply"
+  }
+]
