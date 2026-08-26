@@ -9,5 +9,7 @@ urlpatterns = [
     path("<slug:dataset>/<uuid:id>/edit/",views.edit_architecture,name="architecture-edit"),
     path("my/<int:id>/",views.user_architecture_detail,name="user-architecture-detail"),
     path("my/<int:id>/analyze/",views.analyze_user_architecture,name="analyze-user-architecture"),
-    path("my/<int:id>/delete",views.delete_architecture,name="architecture-delete")
+    path("my/<int:id>/delete",views.delete_architecture,name="architecture-delete"),
+    path("analysis/<int:analysis_id>/",views.architecture_analysis_page,name="architecture-analysis"),
+    path("analysis/<int:analysis_id>/status/",views.architecture_analysis_status,name="architecture_analysis_status"),
 ]

@@ -1,25 +1,28 @@
 {% extends "base.html" %}
 {% block content %}
-{% if arcs %}
-{% for i in arcs %}
-    <div class="modal-card">
-        <div class="modal-header">
-            <h3>{{i.name}}</h3>
-        </div>
-        <div class="modal-body">
-            <p><b>Original Title: </b><i>{{i.original.title}}</i></p>
-            <p><b>Updated On: </b><i>{{i.updated_at}}</i></p>
-            <p><b>Category: </b><i>{{i.original.type}}</i></p>
-        </div>
-        <div class="modal-footer">
-            <a href="{% url "user-architecture-detail" i.id %}">
-                <button class="btn btn-secondary" class="btn btn-primary">View</button>
-            </a>
-            <a id="confirmDeleteBtn" href="#" class="btn btn-danger">Confirm Delete</a>
-        </div>
-    </div>
 
-{% endfor %}
+{% if arcs %}
+<div class="card-grid">
+    {% for i in arcs %}
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3>{{ i.name }}</h3>
+            </div>
+            <div class="modal-body">
+                <p><b>Original Title: </b><i>{{ i.original.title }}</i></p>
+                <p><b>Updated On: </b><i>{{ i.updated_at|date:"M d, Y" }}</i></p>
+                <p><b>Category: </b><i>{{ i.original.type }}</i></p>
+            </div>
+            <div class="modal-footer">
+                <a href="{% url 'user-architecture-detail' i.id %}" class="btn btn-primary">View</a>
+                <!-- Updated delete URL to target the specific item ID -->
+                <a href="{% url 'architecture-delete' i.id %}" class="btn btn-danger">Confirm Delete</a>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% else %}
+    <p>No architecture items found.</p>
 {% endif %}
 
 {% endblock content %}

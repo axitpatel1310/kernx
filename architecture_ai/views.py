@@ -1,18 +1,24 @@
-from architecture_ai.models import UserArchitecture
 from django.shortcuts import get_object_or_404, render,redirect
 from django.contrib.auth.decorators import login_required
-from .models import Architecture, UserArchitecture, ArchitectureType,TechnologyCategory,Technology
-from .llm import analyze_architecture
+from .models import Architecture, UserArchitecture, ArchitectureType,TechnologyCategory,Technology,ProjectField,ArchitectureAnalysis
 from accounts.models import Activity
-
+from django.http import JsonResponse
+from markdown import markdown
+from .llm import analyze_architecture
+import time
+from architecture_ai.services.rate_limiter import check_analysis_limit
+from architecture_ai.services.analysis_cache import (
+    get_cached_analysis,
+    cache_analysis,
+)
+from architecture_ai.services.analysis_cache import (
+    get_cached_analysis,
+    architecture_hash,
+)
+from architecture_ai.models import ArchitectureAnalysis
 def dataset_list(request):
     datasets = ArchitectureType.objects.order_by("name")
-    return render(request,"architectures/all.html",
-        {
-            "datasets": datasets,
-        },
-    )
-
+    return render(request,"architectures/all.html",{"datasets": datasets,},)
 
 def dataset_detail(request, dataset):
     architecture_type = get_object_or_404(ArchitectureType,slug=dataset)
@@ -35,9 +41,6 @@ def architecture_detail(request, dataset, id):
         },
     )
     
-from django.contrib.auth.decorators import login_required
-from django.shortcuts import get_object_or_404, redirect, render
-from .models import (Architecture,UserArchitecture,ProjectField,TechnologyCategory)
 
 @login_required
 def edit_architecture(request, dataset, id):
@@ -46,10 +49,6 @@ def edit_architecture(request, dataset, id):
     Activity.objects.create(user=request.user,activity_type="architecture_created")
     return redirect("user-architecture-detail",id=user_architecture.id)
 
-from markdown import markdown
-from django.contrib.auth.decorators import login_required
-from django.shortcuts import get_object_or_404, redirect, render
-from .models import (UserArchitecture,ProjectField,TechnologyCategory)
 
 @login_required
 def user_architecture_detail(request, id):
@@ -83,19 +82,93 @@ def user_architecture_detail(request, id):
     )
     
 from django.http import JsonResponse
-from markdown import markdown
-from .llm import analyze_architecture
-import time
+from django.shortcuts import get_object_or_404
+
+from architecture_ai.models import ArchitectureAnalysis, Architecture,UserArchitecture
+
+from architecture_ai.services.analysis_cache import (
+    get_cached_analysis,
+    architecture_hash,
+)
+
+from architecture_ai.services.rate_limiter import (
+    check_analysis_limit,
+)
+
+from architecture_ai.tasks import (
+    analyze_architecture_task,
+)
 
 @login_required
 def analyze_user_architecture(request, id):
-    architecture = get_object_or_404(UserArchitecture,id=id,user=request.user)
-    start = time.time()
-    analysis = markdown(analyze_architecture(architecture.data),extensions=["extra"])
-    print(f"Ollama analysis took {time.time() - start:.2f}s")
-    return render(request,"architectures/anaylsis.html",{"analysis": analysis})
+
+    user_architecture = get_object_or_404(
+        UserArchitecture,
+        id=id,
+        user=request.user,
+    )
+
+    analysis = ArchitectureAnalysis.objects.create(
+        architecture=user_architecture.original,
+        user=request.user,
+        architecture_hash=architecture_hash(
+            user_architecture.data
+        ),
+        status="pending",
+    )
+
+    analyze_architecture_task.delay(
+        str(analysis.id)
+    )
+
+    return redirect(
+        "architecture-analysis",
+        analysis_id=analysis.id,
+    )
+
+
+@login_required
+def architecture_analysis_page(
+    request,
+    analysis_id,
+):
+
+    analysis = get_object_or_404(
+        ArchitectureAnalysis,
+        id=analysis_id,
+        user=request.user,
+    )
+
+    return render(
+        request,
+        "architectures/analysis.html",
+        {
+            "analysis": analysis,
+            "analysis_id": analysis.id,
+        },
+    )
+
+@login_required
+def architecture_analysis_status(request, analysis_id):
+    analysis = get_object_or_404(
+        ArchitectureAnalysis,
+        id=analysis_id,
+        user=request.user,
+    )
+    return JsonResponse({
+        "status": analysis.status,
+        "result": analysis.result,
+        "error": analysis.error,
+    })
     
 def delete_architecture(request,id):
     architecture = get_object_or_404(UserArchitecture,id=id,user=request.user)
     architecture.delete()
     return redirect("home")
+
+from django.contrib.auth.decorators import login_required
+from django.http import JsonResponse
+from django.shortcuts import get_object_or_404
+
+from architecture_ai.models import ArchitectureAnalysis
+

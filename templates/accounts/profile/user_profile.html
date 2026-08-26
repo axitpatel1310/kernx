@@ -82,6 +82,11 @@
     #activityGraph rect[data-level="2"] { fill: #40c463; }
     #activityGraph rect[data-level="3"] { fill: #30a14e; }
     #activityGraph rect[data-level="4"] { fill: #216e39; }
+    /* Ensure wrapper styling stays intact */
+    .activity-graph-wrapper {
+        overflow-x: auto;
+        padding: 1rem 0;
+    }
 </style>
 
 <script>
@@ -97,9 +102,20 @@ document.addEventListener('DOMContentLoaded', function () {
     const DAYS = 7;
     const WEEKS = 53;
 
+    // Define colors directly in JS for canvas rendering
+    const COLOR_MAP = {
+        0: "#ebedf0",
+        1: "#9be9a8",
+        2: "#40c463",
+        3: "#30a14e",
+        4: "#216e39"
+    };
+
     const width = WEEKS * (CELL_SIZE + GAP);
     const height = DAYS * (CELL_SIZE + GAP);
 
+    svg.setAttribute("width", width);
+    svg.setAttribute("height", height);
     svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
 
     function getLevel(count) {
@@ -112,12 +128,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function createCell(x, y, count, date) {
         const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+        const level = getLevel(count);
+
         rect.setAttribute("x", x * (CELL_SIZE + GAP));
         rect.setAttribute("y", y * (CELL_SIZE + GAP));
         rect.setAttribute("width", CELL_SIZE);
         rect.setAttribute("height", CELL_SIZE);
         rect.setAttribute("rx", 3);
-        rect.dataset.level = getLevel(count);
+        rect.setAttribute("fill", COLOR_MAP[level]); // Direct fill attribute fixes canvas rendering
+        rect.dataset.level = level;
         rect.dataset.date = date;
         rect.dataset.count = count;
 
@@ -143,15 +162,25 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Download functionality
+    // Export SVG directly to PNG
     const downloadBtn = document.getElementById("downloadActivity");
     if (downloadBtn) {
         downloadBtn.addEventListener("click", function () {
-            const serializer = new XMLSerializer();
-            const svgString = serializer.serializeToString(svg);
-            const canvas = document.createElement("canvas");
-            const scale = 3;
+            // Clone SVG to prevent altering live DOM
+            const svgClone = svg.cloneNode(true);
+            
+            // Set explicit SVG background color for export
+            const bgRect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+            bgRect.setAttribute("width", "100%");
+            bgRect.setAttribute("height", "100%");
+            bgRect.setAttribute("fill", "#ffffff");
+            svgClone.insertBefore(bgRect, svgClone.firstChild);
 
+            const serializer = new XMLSerializer();
+            const svgString = serializer.serializeToString(svgClone);
+            const scale = 2; // Scale for crisp high-DPI output
+
+            const canvas = document.createElement("canvas");
             canvas.width = width * scale;
             canvas.height = height * scale;
 
@@ -159,21 +188,17 @@ document.addEventListener('DOMContentLoaded', function () {
             ctx.scale(scale, scale);
 
             const img = new Image();
-            const blob = new Blob([svgString], { type: "image/svg+xml;charset=utf-8" });
-            const url = URL.createObjectURL(blob);
+            const svgBlob = new Blob([svgString], { type: "image/svg+xml;charset=utf-8" });
+            const url = URL.createObjectURL(svgBlob);
 
             img.onload = function () {
                 ctx.drawImage(img, 0, 0);
                 URL.revokeObjectURL(url);
 
-                canvas.toBlob(function (pngBlob) {
-                    const downloadURL = URL.createObjectURL(pngBlob);
-                    const link = document.createElement("a");
-                    link.href = downloadURL;
-                    link.download = "kernx-activity.png";
-                    link.click();
-                    URL.revokeObjectURL(downloadURL);
-                }, "image/png");
+                const link = document.createElement("a");
+                link.download = "kernx-activity.png";
+                link.href = canvas.toDataURL("image/png");
+                link.click();
             };
 
             img.src = url;
@@ -181,5 +206,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 </script>
+
 
 {% endblock content %}

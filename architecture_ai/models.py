@@ -24,7 +24,6 @@ class Architecture(models.Model):
     data = models.JSONField()
     created_at = models.DateTimeField(auto_now_add=True)
 
-
 class UserArchitecture(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE)
     original = models.ForeignKey(Architecture,on_delete=models.SET_NULL,null=True)
@@ -60,3 +59,26 @@ class ProjectField(models.Model):
     ]
     field_type = models.CharField(max_length=20,choices=FIELD_TYPES)
     required = models.BooleanField(default=True)
+    
+class ArchitectureEmbedding(models.Model):
+    architecture = models.OneToOneField(Architecture,on_delete=models.CASCADE,related_name="embedding")
+    content = models.TextField()
+    indexed_at = models.DateTimeField(auto_now=True)
+    
+class ArchitectureAnalysis(models.Model):
+    STATUS_CHOICES = [
+        ("pending", "Pending"),
+        ("processing", "Processing"),
+        ("completed", "Completed"),
+        ("failed", "Failed"),
+    ]
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name="architecture_analyses",null=True,blank=True)
+    architecture = models.ForeignKey(Architecture,on_delete=models.CASCADE,related_name="analyses")
+    architecture_hash = models.CharField(max_length=64,db_index=True)
+    status = models.CharField(max_length=20,choices=STATUS_CHOICES,default="pending")
+    result = models.TextField(blank=True)
+    error = models.TextField(blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    completed_at = models.DateTimeField(null=True,blank=True)
+    class Meta:
+        ordering = ["-created_at"]

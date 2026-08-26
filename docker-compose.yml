@@ -10,6 +10,24 @@ services:
       - .env
     depends_on:
       - ollama
+      - redis
+
+  redis:
+    image: redis:7-alpine
+    container_name: kernx_redis
+    restart: unless-stopped
+
+  celery:
+    build: .
+    container_name: kernx_celery
+    command: celery -A kernx worker --loglevel=info
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    depends_on:
+      - redis
+      - ollama
 
   ollama:
     image: ollama/ollama

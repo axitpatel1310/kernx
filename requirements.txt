@@ -6,3 +6,7 @@ python-dotenv
 psycopg2-binary
 psycopg
 django_ckeditor_5
+langchain_chroma
+langchain_ollama
+redis
+celery

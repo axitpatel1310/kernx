@@ -177,3 +177,21 @@ for (let week = 0; week < WEEKS; week++) {
         );
     }
 }
+function showAnalysisResult(result) {
+
+    const container =
+        document.getElementById("analysis-status");
+
+    container.innerHTML = result;
+}
+function showAnalysisError(message) {
+
+    const container =
+        document.getElementById("analysis-status");
+
+    container.innerHTML = `
+        <div class="analysis-error">
+            ${message}
+        </div>
+    `;
+}

@@ -1,0 +1,238 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+
+.analysis-result {
+    color: var(--color-cream);
+    line-height: 1.7;
+}
+
+.analysis-result h1 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--color-cream);
+}
+
+.analysis-result h1:first-child {
+    margin-top: 0;
+}
+
+.analysis-result h2 {
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.analysis-result p {
+    color: var(--color-soft-sage);
+    margin-bottom: 1rem;
+}
+
+.analysis-result ul {
+    margin: 0.75rem 0 1.25rem 1.25rem;
+    padding-left: 1rem;
+}
+
+.analysis-result li {
+    color: var(--color-soft-sage);
+    margin-bottom: 0.65rem;
+    padding-left: 0.25rem;
+}
+
+.analysis-result strong {
+    color: var(--color-cream);
+}
+
+.analysis-result code {
+    padding: 0.15rem 0.35rem;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+</style>
+<div class="analysis-section">
+
+    <div class="analysis-card">
+
+        <div class="card-header">
+            <i class="fa-solid fa-microchip card-icon"></i>
+            <h2>Architectural Analysis</h2>
+        </div>
+
+        <div id="analysis-status" class="analysis-content">
+
+    <div id="analysis-loading">
+
+        <i class="fa-solid fa-spinner fa-spin"
+           style="font-size: 2rem;">
+        </i>
+
+        <h3>Analyzing your architecture...</h3>
+
+        <p>
+            Kernx is comparing your architecture
+            against its architecture knowledge base.
+        </p>
+
+    </div>
+
+    <div id="analysis-result" class="analysis-result" style="display: none;"></div>
+
+    <div id="analysis-error" style="display: none;"></div>
+
+</div>
+
+    </div>
+
+    <div class="action-footer">
+        <a href="{% url 'home' %}" class="btn btn-secondary">
+            <i class="fa-solid fa-house"></i>
+            Return To Home
+        </a>
+    </div>
+
+</div>
+<script>
+
+const analysisId = "{{ analysis_id }}";
+
+async function checkAnalysis() {
+
+    console.log(
+        "Checking analysis:",
+        analysisId
+    );
+
+    try {
+
+        const response = await fetch(
+            `/architectures/analysis/${analysisId}/status/`
+        );
+
+        if (!response.ok) {
+
+            console.error(
+                "Status request failed:",
+                response.status
+            );
+
+            setTimeout(checkAnalysis, 2000);
+            return;
+        }
+
+        const data = await response.json();
+
+        console.log(
+            "Kernx status:",
+            data.status
+        );
+
+        // ==============================
+        // Still processing
+        // ==============================
+
+        if (
+            data.status === "pending" ||
+            data.status === "processing"
+        ) {
+
+            setTimeout(
+                checkAnalysis,
+                1500
+            );
+
+            return;
+        }
+
+        // ==============================
+        // Completed
+        // ==============================
+
+        if (data.status === "completed") {
+
+    document.getElementById(
+        "analysis-loading"
+    ).style.display = "none";
+
+    const result =
+        document.getElementById(
+            "analysis-result"
+        );
+
+    result.style.display = "block";
+
+    // Normalize Ollama's compact Markdown
+    let markdown = data.result
+        .replace(/\r\n/g, "\n")
+        .replace(/\r/g, "\n")
+
+        // Put headings on their own lines
+        .replace(/\s+(#\s+Warnings)/gi, "\n\n$1")
+        .replace(/\s+(#\s+Recommendations)/gi, "\n\n$1")
+        .replace(/\s+(#\s+Reasoning)/gi, "\n\n$1")
+
+        // Put bullets on their own lines
+        .replace(/\s+-\s+/g, "\n- ");
+
+    // Render Markdown safely
+    const html = marked.parse(markdown);
+
+    result.innerHTML = DOMPurify.sanitize(html);
+
+    return;
+}
+
+
+
+        // ==============================
+        // Failed
+        // ==============================
+
+        if (data.status === "failed") {
+
+            document.getElementById(
+                "analysis-loading"
+            ).style.display = "none";
+
+            const error =
+                document.getElementById(
+                    "analysis-error"
+                );
+
+            error.style.display = "block";
+
+            error.innerHTML = `
+                <h3>Analysis Failed</h3>
+                <p>
+                    ${data.error || "Unknown error"}
+                </p>
+            `;
+
+            return;
+        }
+
+    } catch (error) {
+
+        console.error(
+            "Polling error:",
+            error
+        );
+
+        setTimeout(
+            checkAnalysis,
+            3000
+        );
+    }
+}
+
+
+{% if analysis_id %}
+    checkAnalysis();
+{% endif %}
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
+{% endblock content %}
